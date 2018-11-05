@@ -1,6 +1,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/drifters/public_html/eiendom/
-    - npm i
+    - npm install
     - gatsby build
     - /bin/cp -R public/. $DEPLOYPATH
