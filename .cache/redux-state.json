@@ -343,11 +343,67 @@
         "owner": "internal-data-bridge"
       }
     },
+    "88cdd4ae-10c4-51f0-8630-7c1f5bb1c5d5": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-htaccess-redirects",
+      "id": "88cdd4ae-10c4-51f0-8630-7c1f5bb1c5d5",
+      "name": "gatsby-plugin-htaccess-redirects",
+      "version": "0.2.0",
+      "pluginOptions": {
+        "plugins": [],
+        "prefix": "<IfModule mod_rewrite.c>\nRewriteEngine On",
+        "suffix": "</IfModule>"
+      },
+      "nodeAPIs": [
+        "onPostBuild"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-htaccess-redirects",
+      "packageJson": {
+        "name": "gatsby-plugin-htaccess-redirects",
+        "description": "Gatsby plugin to render redirects into a .htaccess file at public/.htaccess",
+        "version": "0.2.0",
+        "main": "gatsby-node.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "apache",
+          "htaccess"
+        ],
+        "author": "GatsbyCentral https://www.gatsbycentral.com/",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "fs-extra",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.11"
+          },
+          {
+            "name": "path",
+            "version": "^0.12.7"
+          }
+        ],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "3737a94fcd416ef27a6d0dadf7fb21e0",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "7374ebf2-d961-52ee-92a2-c25e7cb387a9": {
       "resolve": "/home/kodefant/kode/eiendom",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "a833a3b11ff28a3deaa97b6dc4862e53",
+      "version": "175740d4b4794922e1180d546fd4a802",
       "pluginOptions": {
         "plugins": []
       },
@@ -364,6 +420,10 @@
           {
             "name": "gatsby",
             "version": "^2.0.39"
+          },
+          {
+            "name": "gatsby-plugin-htaccess-redirects",
+            "version": "^0.2.0"
           },
           {
             "name": "gatsby-plugin-react-helmet",
@@ -459,7 +519,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "13eaca4dbc1c8cc4a36d6fe8991c556b",
+        "contentDigest": "f091b6664ad2b325d6e2a2de28acd440",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -567,12 +627,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-05T22:49:29.342Z",
+      "buildTime": "2018-11-05T22:58:24.987Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "46866b0b92d90a17e14122390986cc9d",
+        "contentDigest": "06212ab9e71862b37da6084835d7f5d8",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -662,7 +722,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "05ae7e9127474339cd0179965410336e"
+    "PLUGINS_HASH": "36c7324de2fae147318810251593a8b0"
   },
   "componentDataDependencies": {
     "nodes": {
