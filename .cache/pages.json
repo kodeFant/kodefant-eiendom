@@ -16,8 +16,8 @@
     },
     {
         "componentChunkName": "component---src-templates-author-js",
-        "jsonName": "author-gc-5b7",
-        "path": "/author/gc"
+        "jsonName": "author-kodefant-971",
+        "path": "/author/kodefant"
     },
     {
         "componentChunkName": "component---src-templates-category-js",
@@ -26,27 +26,17 @@
     },
     {
         "componentChunkName": "component---src-templates-page-js",
-        "jsonName": "child-of-draft-83c",
-        "path": "/child-of-draft/"
-    },
-    {
-        "componentChunkName": "component---src-templates-page-js",
-        "jsonName": "privacy-policy-6b7",
-        "path": "/privacy-policy/"
-    },
-    {
-        "componentChunkName": "component---src-templates-page-js",
         "jsonName": "sample-page-b1e",
         "path": "/sample-page/"
     },
     {
         "componentChunkName": "component---src-templates-tag-js",
-        "jsonName": "tags-bar-e5a",
-        "path": "/tags/bar/"
+        "jsonName": "tags-test-7c5",
+        "path": "/tags/test/"
     },
     {
         "componentChunkName": "component---src-templates-tag-js",
-        "jsonName": "tags-foo-dd2",
-        "path": "/tags/foo/"
+        "jsonName": "tags-tust-40e",
+        "path": "/tags/tust/"
     }
 ]

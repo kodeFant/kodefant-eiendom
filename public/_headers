@@ -6,33 +6,27 @@
   X-Content-Type-Options: nosniff
 /static/*
   Cache-Control: public, max-age=31536000, immutable
-/child-of-draft/
-  Link: </webpack-runtime-2cf74599ff4fa2cc1934.js>; rel=preload; as=script
-  Link: </0-18fb103ec97bc351bbe3.js>; rel=preload; as=script
-/privacy-policy/
-  Link: </webpack-runtime-2cf74599ff4fa2cc1934.js>; rel=preload; as=script
-  Link: </0-18fb103ec97bc351bbe3.js>; rel=preload; as=script
 /sample-page/
-  Link: </webpack-runtime-2cf74599ff4fa2cc1934.js>; rel=preload; as=script
+  Link: </webpack-runtime-c95c270d29dad2f0a986.js>; rel=preload; as=script
   Link: </0-18fb103ec97bc351bbe3.js>; rel=preload; as=script
 /
-  Link: </webpack-runtime-2cf74599ff4fa2cc1934.js>; rel=preload; as=script
+  Link: </webpack-runtime-c95c270d29dad2f0a986.js>; rel=preload; as=script
   Link: </0-18fb103ec97bc351bbe3.js>; rel=preload; as=script
 /categories/uncategorized/
-  Link: </webpack-runtime-2cf74599ff4fa2cc1934.js>; rel=preload; as=script
+  Link: </webpack-runtime-c95c270d29dad2f0a986.js>; rel=preload; as=script
   Link: </0-18fb103ec97bc351bbe3.js>; rel=preload; as=script
-/tags/bar/
-  Link: </webpack-runtime-2cf74599ff4fa2cc1934.js>; rel=preload; as=script
+/tags/test/
+  Link: </webpack-runtime-c95c270d29dad2f0a986.js>; rel=preload; as=script
   Link: </0-18fb103ec97bc351bbe3.js>; rel=preload; as=script
-/tags/foo/
-  Link: </webpack-runtime-2cf74599ff4fa2cc1934.js>; rel=preload; as=script
+/tags/tust/
+  Link: </webpack-runtime-c95c270d29dad2f0a986.js>; rel=preload; as=script
   Link: </0-18fb103ec97bc351bbe3.js>; rel=preload; as=script
-/author/gc
-  Link: </webpack-runtime-2cf74599ff4fa2cc1934.js>; rel=preload; as=script
+/author/kodefant
+  Link: </webpack-runtime-c95c270d29dad2f0a986.js>; rel=preload; as=script
   Link: </0-18fb103ec97bc351bbe3.js>; rel=preload; as=script
 /404/
-  Link: </webpack-runtime-2cf74599ff4fa2cc1934.js>; rel=preload; as=script
+  Link: </webpack-runtime-c95c270d29dad2f0a986.js>; rel=preload; as=script
   Link: </0-18fb103ec97bc351bbe3.js>; rel=preload; as=script
 /404.html
-  Link: </webpack-runtime-2cf74599ff4fa2cc1934.js>; rel=preload; as=script
+  Link: </webpack-runtime-c95c270d29dad2f0a986.js>; rel=preload; as=script
   Link: </0-18fb103ec97bc351bbe3.js>; rel=preload; as=script
