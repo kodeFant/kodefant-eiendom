@@ -1,42 +1,22 @@
 [
     {
-        "componentChunkName": "component---src-templates-blog-js",
+        "componentChunkName": "component---src-pages-index-jsx",
         "jsonName": "index",
         "path": "/"
     },
     {
-        "componentChunkName": "component---src-pages-404-js",
+        "componentChunkName": "component---src-pages-404-jsx",
         "jsonName": "404-html-516",
         "path": "/404.html"
     },
     {
-        "componentChunkName": "component---src-pages-404-js",
+        "componentChunkName": "component---src-pages-404-jsx",
         "jsonName": "404-22d",
         "path": "/404/"
     },
     {
-        "componentChunkName": "component---src-templates-author-js",
-        "jsonName": "author-kodefant-971",
-        "path": "/author/kodefant"
-    },
-    {
-        "componentChunkName": "component---src-templates-category-js",
-        "jsonName": "categories-uncategorized-9d2",
-        "path": "/categories/uncategorized/"
-    },
-    {
-        "componentChunkName": "component---src-templates-page-js",
-        "jsonName": "sample-page-b1e",
-        "path": "/sample-page/"
-    },
-    {
-        "componentChunkName": "component---src-templates-tag-js",
-        "jsonName": "tags-test-7c5",
-        "path": "/tags/test/"
-    },
-    {
-        "componentChunkName": "component---src-templates-tag-js",
-        "jsonName": "tags-tust-40e",
-        "path": "/tags/tust/"
+        "componentChunkName": "component---src-pages-page-2-jsx",
+        "jsonName": "page-2-fbc",
+        "path": "/page-2/"
     }
 ]

@@ -11,9 +11,9 @@
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin dev-404-page": {
+    "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5": {
       "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/dev-404-page",
-      "id": "Plugin dev-404-page",
+      "id": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
       "name": "dev-404-page",
       "version": "1.0.0",
       "pluginOptions": {
@@ -41,14 +41,14 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "6941b53923fe0bb2c55a0b851fa4bc72",
+        "contentDigest": "498d51cede2742add627a834f950b11d",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin load-babel-config": {
+    "1fc32581-893a-55e8-8927-bcd667e2b700": {
       "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/load-babel-config",
-      "id": "Plugin load-babel-config",
+      "id": "1fc32581-893a-55e8-8927-bcd667e2b700",
       "name": "load-babel-config",
       "version": "1.0.0",
       "pluginOptions": {
@@ -76,14 +76,14 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "0b97eb9b4fed838a3ed25d95b382092d",
+        "contentDigest": "a576a1bbcdb801db065a7379f69d4966",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin internal-data-bridge": {
+    "a5079d69-ba80-53dc-82f9-0f440bd5448c": {
       "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
-      "id": "Plugin internal-data-bridge",
+      "id": "a5079d69-ba80-53dc-82f9-0f440bd5448c",
       "name": "internal-data-bridge",
       "version": "1.0.0",
       "pluginOptions": {
@@ -112,14 +112,14 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "9970af99148a02212a7509eff90f7365",
+        "contentDigest": "7cffe8882dc4932dd2e5d890f9d8823c",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin prod-404": {
+    "f795702c-a3b8-5a88-88ee-5d06019d44fa": {
       "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/prod-404",
-      "id": "Plugin prod-404",
+      "id": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
       "name": "prod-404",
       "version": "1.0.0",
       "pluginOptions": {
@@ -147,14 +147,14 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "0bf854d0d800b338147f4fa58d266dad",
+        "contentDigest": "39dc35a548885f4f0c7a882372f8de6e",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin query-runner": {
+    "84dad27f-1d44-51fc-ac56-4db2e5222995": {
       "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/query-runner",
-      "id": "Plugin query-runner",
+      "id": "84dad27f-1d44-51fc-ac56-4db2e5222995",
       "name": "query-runner",
       "version": "1.0.0",
       "pluginOptions": {
@@ -182,16 +182,16 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "809430046296fa58ffca90009e1af671",
+        "contentDigest": "74763fe8f2ee6763a61c2c783ec43150",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin gatsby-plugin-react-helmet": {
+    "1943ff2f-9c0c-558d-8d0c-006603e8106a": {
       "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-react-helmet",
-      "id": "Plugin gatsby-plugin-react-helmet",
+      "id": "1943ff2f-9c0c-558d-8d0c-006603e8106a",
       "name": "gatsby-plugin-react-helmet",
-      "version": "3.0.0",
+      "version": "3.0.1",
       "pluginOptions": {
         "plugins": []
       },
@@ -204,7 +204,7 @@
       "packageJson": {
         "name": "gatsby-plugin-react-helmet",
         "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
-        "version": "3.0.0",
+        "version": "3.0.1",
         "main": "index.js",
         "keywords": [
           "gatsby",
@@ -222,205 +222,12 @@
           "noscript",
           "style"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "matthews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
             "name": "@babel/runtime",
             "version": "^7.0.0"
-          }
-        ],
-        "devDependencies": [
-          {
-            "name": "@babel/cli",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "@babel/core",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "cross-env",
-            "version": "^5.1.4"
-          }
-        ],
-        "peerDependencies": [
-          {
-            "name": "gatsby",
-            "version": ">2.0.0-alpha"
-          },
-          {
-            "name": "react-helmet",
-            "version": ">=5.1.3"
-          }
-        ],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "70b9dd0d53b071fcacafcb67cc26b0cd",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "Plugin gatsby-plugin-sass": {
-      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-sass",
-      "id": "Plugin gatsby-plugin-sass",
-      "name": "gatsby-plugin-sass",
-      "version": "2.0.1",
-      "pluginOptions": {
-        "plugins": []
-      },
-      "nodeAPIs": [
-        "onCreateWebpackConfig"
-      ],
-      "browserAPIs": [],
-      "ssrAPIs": [],
-      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-sass",
-      "packageJson": {
-        "name": "gatsby-plugin-sass",
-        "description": "Gatsby plugin to handle scss/sass files",
-        "version": "2.0.1",
-        "main": "index.js",
-        "keywords": [
-          "gatsby",
-          "gatsby-plugin",
-          "sass",
-          "scss"
-        ],
-        "author": {
-          "name": "Daniel Farrell",
-          "email": "daniel@mobelux.com"
-        },
-        "license": "MIT",
-        "dependencies": [
-          {
-            "name": "@babel/runtime",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "sass-loader",
-            "version": "^7.0.1"
-          }
-        ],
-        "devDependencies": [
-          {
-            "name": "@babel/cli",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "@babel/core",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "cross-env",
-            "version": "^5.1.4"
-          }
-        ],
-        "peerDependencies": [
-          {
-            "name": "gatsby",
-            "version": ">2.0.0-alpha"
-          },
-          {
-            "name": "node-sass",
-            "version": "^4.9.0"
-          }
-        ],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "15a4e39535f8464d11e295a1118ce0f6",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "Plugin gatsby-source-wordpress": {
-      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-source-wordpress",
-      "id": "Plugin gatsby-source-wordpress",
-      "name": "gatsby-source-wordpress",
-      "version": "3.0.12",
-      "pluginOptions": {
-        "plugins": [],
-        "baseUrl": "www.drifterstage.com/real-estate-headless",
-        "hostingWPCOM": false,
-        "protocol": "https",
-        "useACF": false,
-        "auth": {},
-        "verboseOutput": false
-      },
-      "nodeAPIs": [
-        "sourceNodes"
-      ],
-      "browserAPIs": [],
-      "ssrAPIs": [],
-      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-source-wordpress",
-      "packageJson": {
-        "name": "gatsby-source-wordpress",
-        "description": "Gatsby source plugin for building websites using the Wordpress CMS as a data source.",
-        "version": "3.0.12",
-        "keywords": [
-          "gatsby",
-          "gatsby-plugin",
-          "gatsby-source-plugin"
-        ],
-        "author": {
-          "name": "Sebastien Fichot",
-          "email": "fichot.sebastien@gmail.com"
-        },
-        "license": "MIT",
-        "dependencies": [
-          {
-            "name": "@babel/runtime",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "axios",
-            "version": "^0.18.0"
-          },
-          {
-            "name": "better-queue",
-            "version": "^3.8.6"
-          },
-          {
-            "name": "bluebird",
-            "version": "^3.5.0"
-          },
-          {
-            "name": "deep-map",
-            "version": "^1.5.0"
-          },
-          {
-            "name": "deep-map-keys",
-            "version": "^1.2.0"
-          },
-          {
-            "name": "gatsby-source-filesystem",
-            "version": "^2.0.7"
-          },
-          {
-            "name": "json-stringify-safe",
-            "version": "^5.0.1"
-          },
-          {
-            "name": "lodash",
-            "version": "^4.17.10"
-          },
-          {
-            "name": "minimatch",
-            "version": "^3.0.4"
-          },
-          {
-            "name": "qs",
-            "version": "^6.4.0"
           }
         ],
         "devDependencies": [
@@ -445,6 +252,10 @@
           {
             "name": "gatsby",
             "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "react-helmet",
+            "version": ">=5.1.3"
           }
         ],
         "optionalDependecies": [],
@@ -453,620 +264,145 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "ce3d137bb7851576e0cf0cb6874b88ac",
+        "contentDigest": "72b0ea8d8e36a6ee2be03191faa1d4db",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin gatsby-plugin-htaccess-redirects": {
-      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-htaccess-redirects",
-      "id": "Plugin gatsby-plugin-htaccess-redirects",
-      "name": "gatsby-plugin-htaccess-redirects",
-      "version": "0.2.0",
+    "176dadcc-aa26-5c02-a651-88867760143b": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-styled-components",
+      "id": "176dadcc-aa26-5c02-a651-88867760143b",
+      "name": "gatsby-plugin-styled-components",
+      "version": "3.0.1",
       "pluginOptions": {
-        "plugins": [],
-        "prefix": "<IfModule mod_rewrite.c>\nRewriteEngine On",
-        "suffix": "</IfModule>"
+        "plugins": []
       },
       "nodeAPIs": [
-        "onPostBuild"
+        "onCreateBabelConfig"
       ],
       "browserAPIs": [],
-      "ssrAPIs": [],
-      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-htaccess-redirects",
+      "ssrAPIs": [
+        "wrapRootElement",
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-styled-components",
       "packageJson": {
-        "name": "gatsby-plugin-htaccess-redirects",
-        "description": "Gatsby plugin to render redirects into a .htaccess file at public/.htaccess",
-        "version": "0.2.0",
-        "main": "gatsby-node.js",
+        "name": "gatsby-plugin-styled-components",
+        "description": "Gatsby plugin to add support for styled components",
+        "version": "3.0.1",
+        "main": "index.js",
         "keywords": [
           "gatsby",
           "gatsby-plugin",
-          "apache",
-          "htaccess"
+          "styled-components"
         ],
-        "author": {
-          "name": "GatsbyCentral https://www.gatsbycentral.com/"
-        },
+        "author": "Guten Ye <ywzhaifei@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
-            "name": "fs-extra",
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
             "version": "^7.0.0"
           },
           {
-            "name": "lodash",
-            "version": "^4.17.11"
+            "name": "@babel/core",
+            "version": "^7.0.0"
           },
           {
-            "name": "path",
-            "version": "^0.12.7"
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.2"
           }
         ],
-        "devDependencies": [],
-        "peerDependencies": [],
+        "peerDependencies": [
+          {
+            "name": "babel-plugin-styled-components",
+            "version": ">1.5.0"
+          },
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "styled-components",
+            "version": ">= 2.0.0"
+          }
+        ],
         "optionalDependecies": [],
         "bundledDependecies": []
       },
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "26a20c898e3ac03e5255b4cdb737091a",
+        "contentDigest": "c9ebefa1caa977e963623b7c361a5296",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin gatsby-plugin-sharp": {
-      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-sharp",
-      "id": "Plugin gatsby-plugin-sharp",
-      "name": "gatsby-plugin-sharp",
-      "version": "2.0.5",
+    "7374ebf2-d961-52ee-92a2-c25e7cb387a9": {
+      "resolve": "/home/kodefant/kode/eiendom",
+      "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "name": "default-site-plugin",
+      "version": "a833a3b11ff28a3deaa97b6dc4862e53",
       "pluginOptions": {
         "plugins": []
       },
       "nodeAPIs": [],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-sharp",
-      "packageJson": {
-        "name": "gatsby-plugin-sharp",
-        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
-        "version": "2.0.5",
-        "main": "index.js",
-        "keywords": [
-          "gatsby",
-          "gatsby-plugin",
-          "image",
-          "sharp"
-        ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
-        "license": "MIT",
-        "dependencies": [
-          {
-            "name": "@babel/runtime",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "async",
-            "version": "^2.1.2"
-          },
-          {
-            "name": "bluebird",
-            "version": "^3.5.0"
-          },
-          {
-            "name": "fs-exists-cached",
-            "version": "^1.0.0"
-          },
-          {
-            "name": "imagemin",
-            "version": "^6.0.0"
-          },
-          {
-            "name": "imagemin-pngquant",
-            "version": "^6.0.0"
-          },
-          {
-            "name": "imagemin-webp",
-            "version": "^4.1.0"
-          },
-          {
-            "name": "lodash",
-            "version": "^4.17.10"
-          },
-          {
-            "name": "mini-svg-data-uri",
-            "version": "^1.0.0"
-          },
-          {
-            "name": "potrace",
-            "version": "^2.1.1"
-          },
-          {
-            "name": "probe-image-size",
-            "version": "^4.0.0"
-          },
-          {
-            "name": "progress",
-            "version": "^1.1.8"
-          },
-          {
-            "name": "sharp",
-            "version": "^0.20.2"
-          },
-          {
-            "name": "svgo",
-            "version": "^0.7.2"
-          }
-        ],
-        "devDependencies": [
-          {
-            "name": "@babel/cli",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "@babel/core",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "cross-env",
-            "version": "^5.1.4"
-          }
-        ],
-        "peerDependencies": [
-          {
-            "name": "gatsby",
-            "version": ">2.0.0-alpha"
-          }
-        ],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "aad2922a998a973f062535e8688a7b27",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "Plugin gatsby-transformer-sharp": {
-      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-transformer-sharp",
-      "id": "Plugin gatsby-transformer-sharp",
-      "name": "gatsby-transformer-sharp",
-      "version": "2.1.1",
-      "pluginOptions": {
-        "plugins": []
-      },
-      "nodeAPIs": [
-        "onCreateNode",
-        "setFieldsOnGraphQLNodeType",
-        "onPreExtractQueries"
-      ],
-      "browserAPIs": [],
-      "ssrAPIs": [],
-      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-transformer-sharp",
-      "packageJson": {
-        "name": "gatsby-transformer-sharp",
-        "description": "Gatsby transformer plugin for images using Sharp",
-        "version": "2.1.1",
-        "keywords": [
-          "gatsby",
-          "gatsby-plugin",
-          "image",
-          "sharp"
-        ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
-        "license": "MIT",
-        "dependencies": [
-          {
-            "name": "@babel/runtime",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "bluebird",
-            "version": "^3.5.0"
-          },
-          {
-            "name": "fs-extra",
-            "version": "^4.0.2"
-          },
-          {
-            "name": "potrace",
-            "version": "^2.1.1"
-          },
-          {
-            "name": "probe-image-size",
-            "version": "^4.0.0"
-          },
-          {
-            "name": "sharp",
-            "version": "^0.20.2"
-          }
-        ],
-        "devDependencies": [
-          {
-            "name": "@babel/cli",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "@babel/core",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "cross-env",
-            "version": "^5.1.4"
-          }
-        ],
-        "peerDependencies": [
-          {
-            "name": "gatsby",
-            "version": ">2.0.0-alpha"
-          },
-          {
-            "name": "gatsby-plugin-sharp",
-            "version": "^2.0.0-beta.3"
-          }
-        ],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "c9c02c6fca006a5b188ba6adc91d353a",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "Plugin gatsby-plugin-purgecss": {
-      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-purgecss",
-      "id": "Plugin gatsby-plugin-purgecss",
-      "name": "gatsby-plugin-purgecss",
-      "version": "2.4.0",
-      "pluginOptions": {
-        "plugins": []
-      },
-      "nodeAPIs": [
-        "onCreateWebpackConfig"
-      ],
-      "browserAPIs": [],
-      "ssrAPIs": [],
-      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-purgecss",
-      "packageJson": {
-        "name": "gatsby-plugin-purgecss",
-        "description": "Gatsby plugin for purgecss. Removes unused css/sass/less/stylus from files and modules.",
-        "version": "2.4.0",
-        "main": "index.js",
-        "keywords": [
-          "gatsby",
-          "gatsby-plugin",
-          "css",
-          "sass",
-          "scss",
-          "stylus",
-          "less",
-          "optimize",
-          "clean",
-          "purgecss",
-          "purify",
-          "purifycss"
-        ],
-        "author": {
-          "name": "Ananto Ghosh"
-        },
-        "license": "MIT",
-        "dependencies": [
-          {
-            "name": "fs-extra",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "loader-utils",
-            "version": "^1.1.0"
-          },
-          {
-            "name": "purgecss",
-            "version": "^1.0.1"
-          }
-        ],
-        "devDependencies": [
-          {
-            "name": "babel-cli",
-            "version": "6.26.0"
-          },
-          {
-            "name": "babel-plugin-transform-object-rest-spread",
-            "version": "6.26.0"
-          },
-          {
-            "name": "babel-preset-env",
-            "version": "1.7.0"
-          },
-          {
-            "name": "coveralls",
-            "version": "3.0.2"
-          },
-          {
-            "name": "dotenv",
-            "version": "6.0.0"
-          },
-          {
-            "name": "gatsby",
-            "version": "2.0.0-beta.111"
-          },
-          {
-            "name": "gatsby-plugin-less",
-            "version": "2.0.0-beta.5"
-          },
-          {
-            "name": "gatsby-plugin-sass",
-            "version": "2.0.0-beta.10"
-          },
-          {
-            "name": "gatsby-plugin-stylus",
-            "version": "2.0.0-beta.6"
-          },
-          {
-            "name": "jest",
-            "version": "23.5.0"
-          },
-          {
-            "name": "less",
-            "version": "3.8.1"
-          },
-          {
-            "name": "node-sass",
-            "version": "4.9.3"
-          },
-          {
-            "name": "react",
-            "version": "16.4.2"
-          },
-          {
-            "name": "react-dom",
-            "version": "16.4.2"
-          },
-          {
-            "name": "release-it",
-            "version": "7.5.0"
-          },
-          {
-            "name": "runjs",
-            "version": "4.3.2"
-          },
-          {
-            "name": "symlink-dir",
-            "version": "1.1.3"
-          }
-        ],
-        "peerDependencies": [
-          {
-            "name": "gatsby",
-            "version": ">2.0.0-beta"
-          }
-        ],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "303fdc6b13d434d7fccb459b7e266146",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "Plugin gatsby-plugin-netlify": {
-      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-netlify",
-      "id": "Plugin gatsby-plugin-netlify",
-      "name": "gatsby-plugin-netlify",
-      "version": "2.0.0",
-      "pluginOptions": {
-        "plugins": []
-      },
-      "nodeAPIs": [
-        "onCreateWebpackConfig",
-        "onPostBuild"
-      ],
-      "browserAPIs": [],
-      "ssrAPIs": [],
-      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-netlify",
-      "packageJson": {
-        "name": "gatsby-plugin-netlify",
-        "description": "A Gatsby plugin which generates a _headers file for netlify",
-        "version": "2.0.0",
-        "main": "index.js",
-        "keywords": [
-          "gatsby",
-          "gatsby-plugin",
-          "http/2-server-push",
-          "netlify"
-        ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
-        "license": "MIT",
-        "dependencies": [
-          {
-            "name": "@babel/runtime",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "fs-extra",
-            "version": "^4.0.2"
-          },
-          {
-            "name": "kebab-hash",
-            "version": "^0.1.2"
-          },
-          {
-            "name": "lodash",
-            "version": "^4.17.10"
-          },
-          {
-            "name": "webpack-assets-manifest",
-            "version": "^3.0.2"
-          }
-        ],
-        "devDependencies": [
-          {
-            "name": "@babel/cli",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "@babel/core",
-            "version": "^7.0.0"
-          },
-          {
-            "name": "cross-env",
-            "version": "^5.1.4"
-          }
-        ],
-        "peerDependencies": [
-          {
-            "name": "gatsby",
-            "version": ">2.0.0-alpha"
-          }
-        ],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "7a0816871283ec970ca87a650272889a",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "Plugin default-site-plugin": {
-      "resolve": "/home/kodefant/kode/eiendom",
-      "id": "Plugin default-site-plugin",
-      "name": "default-site-plugin",
-      "version": "65e9930d935d9c70553f16d0c4ce6abb",
-      "pluginOptions": {
-        "plugins": []
-      },
-      "nodeAPIs": [
-        "createPages",
-        "onCreateNode"
-      ],
-      "browserAPIs": [],
-      "ssrAPIs": [],
       "pluginFilepath": "/home/kodefant/kode/eiendom",
       "packageJson": {
-        "name": "gatsby-starter-wordpress",
-        "description": "Gatsby v2 starter for WordPress",
-        "version": "0.1.0",
-        "main": "n/a",
-        "keywords": [
-          "gatsby"
-        ],
-        "author": "GatsbyCentral.com",
-        "license": "MIT",
         "dependencies": [
           {
-            "name": "bulma",
-            "version": "^0.7.0"
+            "name": "babel-plugin-styled-components",
+            "version": "^1.8.0"
           },
           {
             "name": "gatsby",
-            "version": "^2.0.0"
-          },
-          {
-            "name": "gatsby-awesome-pagination",
-            "version": "^0.3.3"
-          },
-          {
-            "name": "gatsby-plugin-htaccess-redirects",
-            "version": "^0.2.0"
-          },
-          {
-            "name": "gatsby-plugin-lodash",
-            "version": "^3.0.1"
-          },
-          {
-            "name": "gatsby-plugin-netlify",
-            "version": "^2.0.0"
-          },
-          {
-            "name": "gatsby-plugin-purgecss",
-            "version": "^2.4.0"
+            "version": "^2.0.39"
           },
           {
             "name": "gatsby-plugin-react-helmet",
-            "version": "^3.0.0"
-          },
-          {
-            "name": "gatsby-plugin-sass",
-            "version": "^2.0.1"
-          },
-          {
-            "name": "gatsby-plugin-sharp",
-            "version": "^2.0.5"
-          },
-          {
-            "name": "gatsby-remark-images",
-            "version": "^2.0.1"
-          },
-          {
-            "name": "gatsby-source-filesystem",
-            "version": "^2.0.1"
-          },
-          {
-            "name": "gatsby-source-wordpress",
             "version": "^3.0.1"
           },
           {
-            "name": "gatsby-transformer-remark",
-            "version": "^2.1.1"
-          },
-          {
-            "name": "gatsby-transformer-sharp",
-            "version": "^2.1.1"
-          },
-          {
-            "name": "lodash",
-            "version": "^4.17.5"
-          },
-          {
-            "name": "node-sass",
-            "version": "^4.9.2"
-          },
-          {
-            "name": "parcel-bundler",
-            "version": "^1.9.4"
+            "name": "gatsby-plugin-styled-components",
+            "version": "^3.0.1"
           },
           {
             "name": "prop-types",
-            "version": "^15.6.0"
+            "version": "^15.6.2"
           },
           {
             "name": "react",
-            "version": "^16.2.0"
+            "version": "^16.6.0"
           },
           {
             "name": "react-dom",
-            "version": "^16.4.1"
+            "version": "^16.6.0"
           },
           {
             "name": "react-helmet",
             "version": "^5.2.0"
           },
           {
-            "name": "uuid",
-            "version": "^3.2.1"
+            "name": "rebass",
+            "version": "^2.3.3"
+          },
+          {
+            "name": "styled-components",
+            "version": "^3.4.10"
           }
         ],
         "devDependencies": [
+          {
+            "name": "eslint",
+            "version": "^5.4.0"
+          },
           {
             "name": "eslint-config-airbnb",
             "version": "^17.1.0"
@@ -1076,12 +412,44 @@
             "version": "^3.1.0"
           },
           {
-            "name": "prettier",
-            "version": "^1.7.4"
+            "name": "eslint-plugin-import",
+            "version": "^2.14.0"
           },
           {
-            "name": "rimraf",
-            "version": "^2.6.2"
+            "name": "eslint-plugin-jsx-a11y",
+            "version": "^6.1.2"
+          },
+          {
+            "name": "eslint-plugin-prettier",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "eslint-plugin-react",
+            "version": "^7.11.1"
+          },
+          {
+            "name": "prettier",
+            "version": "^1.14.3"
+          },
+          {
+            "name": "stylelint",
+            "version": "^9.7.1"
+          },
+          {
+            "name": "stylelint-config-prettier",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "stylelint-config-recommended",
+            "version": "^2.1.0"
+          },
+          {
+            "name": "stylelint-config-styled-components",
+            "version": "^0.1.1"
+          },
+          {
+            "name": "stylelint-processor-styled-components",
+            "version": "^1.5.0"
           }
         ],
         "peerDependencies": [],
@@ -1091,16 +459,16 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f32a97efe70fc9889f449aeff1742526",
+        "contentDigest": "13eaca4dbc1c8cc4a36d6fe8991c556b",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin gatsby-plugin-page-creator": {
+    "e38b0708-2baf-57dd-9ac0-13676b912b6c": {
       "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-page-creator",
-      "id": "Plugin gatsby-plugin-page-creator",
+      "id": "e38b0708-2baf-57dd-9ac0-13676b912b6c",
       "name": "gatsby-plugin-page-creator",
-      "version": "2.0.0",
+      "version": "2.0.2",
       "pluginOptions": {
         "plugins": [],
         "path": "/home/kodefant/kode/eiendom/src/pages",
@@ -1115,16 +483,13 @@
       "packageJson": {
         "name": "gatsby-plugin-page-creator",
         "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
-        "version": "2.0.0",
+        "version": "2.0.2",
         "main": "index.js",
         "keywords": [
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -1170,6 +535,10 @@
             "version": "^7.0.0"
           },
           {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.2"
+          },
+          {
             "name": "cross-env",
             "version": "^5.0.5"
           }
@@ -1186,806 +555,25 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "acf8e0d66ea8cb93f69d5eec7a90a9af",
+        "contentDigest": "2684c48b960f17e1daec0a5212b84320",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Site": {
       "siteMetadata": {
-        "title": "Gatsby + WordPress Starter"
+        "title": "Gatsby Modern Starter",
+        "language": "en"
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-05T22:02:19.584Z",
+      "buildTime": "2018-11-05T22:49:29.342Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "3401c970f200784c726b43d69f4b27d7",
+        "contentDigest": "46866b0b92d90a17e14122390986cc9d",
         "type": "Site",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "583ed48e-4261-5704-9604-9f3878be098d": {
-      "name": "Din Eiendomsmegler",
-      "description": "Eiendomsmeglerside med kodefant.no",
-      "url": "https://drifterstage.com/real-estate-headless",
-      "home": "https://drifterstage.com/real-estate-headless",
-      "id": "583ed48e-4261-5704-9604-9f3878be098d",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__site_metadata",
-        "contentDigest": "c665d8bfaf36d0adbbefc47e9e540080",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "2347739f-f4fa-5d13-8eac-4a0059e4ff82": {
-      "wordpress_id": 1,
-      "date": "2018-11-05T17:39:08.000Z",
-      "guid": "https://drifterstage.com/real-estate-headless/?p=1",
-      "modified": "2018-11-05T21:46:25.000Z",
-      "slug": "hello-world",
-      "status": "publish",
-      "type": "post",
-      "link": "https://drifterstage.com/real-estate-headless/2018/11/05/hello-world/",
-      "title": "Halloi verden!",
-      "content": "<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>\n",
-      "excerpt": "<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>\n",
-      "comment_status": "open",
-      "ping_status": "open",
-      "sticky": false,
-      "template": "",
-      "format": "standard",
-      "meta": [],
-      "_links": {
-        "self": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/posts/1"
-          }
-        ],
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/posts"
-          }
-        ],
-        "about": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/types/post"
-          }
-        ],
-        "author": [
-          {
-            "embeddable": true,
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/users/1"
-          }
-        ],
-        "replies": [
-          {
-            "embeddable": true,
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/comments?post=1"
-          }
-        ],
-        "version_history": [
-          {
-            "count": 2,
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/posts/1/revisions"
-          }
-        ],
-        "predecessor_version": [
-          {
-            "wordpress_id": 6,
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/posts/1/revisions/6"
-          }
-        ],
-        "wp_attachment": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/media?parent=1"
-          }
-        ],
-        "wp_term": [
-          {
-            "taxonomy": "category",
-            "embeddable": true,
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/categories?post=1"
-          },
-          {
-            "taxonomy": "post_tag",
-            "embeddable": true,
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/tags?post=1"
-          }
-        ],
-        "curies": [
-          {
-            "name": "wp",
-            "href": "https://api.w.org/{rel}",
-            "templated": true
-          }
-        ]
-      },
-      "id": "2347739f-f4fa-5d13-8eac-4a0059e4ff82",
-      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
-      "tags___NODE": [
-        "523491d5-4c21-5c07-a1b5-7f04a6c69e96",
-        "052e5749-9865-5f8b-8e7f-830ebe467c86"
-      ],
-      "categories___NODE": [
-        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
-      ],
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__POST",
-        "contentDigest": "f4fe8275f8c34627854802e973be64c1",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "147ce629-51d8-5b6f-97a5-bd0c69893bd4": {
-      "wordpress_id": 2,
-      "date": "2018-11-05T17:39:08.000Z",
-      "guid": "https://drifterstage.com/real-estate-headless/?page_id=2",
-      "modified": "2018-11-05T17:39:08.000Z",
-      "slug": "sample-page",
-      "status": "publish",
-      "type": "page",
-      "link": "https://drifterstage.com/real-estate-headless/sample-page/",
-      "title": "Sample Page",
-      "content": "<p>This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>\n<blockquote><p>Hi there! I&#8217;m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin&#8217; caught in the rain.)</p></blockquote>\n<p>&#8230;or something like this:</p>\n<blockquote><p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p></blockquote>\n<p>As a new WordPress user, you should go to <a href=\"https://drifterstage.com/real-estate-headless/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>\n",
-      "excerpt": "<p>This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this: Hi there! I&#8217;m a bike messenger &hellip; </p>\n<p class=\"link-more\"><a href=\"https://drifterstage.com/real-estate-headless/sample-page/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Sample Page&#8221;</span></a></p>\n",
-      "wordpress_parent": 0,
-      "menu_order": 0,
-      "comment_status": "closed",
-      "ping_status": "open",
-      "template": "",
-      "meta": [],
-      "_links": {
-        "self": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/pages/2"
-          }
-        ],
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/pages"
-          }
-        ],
-        "about": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/types/page"
-          }
-        ],
-        "author": [
-          {
-            "embeddable": true,
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/users/1"
-          }
-        ],
-        "replies": [
-          {
-            "embeddable": true,
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/comments?post=2"
-          }
-        ],
-        "version_history": [
-          {
-            "count": 0,
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/pages/2/revisions"
-          }
-        ],
-        "wp_attachment": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/media?parent=2"
-          }
-        ],
-        "curies": [
-          {
-            "name": "wp",
-            "href": "https://api.w.org/{rel}",
-            "templated": true
-          }
-        ]
-      },
-      "id": "147ce629-51d8-5b6f-97a5-bd0c69893bd4",
-      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__PAGE",
-        "contentDigest": "51c9c81a2166423ca4c9accb6753a346",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "a2d1aa19-233b-5acb-b193-a8f8dbfb3e80": {
-      "wordpress_id": "post",
-      "description": "",
-      "hierarchical": false,
-      "name": "Posts",
-      "slug": "post",
-      "taxonomies": [
-        "category",
-        "post_tag"
-      ],
-      "rest_base": "posts",
-      "_links": {
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/types"
-          }
-        ],
-        "wp_items": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/posts"
-          }
-        ],
-        "curies": [
-          {
-            "name": "wp",
-            "href": "https://api.w.org/{rel}",
-            "templated": true
-          }
-        ]
-      },
-      "id": "a2d1aa19-233b-5acb-b193-a8f8dbfb3e80",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__wp_types",
-        "contentDigest": "683069b356ebb72f2a62c70f637faae3",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "c8b09b7f-356c-5009-981d-86669dcbafcc": {
-      "wordpress_id": "page",
-      "description": "",
-      "hierarchical": true,
-      "name": "Pages",
-      "slug": "page",
-      "taxonomies": [],
-      "rest_base": "pages",
-      "_links": {
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/types"
-          }
-        ],
-        "wp_items": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/pages"
-          }
-        ],
-        "curies": [
-          {
-            "name": "wp",
-            "href": "https://api.w.org/{rel}",
-            "templated": true
-          }
-        ]
-      },
-      "id": "c8b09b7f-356c-5009-981d-86669dcbafcc",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__wp_types",
-        "contentDigest": "e2d4489ca7f5b3ea65767cd51c86fa9e",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "b69811c2-484a-5b8c-9c5a-d0da3737bf18": {
-      "wordpress_id": "attachment",
-      "description": "",
-      "hierarchical": false,
-      "name": "Media",
-      "slug": "attachment",
-      "taxonomies": [],
-      "rest_base": "media",
-      "_links": {
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/types"
-          }
-        ],
-        "wp_items": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/media"
-          }
-        ],
-        "curies": [
-          {
-            "name": "wp",
-            "href": "https://api.w.org/{rel}",
-            "templated": true
-          }
-        ]
-      },
-      "id": "b69811c2-484a-5b8c-9c5a-d0da3737bf18",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__wp_types",
-        "contentDigest": "90a3453bb7a327a62b4bceec703ad896",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "59223e42-064c-537b-b2f6-e7a534391e19": {
-      "wordpress_id": "publish",
-      "name": "Published",
-      "public": true,
-      "queryable": true,
-      "slug": "publish",
-      "_links": {
-        "archives": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/posts"
-          }
-        ]
-      },
-      "id": "59223e42-064c-537b-b2f6-e7a534391e19",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__wp_statuses",
-        "contentDigest": "c295468bb29faf764044d03622897884",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "a5a9ef9b-18e6-5a52-bce8-ed8b7aa25844": {
-      "wordpress_id": "category",
-      "name": "Categories",
-      "slug": "category",
-      "description": "",
-      "types": [
-        "post"
-      ],
-      "hierarchical": true,
-      "rest_base": "categories",
-      "_links": {
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/taxonomies"
-          }
-        ],
-        "wp_items": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/categories"
-          }
-        ],
-        "curies": [
-          {
-            "name": "wp",
-            "href": "https://api.w.org/{rel}",
-            "templated": true
-          }
-        ]
-      },
-      "id": "a5a9ef9b-18e6-5a52-bce8-ed8b7aa25844",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__wp_taxonomies",
-        "contentDigest": "474e27c31a5bec1f4c9caef3a6eba334",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "92aef5e8-a969-590e-8788-9b65d3c78cce": {
-      "wordpress_id": "post_tag",
-      "name": "Tags",
-      "slug": "post_tag",
-      "description": "",
-      "types": [
-        "post"
-      ],
-      "hierarchical": false,
-      "rest_base": "tags",
-      "_links": {
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/taxonomies"
-          }
-        ],
-        "wp_items": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/tags"
-          }
-        ],
-        "curies": [
-          {
-            "name": "wp",
-            "href": "https://api.w.org/{rel}",
-            "templated": true
-          }
-        ]
-      },
-      "id": "92aef5e8-a969-590e-8788-9b65d3c78cce",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__wp_taxonomies",
-        "contentDigest": "80db627ab6481fbadfaaf6dbea4a3fe5",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "f24b5a9e-ed37-56c1-978a-9c95dbc988a9": {
-      "wordpress_id": 1,
-      "count": 1,
-      "description": "",
-      "link": "https://drifterstage.com/real-estate-headless/category/uncategorized/",
-      "name": "Uncategorized",
-      "slug": "uncategorized",
-      "wordpress_parent": 0,
-      "meta": [],
-      "_links": {
-        "self": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/categories/1"
-          }
-        ],
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/categories"
-          }
-        ],
-        "about": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/taxonomies/category"
-          }
-        ],
-        "wp_post_type": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/posts?categories=1"
-          }
-        ],
-        "curies": [
-          {
-            "name": "wp",
-            "href": "https://api.w.org/{rel}",
-            "templated": true
-          }
-        ]
-      },
-      "id": "f24b5a9e-ed37-56c1-978a-9c95dbc988a9",
-      "taxonomy___NODE": "a5a9ef9b-18e6-5a52-bce8-ed8b7aa25844",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__CATEGORY",
-        "contentDigest": "7fcda142ae46d1bce322e8ea50fa5aac",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "523491d5-4c21-5c07-a1b5-7f04a6c69e96": {
-      "wordpress_id": 2,
-      "count": 1,
-      "description": "",
-      "link": "https://drifterstage.com/real-estate-headless/tag/test/",
-      "name": "test",
-      "slug": "test",
-      "meta": [],
-      "_links": {
-        "self": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/tags/2"
-          }
-        ],
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/tags"
-          }
-        ],
-        "about": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/taxonomies/post_tag"
-          }
-        ],
-        "wp_post_type": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/posts?tags=2"
-          }
-        ],
-        "curies": [
-          {
-            "name": "wp",
-            "href": "https://api.w.org/{rel}",
-            "templated": true
-          }
-        ]
-      },
-      "id": "523491d5-4c21-5c07-a1b5-7f04a6c69e96",
-      "taxonomy___NODE": "92aef5e8-a969-590e-8788-9b65d3c78cce",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__TAG",
-        "contentDigest": "77f7ff5aa4c32b99c329ddd89758cd50",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "052e5749-9865-5f8b-8e7f-830ebe467c86": {
-      "wordpress_id": 3,
-      "count": 1,
-      "description": "",
-      "link": "https://drifterstage.com/real-estate-headless/tag/tust/",
-      "name": "tust",
-      "slug": "tust",
-      "meta": [],
-      "_links": {
-        "self": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/tags/3"
-          }
-        ],
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/tags"
-          }
-        ],
-        "about": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/taxonomies/post_tag"
-          }
-        ],
-        "wp_post_type": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/posts?tags=3"
-          }
-        ],
-        "curies": [
-          {
-            "name": "wp",
-            "href": "https://api.w.org/{rel}",
-            "templated": true
-          }
-        ]
-      },
-      "id": "052e5749-9865-5f8b-8e7f-830ebe467c86",
-      "taxonomy___NODE": "92aef5e8-a969-590e-8788-9b65d3c78cce",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__TAG",
-        "contentDigest": "a2992a9534e833846e07a2f10fae5dba",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "c018acb4-c710-5329-9423-762fa8ea4a48": {
-      "wordpress_id": 1,
-      "name": "kodefant",
-      "url": "",
-      "description": "",
-      "link": "https://drifterstage.com/real-estate-headless/author/kodefant/",
-      "slug": "kodefant",
-      "avatar_urls": {
-        "wordpress_24": "https://secure.gravatar.com/avatar/0fbdb44d938c46c4f44a64f6e514c8b1?s=24&d=mm&r=g",
-        "wordpress_48": "https://secure.gravatar.com/avatar/0fbdb44d938c46c4f44a64f6e514c8b1?s=48&d=mm&r=g",
-        "wordpress_96": "https://secure.gravatar.com/avatar/0fbdb44d938c46c4f44a64f6e514c8b1?s=96&d=mm&r=g"
-      },
-      "meta": [],
-      "_links": {
-        "self": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/users/1"
-          }
-        ],
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/users"
-          }
-        ]
-      },
-      "id": "c018acb4-c710-5329-9423-762fa8ea4a48",
-      "all_authored_entities___NODE": [
-        "2347739f-f4fa-5d13-8eac-4a0059e4ff82",
-        "147ce629-51d8-5b6f-97a5-bd0c69893bd4"
-      ],
-      "authored_wordpress__POST___NODE": [
-        "2347739f-f4fa-5d13-8eac-4a0059e4ff82"
-      ],
-      "authored_wordpress__PAGE___NODE": [
-        "147ce629-51d8-5b6f-97a5-bd0c69893bd4"
-      ],
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__wp_users",
-        "contentDigest": "9159bfb3ea20eb057a6b270eef46b205",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "dc03b695-869e-5f7a-b0b8-c82dddeea62f": {
-      "wordpress_id": 1,
-      "post": 1,
-      "wordpress_parent": 0,
-      "author": 0,
-      "author_name": "A WordPress Commenter",
-      "author_url": "https://wordpress.org/",
-      "date": "2018-11-05T17:39:08.000Z",
-      "content": "<p>Hi, this is a comment.<br />\nTo get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.<br />\nCommenter avatars come from <a href=\"https://gravatar.com\">Gravatar</a>.</p>\n",
-      "link": "https://drifterstage.com/real-estate-headless/2018/11/05/hello-world/#comment-1",
-      "status": "approved",
-      "type": "comment",
-      "author_avatar_urls": {
-        "wordpress_24": "https://secure.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=24&d=mm&r=g",
-        "wordpress_48": "https://secure.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=48&d=mm&r=g",
-        "wordpress_96": "https://secure.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=96&d=mm&r=g"
-      },
-      "meta": [],
-      "_links": {
-        "self": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/comments/1"
-          }
-        ],
-        "collection": [
-          {
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/comments"
-          }
-        ],
-        "up": [
-          {
-            "embeddable": true,
-            "post_type": "post",
-            "href": "https://drifterstage.com/real-estate-headless/wp-json/wp/v2/posts/1"
-          }
-        ]
-      },
-      "id": "dc03b695-869e-5f7a-b0b8-c82dddeea62f",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__wp_comments",
-        "contentDigest": "15f45def277eac71a7648672122f2cf9",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "038ece9f-326d-5bb0-8f17-1bb72ce06c57": {
-      "wordpress_id": "acf",
-      "id": "038ece9f-326d-5bb0-8f17-1bb72ce06c57",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__acf_options",
-        "contentDigest": "bd3f9e96cbd367813507cc187dcb7512",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "SitePage /sample-page/": {
-      "jsonName": "sample-page-b1e",
-      "internalComponentName": "ComponentSamplePage",
-      "path": "/sample-page/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/page.js",
-      "componentChunkName": "component---src-templates-page-js",
-      "context": {
-        "id": "147ce629-51d8-5b6f-97a5-bd0c69893bd4"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/page.js",
-      "id": "SitePage /sample-page/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "13a0fca50188ec0d88ea6af1a23cacd2",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /": {
-      "jsonName": "index",
-      "internalComponentName": "ComponentIndex",
-      "path": "/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/blog.js",
-      "componentChunkName": "component---src-templates-blog-js",
-      "context": {
-        "pageNumber": 0,
-        "humanPageNumber": 1,
-        "skip": 0,
-        "limit": 10,
-        "numberOfPages": 1,
-        "previousPagePath": "",
-        "nextPagePath": ""
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/blog.js",
-      "id": "SitePage /",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "24e6ce0f515da0ba396c4398a1cc6118",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /categories/uncategorized/": {
-      "jsonName": "categories-uncategorized-9d2",
-      "internalComponentName": "ComponentCategoriesUncategorized",
-      "path": "/categories/uncategorized/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/category.js",
-      "componentChunkName": "component---src-templates-category-js",
-      "context": {
-        "name": "Uncategorized",
-        "slug": "uncategorized"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/category.js",
-      "id": "SitePage /categories/uncategorized/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "bd2c295b03fae7f35f50b156a45fcad9",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /tags/test/": {
-      "jsonName": "tags-test-7c5",
-      "internalComponentName": "ComponentTagsTest",
-      "path": "/tags/test/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/tag.js",
-      "componentChunkName": "component---src-templates-tag-js",
-      "context": {
-        "name": "test",
-        "slug": "test"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/tag.js",
-      "id": "SitePage /tags/test/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "d9a1b2ec4a266b9fda3ec6d8ab97ebe9",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /tags/tust/": {
-      "jsonName": "tags-tust-40e",
-      "internalComponentName": "ComponentTagsTust",
-      "path": "/tags/tust/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/tag.js",
-      "componentChunkName": "component---src-templates-tag-js",
-      "context": {
-        "name": "tust",
-        "slug": "tust"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/tag.js",
-      "id": "SitePage /tags/tust/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "15c8e9c1b850fc1624e85a07fb01bfdc",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /author/kodefant": {
-      "jsonName": "author-kodefant-971",
-      "internalComponentName": "ComponentAuthorKodefant",
-      "path": "/author/kodefant",
-      "component": "/home/kodefant/kode/eiendom/src/templates/author.js",
-      "componentChunkName": "component---src-templates-author-js",
-      "context": {
-        "id": "c018acb4-c710-5329-9423-762fa8ea4a48"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/author.js",
-      "id": "SitePage /author/kodefant",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "44c3f5fc43a7f4c947dc6d2dd5ab9e0a",
-        "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
     },
@@ -1993,19 +581,59 @@
       "jsonName": "404-22d",
       "internalComponentName": "Component404",
       "path": "/404/",
-      "component": "/home/kodefant/kode/eiendom/src/pages/404.js",
-      "componentChunkName": "component---src-pages-404-js",
+      "component": "/home/kodefant/kode/eiendom/src/pages/404.jsx",
+      "componentChunkName": "component---src-pages-404-jsx",
       "context": {},
-      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
-      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
-      "componentPath": "/home/kodefant/kode/eiendom/src/pages/404.js",
+      "pluginCreator___NODE": "e38b0708-2baf-57dd-9ac0-13676b912b6c",
+      "pluginCreatorId": "e38b0708-2baf-57dd-9ac0-13676b912b6c",
+      "componentPath": "/home/kodefant/kode/eiendom/src/pages/404.jsx",
       "id": "SitePage /404/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "280be913ea0346c5bef7fdff0dd4f49e",
-        "description": "Plugin gatsby-plugin-page-creator",
+        "contentDigest": "e3525f510fa8d6cbf9120033b98ec850",
+        "description": "e38b0708-2baf-57dd-9ac0-13676b912b6c",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "jsonName": "index",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/home/kodefant/kode/eiendom/src/pages/index.jsx",
+      "componentChunkName": "component---src-pages-index-jsx",
+      "context": {},
+      "pluginCreator___NODE": "e38b0708-2baf-57dd-9ac0-13676b912b6c",
+      "pluginCreatorId": "e38b0708-2baf-57dd-9ac0-13676b912b6c",
+      "componentPath": "/home/kodefant/kode/eiendom/src/pages/index.jsx",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "14263db08aee876120f88ea64dbc2388",
+        "description": "e38b0708-2baf-57dd-9ac0-13676b912b6c",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /page-2/": {
+      "jsonName": "page-2-fbc",
+      "internalComponentName": "ComponentPage2",
+      "path": "/page-2/",
+      "component": "/home/kodefant/kode/eiendom/src/pages/page-2.jsx",
+      "componentChunkName": "component---src-pages-page-2-jsx",
+      "context": {},
+      "pluginCreator___NODE": "e38b0708-2baf-57dd-9ac0-13676b912b6c",
+      "pluginCreatorId": "e38b0708-2baf-57dd-9ac0-13676b912b6c",
+      "componentPath": "/home/kodefant/kode/eiendom/src/pages/page-2.jsx",
+      "id": "SitePage /page-2/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "2b712fceb904cc8d112061be18d84144",
+        "description": "e38b0708-2baf-57dd-9ac0-13676b912b6c",
         "owner": "internal-data-bridge"
       }
     },
@@ -2013,115 +641,67 @@
       "jsonName": "404-html-516",
       "internalComponentName": "Component404Html",
       "path": "/404.html",
-      "component": "/home/kodefant/kode/eiendom/src/pages/404.js",
-      "componentChunkName": "component---src-pages-404-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin prod-404",
-      "pluginCreatorId": "Plugin prod-404",
-      "componentPath": "/home/kodefant/kode/eiendom/src/pages/404.js",
+      "component": "/home/kodefant/kode/eiendom/src/pages/404.jsx",
+      "componentChunkName": "component---src-pages-404-jsx",
+      "context": {
+        "$ref": "$[\"nodes\"][\"SitePage /404/\"][\"context\"]"
+      },
+      "pluginCreator___NODE": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "pluginCreatorId": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "componentPath": "/home/kodefant/kode/eiendom/src/pages/404.jsx",
       "id": "SitePage /404.html",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f6587b2eb19422a8d5b511e9016bde40",
-        "description": "Plugin prod-404",
+        "contentDigest": "0d2d3756ecca614ab91122704023daca",
+        "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "a65a901f8514abb146b1748702b502ba"
+    "PLUGINS_HASH": "05ae7e9127474339cd0179965410336e"
   },
   "componentDataDependencies": {
     "nodes": {
       "Site": [
-        "/author/kodefant",
-        "/categories/uncategorized/",
-        "/tags/test/",
-        "/tags/tust/"
-      ],
-      "2347739f-f4fa-5d13-8eac-4a0059e4ff82": [
-        "/author/kodefant"
-      ],
-      "c018acb4-c710-5329-9423-762fa8ea4a48": [
-        "/author/kodefant",
-        "/",
-        "/categories/uncategorized/",
-        "/hello-world/",
-        "/tags/test/",
-        "/tags/tust/"
-      ],
-      "f24b5a9e-ed37-56c1-978a-9c95dbc988a9": [
-        "/hello-world/"
-      ],
-      "523491d5-4c21-5c07-a1b5-7f04a6c69e96": [
-        "/hello-world/"
-      ],
-      "052e5749-9865-5f8b-8e7f-830ebe467c86": [
-        "/hello-world/"
+        "sq--src-components-layout-jsx"
       ]
     },
-    "connections": {
-      "wordpress__PAGE": [
-        "sq--src-components-navbar-js"
-      ],
-      "wordpress__POST": [
-        "/",
-        "/categories/uncategorized/",
-        "/tags/test/",
-        "/tags/tust/"
-      ]
-    }
+    "connections": {}
   },
   "jsonDataPaths": {
-    "sq--src-components-navbar-js": 4089827343,
-    "author-kodefant-971": "469/path---author-kodefant-971-df5-X2MWTmAQLJQTkkAVIubAWxqP4",
-    "categories-uncategorized-9d2": "827/path---categories-uncategorized-9-d-2-65b-x4lX34eGSbA1KRECUsj5vmEpAWE",
-    "index": "462/path---index-6a9-fDpPnnUVXiX66CB8SdzHNDax9zg",
-    "sample-page-b1e": "96/path---sample-page-b-1-e-edf-Uff0X3S6gpLm8B5JmLYjLzrQts",
-    "tags-test-7c5": "834/path---tags-test-7-c-5-3e3-FKaxK3gFSr7Flw7B9XRzt3lCL5I",
-    "hello-world-8bc": "339/path---hello-world-8-bc-b62-Uxa9mrXskRT6Z7B2ZzhAPQAOW6E",
-    "tags-tust-40e": "873/path---tags-tust-40-e-33a-aYvw7L2SgP2og9OkWreMv28bW4",
     "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
-    "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
-    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E"
+    "sq--src-components-layout-jsx": 3468613259,
+    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
+    "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
+    "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
+    "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E"
   },
   "components": {
-    "/home/kodefant/kode/eiendom/src/templates/page.js": {
-      "query": "query PageById(\n  $id: String!\n) {\n  wordpressPage(id: {eq: $id}) {\n    title\n    content\n  }\n}\n",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/page.js"
-    },
-    "/home/kodefant/kode/eiendom/src/templates/blog.js": {
-      "query": "query IndexQuery(\n  $limit: Int!\n  $skip: Int!\n) {\n  allWordpressPost(sort: {fields: date, order: DESC}, limit: $limit, skip: $skip) {\n    edges {\n      node {\n        ...PostListFields\n      }\n    }\n  }\n}\n\nfragment PostListFields on wordpress__POST {\n  id\n  title\n  excerpt\n  author {\n    name\n    slug\n    avatar_urls {\n      wordpress_48\n    }\n  }\n  date(formatString: \"MMMM DD, YYYY\")\n  slug\n}\n",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/blog.js"
-    },
-    "/home/kodefant/kode/eiendom/src/templates/category.js": {
-      "query": "query CategoryPage(\n  $slug: String!\n) {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n  allWordpressPost(filter: {categories: {slug: {eq: $slug}}}) {\n    totalCount\n    edges {\n      node {\n        ...PostListFields\n      }\n    }\n  }\n}\n\nfragment PostListFields on wordpress__POST {\n  id\n  title\n  excerpt\n  author {\n    name\n    slug\n    avatar_urls {\n      wordpress_48\n    }\n  }\n  date(formatString: \"MMMM DD, YYYY\")\n  slug\n}\n",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/category.js"
-    },
-    "/home/kodefant/kode/eiendom/src/templates/tag.js": {
-      "query": "query TagPage(\n  $slug: String!\n) {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n  allWordpressPost(filter: {tags: {slug: {eq: $slug}}}) {\n    totalCount\n    edges {\n      node {\n        ...PostListFields\n      }\n    }\n  }\n}\n\nfragment PostListFields on wordpress__POST {\n  id\n  title\n  excerpt\n  author {\n    name\n    slug\n    avatar_urls {\n      wordpress_48\n    }\n  }\n  date(formatString: \"MMMM DD, YYYY\")\n  slug\n}\n",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/tag.js"
-    },
-    "/home/kodefant/kode/eiendom/src/templates/author.js": {
-      "query": "query AuthorPage(\n  $id: String!\n) {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n  wordpressWpUsers(id: {eq: $id}) {\n    name\n    authored_wordpress__POST {\n      ...PostListFields\n    }\n  }\n}\n\nfragment PostListFields on wordpress__POST {\n  id\n  title\n  excerpt\n  author {\n    name\n    slug\n    avatar_urls {\n      wordpress_48\n    }\n  }\n  date(formatString: \"MMMM DD, YYYY\")\n  slug\n}\n",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/author.js"
-    },
-    "/home/kodefant/kode/eiendom/src/pages/404.js": {
+    "/home/kodefant/kode/eiendom/src/pages/404.jsx": {
       "query": "",
-      "componentPath": "/home/kodefant/kode/eiendom/src/pages/404.js"
+      "componentPath": "/home/kodefant/kode/eiendom/src/pages/404.jsx"
+    },
+    "/home/kodefant/kode/eiendom/src/pages/index.jsx": {
+      "query": "",
+      "componentPath": "/home/kodefant/kode/eiendom/src/pages/index.jsx"
+    },
+    "/home/kodefant/kode/eiendom/src/pages/page-2.jsx": {
+      "query": "",
+      "componentPath": "/home/kodefant/kode/eiendom/src/pages/page-2.jsx"
     }
   },
   "staticQueryComponents": {
-    "sq--src-components-navbar-js": {
-      "name": "homeKodefantKodeEiendomSrcComponentsNavbarJs4089827343",
-      "componentPath": "/home/kodefant/kode/eiendom/src/components/Navbar.js",
-      "id": "sq--src-components-navbar-js",
-      "jsonName": "sq--src-components-navbar-js",
-      "query": "query homeKodefantKodeEiendomSrcComponentsNavbarJs4089827343 {\n  allWordpressPage(sort: {fields: wordpress_id}, limit: 5) {\n    edges {\n      node {\n        title\n        slug\n      }\n    }\n  }\n}\n",
-      "hash": 4089827343
+    "sq--src-components-layout-jsx": {
+      "name": "homeKodefantKodeEiendomSrcComponentsLayoutJsx3468613259",
+      "componentPath": "/home/kodefant/kode/eiendom/src/components/Layout.jsx",
+      "id": "sq--src-components-layout-jsx",
+      "jsonName": "sq--src-components-layout-jsx",
+      "query": "query homeKodefantKodeEiendomSrcComponentsLayoutJsx3468613259 {\n  site {\n    siteMetadata {\n      title\n      language\n    }\n  }\n}\n",
+      "hash": 3468613259
     }
   }
 }

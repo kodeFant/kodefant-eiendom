@@ -1,39 +1,44 @@
-# Gatsby v2 WordPress Starter
+# ⚛️ gatsby-starter-modern
 
-This starter is forked from the
-[gatsby-starter-netlify-cms](https://github.com/netlify-templates/gatsby-starter-netlify-cms)
-and modified to use WordPress instead of netlify-cms.
+A modern Gatsby starter with strict linting and auto-formatting rules.
 
-Demo: https://gatsby-starter-wordpress.netlify.com/
+## 🚀 Getting started
 
-## Use it now
+- Clone this project and install all the required dependencies _(e.g. with `gatsby new gatsby-example-site https://github.com/kripod/gatsby-starter-modern` after making sure that Gatsby CLI is installed globally with `npm install --global gatsby-cli`)_
+- Start a development server with `yarn develop` or `npm run develop`
+  - _Other scripts like `build`, [`format`](#automatic-code-formatting) and [`lint`](#linting) are also available_
 
-    gatsby new NAME https://github.com/GatsbyCentral/gatsby-starter-wordpress
+### Deploy
 
-* Edit `gatsby-config.js`, change `baseUrl`
-  - Make sure you have at least 1 post and 1 page on your WordPress site
-  - Make sure at least 1 post has at least 1 tag
-* Rejoice
-  - File any [issues here](https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kripod/gatsby-starter-modern)
 
-### Known Limitations
+## 💅 Style management
 
-* This is based on the [netlify starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms) which uses [bulma](https://bulma.io). This adds 150KB to every built page.
-* Your WordPress site must have at least 1 post with 1 tag, or the starter will crash
-* Nested pages / categories will not render with nested pages
-  - A WordPress page like `/about/team/` will render on Gatsby as `/team/`
-  - Likewise for categories
-  - Discussion here https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues/24
+[Rebass][], a React UI component library & design system, is used for styling components. Based on [styled-components][] and [styled-system][], it provides a delightful way for managing styles.
 
-## CSS Processing
+[rebass]: https://jxnblk.com/rebass/
+[styled-components]: https://www.styled-components.com/
+[styled-system]: https://jxnblk.com/styled-system/
 
-This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma build would otherwise be ~170K which adds 170K to each of your built HTML pages. However, with purgecss this is reduced 90%.
+## ✨ Developer experience
 
-## Contributors
+### Automatic code formatting
 
-This starter was forked from the netlify starter by the
-[GatsbyCentral](https://www.gatsbycentral.com/) crew. Additional contributions
-were gratefully received from the following folks:
+[Prettier][] is an opinionated code formatter aiming to provide codebase consistency when multiple developers work on the same project. The main reason behind adopting Prettier is to [stop all the on-going debates over coding styles][].
 
-* https://github.com/tomByrer
-* https://github.com/dajocarter
+[prettier]: https://prettier.io/
+[stop all the on-going debates over coding styles]: https://prettier.io/docs/en/why-prettier.html
+
+### Linting
+
+[Linters][lint] are tools that analyze source code to flag programming errors, bugs, stylistic errors, and suspicious constructs.
+
+- JavaScript is linted by [ESLint][], enforcing the [Airbnb JavaScript Style Guide][] through an overridable set of rules provided by [eslint-config-airbnb-base][].
+- Styles are linted by [stylelint][], adhering to the rules specified in [stylelint-config-recommended][].
+
+[lint]: https://en.wikipedia.org/wiki/Lint_(software)
+[eslint]: https://eslint.org/
+[airbnb javascript style guide]: https://github.com/airbnb/javascript
+[eslint-config-airbnb-base]: https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base
+[stylelint]: https://stylelint.io/
+[stylelint-config-recommended]: https://github.com/stylelint/stylelint-config-recommended
