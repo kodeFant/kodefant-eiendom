@@ -222,7 +222,10 @@
           "noscript",
           "style"
         ],
-        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "matthews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -290,7 +293,10 @@
           "sass",
           "scss"
         ],
-        "author": "Daniel Farrell <daniel@mobelux.com>",
+        "author": {
+          "name": "Daniel Farrell",
+          "email": "daniel@mobelux.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -341,7 +347,7 @@
       "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-source-wordpress",
       "id": "Plugin gatsby-source-wordpress",
       "name": "gatsby-source-wordpress",
-      "version": "3.0.1",
+      "version": "3.0.12",
       "pluginOptions": {
         "plugins": [],
         "baseUrl": "wpdemo.gatsbycentral.com",
@@ -360,13 +366,16 @@
       "packageJson": {
         "name": "gatsby-source-wordpress",
         "description": "Gatsby source plugin for building websites using the Wordpress CMS as a data source.",
-        "version": "3.0.1",
+        "version": "3.0.12",
         "keywords": [
           "gatsby",
           "gatsby-plugin",
           "gatsby-source-plugin"
         ],
-        "author": "Sebastien Fichot <fichot.sebastien@gmail.com>",
+        "author": {
+          "name": "Sebastien Fichot",
+          "email": "fichot.sebastien@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -395,7 +404,7 @@
           },
           {
             "name": "gatsby-source-filesystem",
-            "version": "^2.0.1"
+            "version": "^2.0.7"
           },
           {
             "name": "json-stringify-safe",
@@ -424,6 +433,10 @@
             "version": "^7.0.0"
           },
           {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.2"
+          },
+          {
             "name": "cross-env",
             "version": "^5.1.4"
           }
@@ -440,7 +453,65 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "5006fc65d278e67d50d3252876d4470c",
+        "contentDigest": "70514f64ac7752516967f688a3ea4e57",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-htaccess-redirects": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-htaccess-redirects",
+      "id": "Plugin gatsby-plugin-htaccess-redirects",
+      "name": "gatsby-plugin-htaccess-redirects",
+      "version": "0.2.0",
+      "pluginOptions": {
+        "plugins": [],
+        "prefix": "<IfModule mod_rewrite.c>\nRewriteEngine On",
+        "suffix": "</IfModule>"
+      },
+      "nodeAPIs": [
+        "onPostBuild"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-htaccess-redirects",
+      "packageJson": {
+        "name": "gatsby-plugin-htaccess-redirects",
+        "description": "Gatsby plugin to render redirects into a .htaccess file at public/.htaccess",
+        "version": "0.2.0",
+        "main": "gatsby-node.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "apache",
+          "htaccess"
+        ],
+        "author": {
+          "name": "GatsbyCentral https://www.gatsbycentral.com/"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "fs-extra",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.11"
+          },
+          {
+            "name": "path",
+            "version": "^0.12.7"
+          }
+        ],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "26a20c898e3ac03e5255b4cdb737091a",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -468,7 +539,10 @@
           "image",
           "sharp"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -585,7 +659,10 @@
           "image",
           "sharp"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -681,7 +758,9 @@
           "purify",
           "purifycss"
         ],
-        "author": "Ananto Ghosh",
+        "author": {
+          "name": "Ananto Ghosh"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -810,7 +889,10 @@
           "http/2-server-push",
           "netlify"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -869,7 +951,7 @@
       "resolve": "/home/kodefant/kode/eiendom",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "dc91f1262d99225665471529f6f5fbab",
+      "version": "f2f22dbcc49ad2ad56b78997ee2342c3",
       "pluginOptions": {
         "plugins": []
       },
@@ -902,6 +984,10 @@
           {
             "name": "gatsby-awesome-pagination",
             "version": "^0.3.3"
+          },
+          {
+            "name": "gatsby-plugin-htaccess-redirects",
+            "version": "^0.2.0"
           },
           {
             "name": "gatsby-plugin-lodash",
@@ -1005,7 +1091,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "548adadb97ff8b06b55e329dc3550346",
+        "contentDigest": "30bd27d8a16db434a73aa06fb30a6717",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -1035,7 +1121,10 @@
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -1108,71 +1197,14 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-05T18:58:47.444Z",
+      "buildTime": "2018-11-05T20:54:00.690Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "84f1fb0a682a1afd9c4408d3e6b3664b",
+        "contentDigest": "c7c36f78c2dcbbafb3428ba0c331347d",
         "type": "Site",
         "owner": "internal-data-bridge"
-      }
-    },
-    "4ca660b8-0c17-5d55-97a0-bdec727eb2d4": {
-      "id": "4ca660b8-0c17-5d55-97a0-bdec727eb2d4",
-      "children": [
-        "7792b9dc-b64d-5a93-b3c6-6168620e77b4"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "6280d8f5248e891e259926e2af79b110",
-        "type": "File",
-        "mediaType": "image/jpeg",
-        "description": "File \"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730.jpg\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "__PROGRAMATTIC__",
-      "absolutePath": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem/de79951679bc42fd0f5d42ed2e6e87e8.jpg",
-      "relativePath": ".cache/gatsby-source-filesystem/de79951679bc42fd0f5d42ed2e6e87e8.jpg",
-      "extension": "jpg",
-      "size": 93746,
-      "prettySize": "93.7 kB",
-      "modifiedTime": "2018-11-05T18:46:43.829Z",
-      "accessTime": "2018-11-05T18:46:43.521Z",
-      "changeTime": "2018-11-05T18:46:43.833Z",
-      "birthTime": "2018-11-05T18:46:43.833Z",
-      "root": "/",
-      "dir": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem",
-      "base": "de79951679bc42fd0f5d42ed2e6e87e8.jpg",
-      "ext": ".jpg",
-      "name": "de79951679bc42fd0f5d42ed2e6e87e8",
-      "relativeDirectory": ".cache/gatsby-source-filesystem",
-      "dev": 2055,
-      "mode": 33204,
-      "nlink": 1,
-      "uid": 1000,
-      "gid": 1000,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 3346848,
-      "blocks": 184,
-      "atimeMs": 1541443603520.8132,
-      "mtimeMs": 1541443603828.813,
-      "ctimeMs": 1541443603832.813,
-      "birthtimeMs": 1541443603832.813,
-      "atime": "2018-11-05T18:46:43.521Z",
-      "mtime": "2018-11-05T18:46:43.829Z",
-      "ctime": "2018-11-05T18:46:43.833Z",
-      "birthtime": "2018-11-05T18:46:43.833Z"
-    },
-    "7792b9dc-b64d-5a93-b3c6-6168620e77b4": {
-      "id": "7792b9dc-b64d-5a93-b3c6-6168620e77b4",
-      "children": [],
-      "parent": "4ca660b8-0c17-5d55-97a0-bdec727eb2d4",
-      "internal": {
-        "contentDigest": "6280d8f5248e891e259926e2af79b110",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
       }
     },
     "7ee94779-311a-5a8e-868d-1c1234d11e1a": {
@@ -1188,16 +1220,16 @@
         "description": "File \"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1778693-1200x826.jpg\"",
         "owner": "gatsby-source-filesystem"
       },
-      "sourceInstanceName": "__PROGRAMATTIC__",
+      "sourceInstanceName": "__PROGRAMMATIC__",
       "absolutePath": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem/db18fb07a16ca2501eb37d62ea415f7b.jpg",
       "relativePath": ".cache/gatsby-source-filesystem/db18fb07a16ca2501eb37d62ea415f7b.jpg",
       "extension": "jpg",
       "size": 69233,
       "prettySize": "69.2 kB",
-      "modifiedTime": "2018-11-05T18:46:43.845Z",
-      "accessTime": "2018-11-05T18:46:43.521Z",
-      "changeTime": "2018-11-05T18:46:43.845Z",
-      "birthTime": "2018-11-05T18:46:43.845Z",
+      "modifiedTime": "2018-11-05T20:54:09.506Z",
+      "accessTime": "2018-11-05T20:54:09.246Z",
+      "changeTime": "2018-11-05T20:54:09.506Z",
+      "birthTime": "2018-11-05T20:54:09.506Z",
       "root": "/",
       "dir": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem",
       "base": "db18fb07a16ca2501eb37d62ea415f7b.jpg",
@@ -1211,16 +1243,16 @@
       "gid": 1000,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 3346847,
+      "ino": 425035,
       "blocks": 136,
-      "atimeMs": 1541443603520.8132,
-      "mtimeMs": 1541443603844.813,
-      "ctimeMs": 1541443603844.813,
-      "birthtimeMs": 1541443603844.813,
-      "atime": "2018-11-05T18:46:43.521Z",
-      "mtime": "2018-11-05T18:46:43.845Z",
-      "ctime": "2018-11-05T18:46:43.845Z",
-      "birthtime": "2018-11-05T18:46:43.845Z"
+      "atimeMs": 1541451249246.3513,
+      "mtimeMs": 1541451249506.3518,
+      "ctimeMs": 1541451249506.3518,
+      "birthtimeMs": 1541451249506.3518,
+      "atime": "2018-11-05T20:54:09.246Z",
+      "mtime": "2018-11-05T20:54:09.506Z",
+      "ctime": "2018-11-05T20:54:09.506Z",
+      "birthtime": "2018-11-05T20:54:09.506Z"
     },
     "57794831-c103-5703-99f1-81b1c6b11904": {
       "id": "57794831-c103-5703-99f1-81b1c6b11904",
@@ -1228,6 +1260,63 @@
       "parent": "7ee94779-311a-5a8e-868d-1c1234d11e1a",
       "internal": {
         "contentDigest": "c4016fad1b124d96e216ef14dad8baf6",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "4ca660b8-0c17-5d55-97a0-bdec727eb2d4": {
+      "id": "4ca660b8-0c17-5d55-97a0-bdec727eb2d4",
+      "children": [
+        "7792b9dc-b64d-5a93-b3c6-6168620e77b4"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "6280d8f5248e891e259926e2af79b110",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "__PROGRAMMATIC__",
+      "absolutePath": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem/de79951679bc42fd0f5d42ed2e6e87e8.jpg",
+      "relativePath": ".cache/gatsby-source-filesystem/de79951679bc42fd0f5d42ed2e6e87e8.jpg",
+      "extension": "jpg",
+      "size": 93746,
+      "prettySize": "93.7 kB",
+      "modifiedTime": "2018-11-05T20:54:09.526Z",
+      "accessTime": "2018-11-05T20:54:09.250Z",
+      "changeTime": "2018-11-05T20:54:09.530Z",
+      "birthTime": "2018-11-05T20:54:09.530Z",
+      "root": "/",
+      "dir": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem",
+      "base": "de79951679bc42fd0f5d42ed2e6e87e8.jpg",
+      "ext": ".jpg",
+      "name": "de79951679bc42fd0f5d42ed2e6e87e8",
+      "relativeDirectory": ".cache/gatsby-source-filesystem",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 425036,
+      "blocks": 184,
+      "atimeMs": 1541451249250.3513,
+      "mtimeMs": 1541451249526.3518,
+      "ctimeMs": 1541451249530.3518,
+      "birthtimeMs": 1541451249530.3518,
+      "atime": "2018-11-05T20:54:09.250Z",
+      "mtime": "2018-11-05T20:54:09.526Z",
+      "ctime": "2018-11-05T20:54:09.530Z",
+      "birthtime": "2018-11-05T20:54:09.530Z"
+    },
+    "7792b9dc-b64d-5a93-b3c6-6168620e77b4": {
+      "id": "7792b9dc-b64d-5a93-b3c6-6168620e77b4",
+      "children": [],
+      "parent": "4ca660b8-0c17-5d55-97a0-bdec727eb2d4",
+      "internal": {
+        "contentDigest": "6280d8f5248e891e259926e2af79b110",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
       }
@@ -1245,16 +1334,16 @@
         "description": "File \"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1757540-1167x900.jpg\"",
         "owner": "gatsby-source-filesystem"
       },
-      "sourceInstanceName": "__PROGRAMATTIC__",
+      "sourceInstanceName": "__PROGRAMMATIC__",
       "absolutePath": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem/a1eae3bbd30219ab495db5eb5b4035f5.jpg",
       "relativePath": ".cache/gatsby-source-filesystem/a1eae3bbd30219ab495db5eb5b4035f5.jpg",
       "extension": "jpg",
       "size": 93513,
       "prettySize": "93.5 kB",
-      "modifiedTime": "2018-11-05T18:46:43.861Z",
-      "accessTime": "2018-11-05T18:46:43.521Z",
-      "changeTime": "2018-11-05T18:46:43.861Z",
-      "birthTime": "2018-11-05T18:46:43.861Z",
+      "modifiedTime": "2018-11-05T20:54:09.534Z",
+      "accessTime": "2018-11-05T20:54:09.250Z",
+      "changeTime": "2018-11-05T20:54:09.534Z",
+      "birthTime": "2018-11-05T20:54:09.534Z",
       "root": "/",
       "dir": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem",
       "base": "a1eae3bbd30219ab495db5eb5b4035f5.jpg",
@@ -1268,16 +1357,16 @@
       "gid": 1000,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 3346849,
+      "ino": 425037,
       "blocks": 184,
-      "atimeMs": 1541443603520.8132,
-      "mtimeMs": 1541443603860.813,
-      "ctimeMs": 1541443603860.813,
-      "birthtimeMs": 1541443603860.813,
-      "atime": "2018-11-05T18:46:43.521Z",
-      "mtime": "2018-11-05T18:46:43.861Z",
-      "ctime": "2018-11-05T18:46:43.861Z",
-      "birthtime": "2018-11-05T18:46:43.861Z"
+      "atimeMs": 1541451249250.3513,
+      "mtimeMs": 1541451249534.3518,
+      "ctimeMs": 1541451249534.3518,
+      "birthtimeMs": 1541451249534.3518,
+      "atime": "2018-11-05T20:54:09.250Z",
+      "mtime": "2018-11-05T20:54:09.534Z",
+      "ctime": "2018-11-05T20:54:09.534Z",
+      "birthtime": "2018-11-05T20:54:09.534Z"
     },
     "0449aac9-66cf-5c5f-bdd6-d6af646f3ff5": {
       "id": "0449aac9-66cf-5c5f-bdd6-d6af646f3ff5",
@@ -1287,6 +1376,20 @@
         "contentDigest": "90cbfb959feeec8c4653557d6579ed4b",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "583ed48e-4261-5704-9604-9f3878be098d": {
+      "name": "Gatsby Starter WordPress",
+      "description": "Just another WordPress site",
+      "url": "http://wpdemo.gatsbycentral.com",
+      "home": "https://wpdemo.gatsbycentral.com",
+      "id": "583ed48e-4261-5704-9604-9f3878be098d",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__site_metadata",
+        "contentDigest": "4cfe7441a18d1225dd3a3956c61bc6e8",
+        "owner": "gatsby-source-wordpress"
       }
     },
     "7296d607-5f71-5e98-8e73-f6149a0675ca": {
@@ -3583,7 +3686,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "f859d028658d8e2103a7ff80fcb3bb1b"
+    "PLUGINS_HASH": "caa19ff88504f04ebc6cf1ef0ab68659"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -3629,40 +3732,9 @@
       "c018acb4-c710-5329-9423-762fa8ea4a48": [
         "/author/gc",
         "/",
-        "/page/2",
         "/categories/uncategorized/",
-        "/sample-media-post/",
-        "/morbi-rhoncus-malesuada/",
-        "/hello-world/",
-        "/nam-aliquam-vitae-metus-et-ornare/",
-        "/morbi-congue-nulla-ac/",
-        "/donec-convallis-dictum-quam/",
-        "/sed-cursus-lacus-a-mi-mollis/",
-        "/in-hac-habitasse-platea/",
-        "/sed-sagittis-nibh/",
-        "/aliquam-ac-nulla-egestas/",
-        "/maecenas-pellentesque-sollicitudin/",
         "/tags/bar/",
         "/tags/foo/"
-      ],
-      "f24b5a9e-ed37-56c1-978a-9c95dbc988a9": [
-        "/sample-media-post/",
-        "/morbi-rhoncus-malesuada/",
-        "/hello-world/",
-        "/nam-aliquam-vitae-metus-et-ornare/",
-        "/morbi-congue-nulla-ac/",
-        "/donec-convallis-dictum-quam/",
-        "/sed-cursus-lacus-a-mi-mollis/",
-        "/in-hac-habitasse-platea/",
-        "/sed-sagittis-nibh/",
-        "/aliquam-ac-nulla-egestas/",
-        "/maecenas-pellentesque-sollicitudin/"
-      ],
-      "052e5749-9865-5f8b-8e7f-830ebe467c86": [
-        "/morbi-rhoncus-malesuada/"
-      ],
-      "523491d5-4c21-5c07-a1b5-7f04a6c69e96": [
-        "/morbi-rhoncus-malesuada/"
       ]
     },
     "connections": {
@@ -3671,7 +3743,6 @@
       ],
       "wordpress__POST": [
         "/",
-        "/page/2",
         "/categories/uncategorized/",
         "/tags/bar/",
         "/tags/foo/"
@@ -3681,7 +3752,7 @@
   "jsonDataPaths": {
     "sq--src-components-navbar-js": 4089827343,
     "author-gc-5b7": "761/path---author-gc-5-b-7-820-ufMjEgmAXSmj2paFbIDedG09k",
-    "index": "90/path---index-6a9-4iShzFrHYcVHoChULAgCW4rvQSI",
+    "index": "893/path---index-6a9-zayI1kEpnU8fOfktJStbSAzJbMI",
     "page-2-b45": "533/path---page-2-b-45-94b-zXdMbdjpU27sVj9W5ZOsCjHkE",
     "child-of-draft-83c": "516/path---child-of-draft-83-c-669-xGqz4a968s7VI8zjigRUpU3YFnM",
     "privacy-policy-6b7": "344/path---privacy-policy-6-b-7-610-ahUfAFOg0trDbQPMnrmj2GH4",

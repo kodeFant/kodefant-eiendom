@@ -21,6 +21,13 @@ module.exports = {
         verboseOutput: false,
       },
     },
+    {
+      resolve: `gatsby-plugin-htaccess-redirects`,
+      options: {
+        prefix: "<IfModule mod_rewrite.c>\nRewriteEngine On",
+        suffix: "</IfModule>",
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-purgecss',
