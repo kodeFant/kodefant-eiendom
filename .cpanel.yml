@@ -1,5 +1,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/drifters/public_html/eiendom
-    - gatsby build
     - /bin/cp -R public/. $DEPLOYPATH
