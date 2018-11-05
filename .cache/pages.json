@@ -15,11 +15,6 @@
         "path": "/404/"
     },
     {
-        "componentChunkName": "component---src-templates-post-js",
-        "jsonName": "aliquam-ac-nulla-egestas-67f",
-        "path": "/aliquam-ac-nulla-egestas/"
-    },
-    {
         "componentChunkName": "component---src-templates-author-js",
         "jsonName": "author-gc-5b7",
         "path": "/author/gc"
@@ -35,74 +30,14 @@
         "path": "/child-of-draft/"
     },
     {
-        "componentChunkName": "component---cache-dev-404-page-js",
-        "jsonName": "dev-404-page-5f9",
-        "path": "/dev-404-page/"
-    },
-    {
-        "componentChunkName": "component---src-templates-post-js",
-        "jsonName": "donec-convallis-dictum-quam-f0c",
-        "path": "/donec-convallis-dictum-quam/"
-    },
-    {
-        "componentChunkName": "component---src-templates-post-js",
-        "jsonName": "hello-world-8bc",
-        "path": "/hello-world/"
-    },
-    {
-        "componentChunkName": "component---src-templates-post-js",
-        "jsonName": "in-hac-habitasse-platea-f98",
-        "path": "/in-hac-habitasse-platea/"
-    },
-    {
-        "componentChunkName": "component---src-templates-post-js",
-        "jsonName": "maecenas-pellentesque-sollicitudin-b6e",
-        "path": "/maecenas-pellentesque-sollicitudin/"
-    },
-    {
-        "componentChunkName": "component---src-templates-post-js",
-        "jsonName": "morbi-congue-nulla-ac-e0c",
-        "path": "/morbi-congue-nulla-ac/"
-    },
-    {
-        "componentChunkName": "component---src-templates-post-js",
-        "jsonName": "morbi-rhoncus-malesuada-e2f",
-        "path": "/morbi-rhoncus-malesuada/"
-    },
-    {
-        "componentChunkName": "component---src-templates-post-js",
-        "jsonName": "nam-aliquam-vitae-metus-et-ornare-df6",
-        "path": "/nam-aliquam-vitae-metus-et-ornare/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-js",
-        "jsonName": "page-2-b45",
-        "path": "/page/2"
-    },
-    {
         "componentChunkName": "component---src-templates-page-js",
         "jsonName": "privacy-policy-6b7",
         "path": "/privacy-policy/"
     },
     {
-        "componentChunkName": "component---src-templates-post-js",
-        "jsonName": "sample-media-post-5f4",
-        "path": "/sample-media-post/"
-    },
-    {
         "componentChunkName": "component---src-templates-page-js",
         "jsonName": "sample-page-b1e",
         "path": "/sample-page/"
-    },
-    {
-        "componentChunkName": "component---src-templates-post-js",
-        "jsonName": "sed-cursus-lacus-a-mi-mollis-925",
-        "path": "/sed-cursus-lacus-a-mi-mollis/"
-    },
-    {
-        "componentChunkName": "component---src-templates-post-js",
-        "jsonName": "sed-sagittis-nibh-a6e",
-        "path": "/sed-sagittis-nibh/"
     },
     {
         "componentChunkName": "component---src-templates-tag-js",

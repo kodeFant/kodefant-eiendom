@@ -1,22 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "jsonName": "dev-404-page-5f9",
-      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "/home/kodefant/kode/eiendom/.cache/dev-404-page.js",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin dev-404-page",
-      "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/home/kodefant/kode/eiendom/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5dea796f19f9ee4c4df584ae2af22ae7",
-        "description": "Plugin dev-404-page",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -1115,16 +1106,14 @@
       "siteMetadata": {
         "title": "Gatsby + WordPress Starter"
       },
-      "port": "8000",
-      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-05T18:46:35.296Z",
+      "buildTime": "2018-11-05T18:58:47.444Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "e90faf98178d9eca6175d1ae0424b282",
+        "contentDigest": "84f1fb0a682a1afd9c4408d3e6b3664b",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -3432,248 +3421,6 @@
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /sample-media-post/": {
-      "jsonName": "sample-media-post-5f4",
-      "internalComponentName": "ComponentSampleMediaPost",
-      "path": "/sample-media-post/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "id": "7296d607-5f71-5e98-8e73-f6149a0675ca"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "id": "SitePage /sample-media-post/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "91953eb4d8f71423f983b451d001362b",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /morbi-rhoncus-malesuada/": {
-      "jsonName": "morbi-rhoncus-malesuada-e2f",
-      "internalComponentName": "ComponentMorbiRhoncusMalesuada",
-      "path": "/morbi-rhoncus-malesuada/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "id": "73027541-7763-5d83-b88a-6db88158f828"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "id": "SitePage /morbi-rhoncus-malesuada/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "007264f160c8335fefac4c363aa271a3",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /hello-world/": {
-      "jsonName": "hello-world-8bc",
-      "internalComponentName": "ComponentHelloWorld",
-      "path": "/hello-world/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "id": "2347739f-f4fa-5d13-8eac-4a0059e4ff82"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "id": "SitePage /hello-world/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "5b376db7c00a96a1128b292195926ba9",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /nam-aliquam-vitae-metus-et-ornare/": {
-      "jsonName": "nam-aliquam-vitae-metus-et-ornare-df6",
-      "internalComponentName": "ComponentNamAliquamVitaeMetusEtOrnare",
-      "path": "/nam-aliquam-vitae-metus-et-ornare/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "id": "099ae931-5fbf-5690-8148-c679b17b745c"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "id": "SitePage /nam-aliquam-vitae-metus-et-ornare/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "e80b641c00259c9c0200faa07625ecfb",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /morbi-congue-nulla-ac/": {
-      "jsonName": "morbi-congue-nulla-ac-e0c",
-      "internalComponentName": "ComponentMorbiCongueNullaAc",
-      "path": "/morbi-congue-nulla-ac/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "id": "3fac2489-1677-524e-bbaa-fbb6212106d2"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "id": "SitePage /morbi-congue-nulla-ac/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "43d2f9e2441b10a04bd841791cb87868",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /donec-convallis-dictum-quam/": {
-      "jsonName": "donec-convallis-dictum-quam-f0c",
-      "internalComponentName": "ComponentDonecConvallisDictumQuam",
-      "path": "/donec-convallis-dictum-quam/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "id": "b150cbb5-9392-5a14-a07b-f444d7f200ad"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "id": "SitePage /donec-convallis-dictum-quam/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "1bce1fe9db65b398504afa9e87182dfb",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /sed-cursus-lacus-a-mi-mollis/": {
-      "jsonName": "sed-cursus-lacus-a-mi-mollis-925",
-      "internalComponentName": "ComponentSedCursusLacusAMiMollis",
-      "path": "/sed-cursus-lacus-a-mi-mollis/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "id": "724f15ef-f323-50f5-9ee1-820331e892b1"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "id": "SitePage /sed-cursus-lacus-a-mi-mollis/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "0aeadfd32c4582897c6e7bcca80a55bd",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /in-hac-habitasse-platea/": {
-      "jsonName": "in-hac-habitasse-platea-f98",
-      "internalComponentName": "ComponentInHacHabitassePlatea",
-      "path": "/in-hac-habitasse-platea/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "id": "4691db0c-877b-5938-8f59-c109400bdbfd"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "id": "SitePage /in-hac-habitasse-platea/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "a42bd85a0f3614b81b111a1051c6a3c1",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /sed-sagittis-nibh/": {
-      "jsonName": "sed-sagittis-nibh-a6e",
-      "internalComponentName": "ComponentSedSagittisNibh",
-      "path": "/sed-sagittis-nibh/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "id": "ada907ea-1526-5c38-a703-66b37194f664"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "id": "SitePage /sed-sagittis-nibh/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "0bdee33cd37dcc5e9546e648553ccc4e",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /aliquam-ac-nulla-egestas/": {
-      "jsonName": "aliquam-ac-nulla-egestas-67f",
-      "internalComponentName": "ComponentAliquamAcNullaEgestas",
-      "path": "/aliquam-ac-nulla-egestas/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "id": "6d5fda42-6c68-5299-8275-6e9f8716765e"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "id": "SitePage /aliquam-ac-nulla-egestas/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "b0066dac874f5077fc25ed3cc43099b7",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /maecenas-pellentesque-sollicitudin/": {
-      "jsonName": "maecenas-pellentesque-sollicitudin-b6e",
-      "internalComponentName": "ComponentMaecenasPellentesqueSollicitudin",
-      "path": "/maecenas-pellentesque-sollicitudin/",
-      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "id": "991e7359-5ba0-5114-91b5-35a968224bcd"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
-      "id": "SitePage /maecenas-pellentesque-sollicitudin/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "0a92573160ce739b32ecdab3e6fe1d96",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
     "SitePage /": {
       "jsonName": "index",
       "internalComponentName": "ComponentIndex",
@@ -3685,9 +3432,9 @@
         "humanPageNumber": 1,
         "skip": 0,
         "limit": 10,
-        "numberOfPages": 2,
+        "numberOfPages": 1,
         "previousPagePath": "",
-        "nextPagePath": "/page/2"
+        "nextPagePath": ""
       },
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
@@ -3697,35 +3444,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e1a18c6c6a3203c4dc4d120645c1ae9c",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /page/2": {
-      "jsonName": "page-2-b45",
-      "internalComponentName": "ComponentPage2",
-      "path": "/page/2",
-      "component": "/home/kodefant/kode/eiendom/src/templates/blog.js",
-      "componentChunkName": "component---src-templates-blog-js",
-      "context": {
-        "pageNumber": 1,
-        "humanPageNumber": 2,
-        "skip": 10,
-        "limit": 10,
-        "numberOfPages": 2,
-        "previousPagePath": "/",
-        "nextPagePath": ""
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/blog.js",
-      "id": "SitePage /page/2",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "b9b8bad6e53d8b7bbfac34d1f1d13062",
+        "contentDigest": "24e6ce0f515da0ba396c4398a1cc6118",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -3990,10 +3709,6 @@
       "query": "query PageById(\n  $id: String!\n) {\n  wordpressPage(id: {eq: $id}) {\n    title\n    content\n  }\n}\n",
       "componentPath": "/home/kodefant/kode/eiendom/src/templates/page.js"
     },
-    "/home/kodefant/kode/eiendom/src/templates/post.js": {
-      "query": "query BlogPostByID(\n  $id: String!\n) {\n  wordpressPost(id: {eq: $id}) {\n    id\n    title\n    slug\n    content\n    date(formatString: \"MMMM DD, YYYY\")\n    categories {\n      name\n      slug\n    }\n    tags {\n      name\n      slug\n    }\n    author {\n      name\n      slug\n    }\n  }\n}\n",
-      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js"
-    },
     "/home/kodefant/kode/eiendom/src/templates/blog.js": {
       "query": "query IndexQuery(\n  $limit: Int!\n  $skip: Int!\n) {\n  allWordpressPost(sort: {fields: date, order: DESC}, limit: $limit, skip: $skip) {\n    edges {\n      node {\n        ...PostListFields\n      }\n    }\n  }\n}\n\nfragment PostListFields on wordpress__POST {\n  id\n  title\n  excerpt\n  author {\n    name\n    slug\n    avatar_urls {\n      wordpress_48\n    }\n  }\n  date(formatString: \"MMMM DD, YYYY\")\n  slug\n}\n",
       "componentPath": "/home/kodefant/kode/eiendom/src/templates/blog.js"
@@ -4009,10 +3724,6 @@
     "/home/kodefant/kode/eiendom/src/templates/author.js": {
       "query": "query AuthorPage(\n  $id: String!\n) {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n  wordpressWpUsers(id: {eq: $id}) {\n    name\n    authored_wordpress__POST {\n      ...PostListFields\n    }\n  }\n}\n\nfragment PostListFields on wordpress__POST {\n  id\n  title\n  excerpt\n  author {\n    name\n    slug\n    avatar_urls {\n      wordpress_48\n    }\n  }\n  date(formatString: \"MMMM DD, YYYY\")\n  slug\n}\n",
       "componentPath": "/home/kodefant/kode/eiendom/src/templates/author.js"
-    },
-    "/home/kodefant/kode/eiendom/.cache/dev-404-page.js": {
-      "query": "",
-      "componentPath": "/home/kodefant/kode/eiendom/.cache/dev-404-page.js"
     },
     "/home/kodefant/kode/eiendom/src/pages/404.js": {
       "query": "",
