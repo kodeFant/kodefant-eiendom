@@ -1,0 +1,4032 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "jsonName": "dev-404-page-5f9",
+      "internalComponentName": "ComponentDev404Page",
+      "path": "/dev-404-page/",
+      "component": "/home/kodefant/kode/eiendom/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/home/kodefant/kode/eiendom/.cache/dev-404-page.js",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5dea796f19f9ee4c4df584ae2af22ae7",
+        "description": "Plugin dev-404-page",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "6941b53923fe0bb2c55a0b851fa4bc72",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin load-babel-config": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "id": "Plugin load-babel-config",
+      "name": "load-babel-config",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "packageJson": {
+        "name": "load-babel-config",
+        "description": "Internal plugin that handles loading Babel configs",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "0b97eb9b4fed838a3ed25d95b382092d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "9970af99148a02212a7509eff90f7365",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "0bf854d0d800b338147f4fa58d266dad",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "809430046296fa58ffca90009e1af671",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-react-helmet": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-react-helmet",
+      "id": "Plugin gatsby-plugin-react-helmet",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "3.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
+        "version": "3.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "react-helmet",
+          "seo",
+          "document",
+          "head",
+          "title",
+          "meta",
+          "link",
+          "script",
+          "base",
+          "noscript",
+          "style"
+        ],
+        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "react-helmet",
+            "version": ">=5.1.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "70b9dd0d53b071fcacafcb67cc26b0cd",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sass": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-sass",
+      "id": "Plugin gatsby-plugin-sass",
+      "name": "gatsby-plugin-sass",
+      "version": "2.0.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateWebpackConfig"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-sass",
+      "packageJson": {
+        "name": "gatsby-plugin-sass",
+        "description": "Gatsby plugin to handle scss/sass files",
+        "version": "2.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "sass",
+          "scss"
+        ],
+        "author": "Daniel Farrell <daniel@mobelux.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "sass-loader",
+            "version": "^7.0.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "node-sass",
+            "version": "^4.9.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "15a4e39535f8464d11e295a1118ce0f6",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-wordpress": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-source-wordpress",
+      "id": "Plugin gatsby-source-wordpress",
+      "name": "gatsby-source-wordpress",
+      "version": "3.0.1",
+      "pluginOptions": {
+        "plugins": [],
+        "baseUrl": "wpdemo.gatsbycentral.com",
+        "hostingWPCOM": false,
+        "protocol": "https",
+        "useACF": false,
+        "auth": {},
+        "verboseOutput": false
+      },
+      "nodeAPIs": [
+        "sourceNodes"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-source-wordpress",
+      "packageJson": {
+        "name": "gatsby-source-wordpress",
+        "description": "Gatsby source plugin for building websites using the Wordpress CMS as a data source.",
+        "version": "3.0.1",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "gatsby-source-plugin"
+        ],
+        "author": "Sebastien Fichot <fichot.sebastien@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "axios",
+            "version": "^0.18.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.6"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "deep-map",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "deep-map-keys",
+            "version": "^1.2.0"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "json-stringify-safe",
+            "version": "^5.0.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "minimatch",
+            "version": "^3.0.4"
+          },
+          {
+            "name": "qs",
+            "version": "^6.4.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "5006fc65d278e67d50d3252876d4470c",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sharp": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-sharp",
+      "id": "Plugin gatsby-plugin-sharp",
+      "name": "gatsby-plugin-sharp",
+      "version": "2.0.5",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "2.0.5",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "async",
+            "version": "^2.1.2"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-exists-cached",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "imagemin",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "imagemin-webp",
+            "version": "^4.1.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "mini-svg-data-uri",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.2"
+          },
+          {
+            "name": "svgo",
+            "version": "^0.7.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "aad2922a998a973f062535e8688a7b27",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-sharp": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-transformer-sharp",
+      "id": "Plugin gatsby-transformer-sharp",
+      "name": "gatsby-transformer-sharp",
+      "version": "2.1.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType",
+        "onPreExtractQueries"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-transformer-sharp",
+      "packageJson": {
+        "name": "gatsby-transformer-sharp",
+        "description": "Gatsby transformer plugin for images using Sharp",
+        "version": "2.1.1",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.0-beta.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "c9c02c6fca006a5b188ba6adc91d353a",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-purgecss": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-purgecss",
+      "id": "Plugin gatsby-plugin-purgecss",
+      "name": "gatsby-plugin-purgecss",
+      "version": "2.4.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateWebpackConfig"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-purgecss",
+      "packageJson": {
+        "name": "gatsby-plugin-purgecss",
+        "description": "Gatsby plugin for purgecss. Removes unused css/sass/less/stylus from files and modules.",
+        "version": "2.4.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "css",
+          "sass",
+          "scss",
+          "stylus",
+          "less",
+          "optimize",
+          "clean",
+          "purgecss",
+          "purify",
+          "purifycss"
+        ],
+        "author": "Ananto Ghosh",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "fs-extra",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "loader-utils",
+            "version": "^1.1.0"
+          },
+          {
+            "name": "purgecss",
+            "version": "^1.0.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "6.26.0"
+          },
+          {
+            "name": "babel-plugin-transform-object-rest-spread",
+            "version": "6.26.0"
+          },
+          {
+            "name": "babel-preset-env",
+            "version": "1.7.0"
+          },
+          {
+            "name": "coveralls",
+            "version": "3.0.2"
+          },
+          {
+            "name": "dotenv",
+            "version": "6.0.0"
+          },
+          {
+            "name": "gatsby",
+            "version": "2.0.0-beta.111"
+          },
+          {
+            "name": "gatsby-plugin-less",
+            "version": "2.0.0-beta.5"
+          },
+          {
+            "name": "gatsby-plugin-sass",
+            "version": "2.0.0-beta.10"
+          },
+          {
+            "name": "gatsby-plugin-stylus",
+            "version": "2.0.0-beta.6"
+          },
+          {
+            "name": "jest",
+            "version": "23.5.0"
+          },
+          {
+            "name": "less",
+            "version": "3.8.1"
+          },
+          {
+            "name": "node-sass",
+            "version": "4.9.3"
+          },
+          {
+            "name": "react",
+            "version": "16.4.2"
+          },
+          {
+            "name": "react-dom",
+            "version": "16.4.2"
+          },
+          {
+            "name": "release-it",
+            "version": "7.5.0"
+          },
+          {
+            "name": "runjs",
+            "version": "4.3.2"
+          },
+          {
+            "name": "symlink-dir",
+            "version": "1.1.3"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-beta"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "303fdc6b13d434d7fccb459b7e266146",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-netlify": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-netlify",
+      "id": "Plugin gatsby-plugin-netlify",
+      "name": "gatsby-plugin-netlify",
+      "version": "2.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateWebpackConfig",
+        "onPostBuild"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-netlify",
+      "packageJson": {
+        "name": "gatsby-plugin-netlify",
+        "description": "A Gatsby plugin which generates a _headers file for netlify",
+        "version": "2.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "http/2-server-push",
+          "netlify"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "kebab-hash",
+            "version": "^0.1.2"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "webpack-assets-manifest",
+            "version": "^3.0.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7a0816871283ec970ca87a650272889a",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/home/kodefant/kode/eiendom",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "dc91f1262d99225665471529f6f5fbab",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPages",
+        "onCreateNode"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom",
+      "packageJson": {
+        "name": "gatsby-starter-wordpress",
+        "description": "Gatsby v2 starter for WordPress",
+        "version": "0.1.0",
+        "main": "n/a",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "GatsbyCentral.com",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "bulma",
+            "version": "^0.7.0"
+          },
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "gatsby-awesome-pagination",
+            "version": "^0.3.3"
+          },
+          {
+            "name": "gatsby-plugin-lodash",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "gatsby-plugin-netlify",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "gatsby-plugin-purgecss",
+            "version": "^2.4.0"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "gatsby-plugin-sass",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-remark-images",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "gatsby-source-wordpress",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "gatsby-transformer-remark",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "gatsby-transformer-sharp",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.5"
+          },
+          {
+            "name": "node-sass",
+            "version": "^4.9.2"
+          },
+          {
+            "name": "parcel-bundler",
+            "version": "^1.9.4"
+          },
+          {
+            "name": "prop-types",
+            "version": "^15.6.0"
+          },
+          {
+            "name": "react",
+            "version": "^16.2.0"
+          },
+          {
+            "name": "react-dom",
+            "version": "^16.4.1"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.2.0"
+          },
+          {
+            "name": "uuid",
+            "version": "^3.2.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "eslint-config-airbnb",
+            "version": "^17.1.0"
+          },
+          {
+            "name": "eslint-config-prettier",
+            "version": "^3.1.0"
+          },
+          {
+            "name": "prettier",
+            "version": "^1.7.4"
+          },
+          {
+            "name": "rimraf",
+            "version": "^2.6.2"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "548adadb97ff8b06b55e329dc3550346",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-page-creator": {
+      "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-page-creator",
+      "id": "Plugin gatsby-plugin-page-creator",
+      "name": "gatsby-plugin-page-creator",
+      "version": "2.0.0",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/home/kodefant/kode/eiendom/src/pages",
+        "pathCheck": false
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-page-creator",
+      "packageJson": {
+        "name": "gatsby-plugin-page-creator",
+        "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
+        "version": "2.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-exists-cached",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "glob",
+            "version": "^7.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "parse-filepath",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "acf8e0d66ea8cb93f69d5eec7a90a9af",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "Gatsby + WordPress Starter"
+      },
+      "port": "8000",
+      "host": "localhost",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2018-11-05T18:46:35.296Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e90faf98178d9eca6175d1ae0424b282",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "4ca660b8-0c17-5d55-97a0-bdec727eb2d4": {
+      "id": "4ca660b8-0c17-5d55-97a0-bdec727eb2d4",
+      "children": [
+        "7792b9dc-b64d-5a93-b3c6-6168620e77b4"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "6280d8f5248e891e259926e2af79b110",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "__PROGRAMATTIC__",
+      "absolutePath": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem/de79951679bc42fd0f5d42ed2e6e87e8.jpg",
+      "relativePath": ".cache/gatsby-source-filesystem/de79951679bc42fd0f5d42ed2e6e87e8.jpg",
+      "extension": "jpg",
+      "size": 93746,
+      "prettySize": "93.7 kB",
+      "modifiedTime": "2018-11-05T18:46:43.829Z",
+      "accessTime": "2018-11-05T18:46:43.521Z",
+      "changeTime": "2018-11-05T18:46:43.833Z",
+      "birthTime": "2018-11-05T18:46:43.833Z",
+      "root": "/",
+      "dir": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem",
+      "base": "de79951679bc42fd0f5d42ed2e6e87e8.jpg",
+      "ext": ".jpg",
+      "name": "de79951679bc42fd0f5d42ed2e6e87e8",
+      "relativeDirectory": ".cache/gatsby-source-filesystem",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 3346848,
+      "blocks": 184,
+      "atimeMs": 1541443603520.8132,
+      "mtimeMs": 1541443603828.813,
+      "ctimeMs": 1541443603832.813,
+      "birthtimeMs": 1541443603832.813,
+      "atime": "2018-11-05T18:46:43.521Z",
+      "mtime": "2018-11-05T18:46:43.829Z",
+      "ctime": "2018-11-05T18:46:43.833Z",
+      "birthtime": "2018-11-05T18:46:43.833Z"
+    },
+    "7792b9dc-b64d-5a93-b3c6-6168620e77b4": {
+      "id": "7792b9dc-b64d-5a93-b3c6-6168620e77b4",
+      "children": [],
+      "parent": "4ca660b8-0c17-5d55-97a0-bdec727eb2d4",
+      "internal": {
+        "contentDigest": "6280d8f5248e891e259926e2af79b110",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "7ee94779-311a-5a8e-868d-1c1234d11e1a": {
+      "id": "7ee94779-311a-5a8e-868d-1c1234d11e1a",
+      "children": [
+        "57794831-c103-5703-99f1-81b1c6b11904"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c4016fad1b124d96e216ef14dad8baf6",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1778693-1200x826.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "__PROGRAMATTIC__",
+      "absolutePath": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem/db18fb07a16ca2501eb37d62ea415f7b.jpg",
+      "relativePath": ".cache/gatsby-source-filesystem/db18fb07a16ca2501eb37d62ea415f7b.jpg",
+      "extension": "jpg",
+      "size": 69233,
+      "prettySize": "69.2 kB",
+      "modifiedTime": "2018-11-05T18:46:43.845Z",
+      "accessTime": "2018-11-05T18:46:43.521Z",
+      "changeTime": "2018-11-05T18:46:43.845Z",
+      "birthTime": "2018-11-05T18:46:43.845Z",
+      "root": "/",
+      "dir": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem",
+      "base": "db18fb07a16ca2501eb37d62ea415f7b.jpg",
+      "ext": ".jpg",
+      "name": "db18fb07a16ca2501eb37d62ea415f7b",
+      "relativeDirectory": ".cache/gatsby-source-filesystem",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 3346847,
+      "blocks": 136,
+      "atimeMs": 1541443603520.8132,
+      "mtimeMs": 1541443603844.813,
+      "ctimeMs": 1541443603844.813,
+      "birthtimeMs": 1541443603844.813,
+      "atime": "2018-11-05T18:46:43.521Z",
+      "mtime": "2018-11-05T18:46:43.845Z",
+      "ctime": "2018-11-05T18:46:43.845Z",
+      "birthtime": "2018-11-05T18:46:43.845Z"
+    },
+    "57794831-c103-5703-99f1-81b1c6b11904": {
+      "id": "57794831-c103-5703-99f1-81b1c6b11904",
+      "children": [],
+      "parent": "7ee94779-311a-5a8e-868d-1c1234d11e1a",
+      "internal": {
+        "contentDigest": "c4016fad1b124d96e216ef14dad8baf6",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "a54357ab-b57a-5d75-b375-59f114794de6": {
+      "id": "a54357ab-b57a-5d75-b375-59f114794de6",
+      "children": [
+        "0449aac9-66cf-5c5f-bdd6-d6af646f3ff5"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "90cbfb959feeec8c4653557d6579ed4b",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1757540-1167x900.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "__PROGRAMATTIC__",
+      "absolutePath": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem/a1eae3bbd30219ab495db5eb5b4035f5.jpg",
+      "relativePath": ".cache/gatsby-source-filesystem/a1eae3bbd30219ab495db5eb5b4035f5.jpg",
+      "extension": "jpg",
+      "size": 93513,
+      "prettySize": "93.5 kB",
+      "modifiedTime": "2018-11-05T18:46:43.861Z",
+      "accessTime": "2018-11-05T18:46:43.521Z",
+      "changeTime": "2018-11-05T18:46:43.861Z",
+      "birthTime": "2018-11-05T18:46:43.861Z",
+      "root": "/",
+      "dir": "/home/kodefant/kode/eiendom/.cache/gatsby-source-filesystem",
+      "base": "a1eae3bbd30219ab495db5eb5b4035f5.jpg",
+      "ext": ".jpg",
+      "name": "a1eae3bbd30219ab495db5eb5b4035f5",
+      "relativeDirectory": ".cache/gatsby-source-filesystem",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 3346849,
+      "blocks": 184,
+      "atimeMs": 1541443603520.8132,
+      "mtimeMs": 1541443603860.813,
+      "ctimeMs": 1541443603860.813,
+      "birthtimeMs": 1541443603860.813,
+      "atime": "2018-11-05T18:46:43.521Z",
+      "mtime": "2018-11-05T18:46:43.861Z",
+      "ctime": "2018-11-05T18:46:43.861Z",
+      "birthtime": "2018-11-05T18:46:43.861Z"
+    },
+    "0449aac9-66cf-5c5f-bdd6-d6af646f3ff5": {
+      "id": "0449aac9-66cf-5c5f-bdd6-d6af646f3ff5",
+      "children": [],
+      "parent": "a54357ab-b57a-5d75-b375-59f114794de6",
+      "internal": {
+        "contentDigest": "90cbfb959feeec8c4653557d6579ed4b",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "7296d607-5f71-5e98-8e73-f6149a0675ca": {
+      "wordpress_id": 10,
+      "date": "2018-10-04T16:12:43.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?p=10",
+      "modified": "2018-11-01T12:54:19.000Z",
+      "slug": "sample-media-post",
+      "status": "publish",
+      "type": "post",
+      "link": "https://wpdemo.gatsbycentral.com/2018/10/04/sample-media-post/",
+      "title": "Sample Media Post",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar, urna placerat mattis laoreet, quam massa tincidunt felis, sed ullamcorper sem ex a massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dolor tristique, molestie ante eget, interdum sem. Pellentesque dapibus posuere tempor. Suspendisse tincidunt diam non massa scelerisque, quis ornare est imperdiet. Curabitur iaculis, elit ut finibus congue, mi magna vulputate nibh, at luctus lectus dui at metus. Quisque tincidunt, ante sed luctus scelerisque, erat purus pellentesque mi, ut maximus dolor metus eu est. Pellentesque tincidunt augue nec tincidunt venenatis. Fusce velit risus, tincidunt nec pellentesque id, dapibus ut diam. Donec iaculis bibendum turpis, at rutrum orci fringilla sed. Aliquam id congue ipsum, quis aliquam ex. Suspendisse varius sodales quam a auctor. Etiam placerat augue velit, ac vehicula metus fermentum ullamcorper. Donec ac consectetur libero.</p>\n<p><img class=\"alignnone size-large wp-image-11\" src=\"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730-1024x680.jpg\" alt=\"\" width=\"525\" height=\"349\" srcset=\"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730-1024x680.jpg 1024w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730-300x199.jpg 300w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730-768x510.jpg 768w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730.jpg 1100w\" sizes=\"(max-width: 525px) 100vw, 525px\" /></p>\n<p>Fusce urna odio, aliquam in tincidunt et, rhoncus sed est. Nullam rhoncus, est vitae tincidunt efficitur, mi urna interdum libero, ut sagittis magna arcu sit amet lorem. Aenean in metus nec purus porta interdum. Ut a sollicitudin ipsum. Duis volutpat vulputate convallis. Curabitur lacinia aliquam sapien, a viverra ex porttitor in. Fusce ornare sapien ac risus porttitor porta.</p>\n<h3>Donec non felis massa.</h3>\n<p>Sed ac lacus quis purus suscipit bibendum non eget lectus. In finibus lorem condimentum felis molestie, sit amet congue ante ultrices. Suspendisse faucibus sit amet nibh vel aliquam. Quisque blandit tortor tristique imperdiet placerat. Praesent dictum nec metus eu posuere. Praesent vitae leo risus. Aliquam erat volutpat. Phasellus et lobortis est.</p>\n<p>Phasellus porta neque diam, et consequat nisi ultricies eu. Donec mollis semper ultrices. Sed facilisis blandit euismod. Nulla at iaculis sapien, quis tristique sem. Quisque sed libero nisl. Suspendisse ut tortor ac augue finibus efficitur. Fusce sagittis eros a libero aliquam pulvinar. Nunc tempus nisi urna, a hendrerit felis mollis sed. Vivamus a aliquam felis, sit amet finibus erat. Curabitur et erat nunc. Ut lobortis, libero ut aliquam faucibus, neque justo feugiat tortor, a maximus est tellus id metus. Curabitur facilisis venenatis lectus. Aenean id purus purus.</p>\n<p>Morbi augue mauris, volutpat a venenatis sit amet, vehicula nec leo. Mauris gravida tellus non sem dictum pellentesque. Integer sed enim eleifend, pulvinar risus ac, porta arcu. Sed tincidunt vestibulum augue elementum lacinia. Aenean rhoncus nunc eu dignissim interdum. Quisque id arcu semper, semper ipsum in, convallis quam. Phasellus pharetra, mauris non tincidunt elementum, lorem diam tincidunt nisi, quis dapibus est ante finibus lectus. Cras eu aliquet leo, posuere dapibus nibh. Curabitur feugiat sagittis nunc, et volutpat augue feugiat sit amet.</p>\n",
+      "excerpt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar, urna placerat mattis laoreet, quam massa tincidunt felis, sed ullamcorper sem ex a massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dolor tristique, molestie ante eget, interdum sem. Pellentesque dapibus posuere tempor. Suspendisse tincidunt diam non massa scelerisque, quis ornare est imperdiet. &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/2018/10/04/sample-media-post/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Sample Media Post&#8221;</span></a></p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/10"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=10"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 3,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/10/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 21,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/10/revisions/21"
+          }
+        ],
+        "wp_featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media/12"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=10"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories?post=10"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags?post=10"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "7296d607-5f71-5e98-8e73-f6149a0675ca",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "featured_media___NODE": "7f6e6100-fa9b-5de0-a44f-db4606a84957",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "603154d7a2b103308e58f7595fd35b6b",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "73027541-7763-5d83-b88a-6db88158f828": {
+      "wordpress_id": 5,
+      "date": "2018-10-04T09:16:59.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?p=5",
+      "modified": "2018-10-04T09:36:10.000Z",
+      "slug": "morbi-rhoncus-malesuada",
+      "status": "publish",
+      "type": "post",
+      "link": "https://wpdemo.gatsbycentral.com/2018/10/04/morbi-rhoncus-malesuada/",
+      "title": "Morbi rhoncus malesuada",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis diam, vestibulum sed metus in, eleifend fermentum elit. Cras sit amet justo elit. Vivamus massa arcu, lacinia quis porttitor et, congue a lorem. Vivamus lacus sapien, commodo nec maximus in, lacinia in nulla. Donec nec enim cursus ante accumsan luctus vel nec turpis. Nunc convallis vehicula nunc, a accumsan ipsum blandit vel. Aenean non efficitur turpis, a molestie est. Donec ac sollicitudin erat. Vestibulum eu lorem orci. Mauris eu erat velit. Aliquam erat volutpat. In hac habitasse platea dictumst. Suspendisse potenti.</p>\n<p>Proin tellus leo, convallis at volutpat non, vehicula id nisl. Quisque ut iaculis odio. Aliquam lacus dolor, scelerisque quis elit ut, pretium porttitor nisi. Maecenas interdum libero in ligula rhoncus, a varius massa hendrerit. Morbi fermentum, lectus vitae vestibulum dapibus, turpis neque consequat neque, et scelerisque metus nibh ac mi. Maecenas interdum ante sed ligula aliquam scelerisque. Morbi lorem mi, consequat nec ligula ultrices, convallis bibendum mauris. Sed suscipit ultrices vulputate. Cras imperdiet facilisis luctus. Nam sagittis quam ut vestibulum pulvinar. Aenean pretium justo ac ultricies bibendum. Vestibulum consectetur, est vel faucibus dictum, arcu libero vestibulum justo, ac congue diam nisl vitae est.</p>\n<p>Nunc pellentesque nibh ac tristique lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent ut odio vitae risus sodales lobortis vel eget lorem. Aliquam arcu risus, sollicitudin sed mauris in, facilisis faucibus neque. Phasellus vitae ex vel felis ultrices aliquam ac blandit eros. Pellentesque tincidunt ipsum quam, vel aliquam urna vestibulum in. Nulla feugiat augue feugiat fringilla cursus. Duis consequat finibus felis a bibendum. Morbi gravida felis quis orci condimentum dictum.</p>\n<p>Quisque condimentum suscipit purus, at posuere lacus ultrices in. Ut vitae lacinia tortor. Donec in sodales erat. Aliquam interdum neque in sollicitudin efficitur. Nam id lectus sagittis, porta ipsum in, dignissim sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat sapien lorem. Integer posuere sagittis nisi aliquet eleifend. Sed congue sodales elementum.</p>\n<p>Nullam euismod sollicitudin cursus. Etiam et ultricies dui. Mauris felis nisl, vulputate vestibulum augue ut, tincidunt varius nibh. Sed nec dolor eu orci commodo sodales. Donec in urna tristique, placerat lorem non, laoreet massa. Aliquam sed arcu accumsan, vestibulum ante eu, sagittis purus. Maecenas nec pellentesque dui, vitae laoreet nibh. In pulvinar fermentum odio, sed vestibulum metus fermentum a. Fusce consequat fermentum enim eu placerat. Donec sit amet fringilla ipsum. Sed hendrerit hendrerit turpis in facilisis. Vivamus quis odio sed dui vehicula lobortis eget vitae ipsum.</p>\n",
+      "excerpt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis diam, vestibulum sed metus in, eleifend fermentum elit. Cras sit amet justo elit. Vivamus massa arcu, lacinia quis porttitor et, congue a lorem. Vivamus lacus sapien, commodo nec maximus in, lacinia in nulla. Donec nec enim cursus ante accumsan luctus vel nec turpis. Nunc convallis &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/2018/10/04/morbi-rhoncus-malesuada/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Morbi rhoncus malesuada&#8221;</span></a></p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/5"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=5"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/5/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 6,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/5/revisions/6"
+          }
+        ],
+        "wp_featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media/7"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=5"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories?post=5"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags?post=5"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "73027541-7763-5d83-b88a-6db88158f828",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "tags___NODE": [
+        "052e5749-9865-5f8b-8e7f-830ebe467c86",
+        "523491d5-4c21-5c07-a1b5-7f04a6c69e96"
+      ],
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "featured_media___NODE": "1f8bdfb0-6b93-51b9-8d04-341dea713002",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "6c5a7adca481ff5927d586c3442b2def",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "2347739f-f4fa-5d13-8eac-4a0059e4ff82": {
+      "wordpress_id": 1,
+      "date": "2018-10-03T17:01:19.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?p=1",
+      "modified": "2018-10-03T17:01:19.000Z",
+      "slug": "hello-world",
+      "status": "publish",
+      "type": "post",
+      "link": "https://wpdemo.gatsbycentral.com/2018/10/03/hello-world/",
+      "title": "Hello world!",
+      "content": "<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>\n",
+      "excerpt": "<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/1"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=1"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 0,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/1/revisions"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=1"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories?post=1"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags?post=1"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "2347739f-f4fa-5d13-8eac-4a0059e4ff82",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "7180a2bbb8c27219f83715004e94dcc3",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "099ae931-5fbf-5690-8148-c679b17b745c": {
+      "wordpress_id": 22,
+      "date": "2018-10-03T13:07:06.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?p=22",
+      "modified": "2018-11-05T13:07:40.000Z",
+      "slug": "nam-aliquam-vitae-metus-et-ornare",
+      "status": "publish",
+      "type": "post",
+      "link": "https://wpdemo.gatsbycentral.com/2018/10/03/nam-aliquam-vitae-metus-et-ornare/",
+      "title": "Nam aliquam vitae metus et ornare",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at commodo mi, ac lobortis sapien. Curabitur gravida vitae nunc sed bibendum. Aenean tristique elit sed velit hendrerit, ac cursus metus semper. Sed varius dictum odio, eu rutrum magna fringilla a. Nullam porttitor facilisis est ut luctus. Cras fermentum justo at euismod scelerisque. Ut dictum eget tellus in sollicitudin.</p>\n<p>Nam aliquam vitae metus et ornare. Duis ut placerat nibh. Proin porta lorem dignissim, pharetra nunc a, gravida sem. Curabitur vel pulvinar lacus, ut rhoncus justo. Phasellus volutpat nisl eu sapien ultrices, condimentum consectetur libero fringilla. Nam bibendum ac ex ac mattis. Pellentesque placerat pretium lorem vel accumsan. Curabitur quis sollicitudin urna. Maecenas at ligula non lacus egestas vehicula. Suspendisse potenti.</p>\n<p>Phasellus eget nulla nulla. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam gravida efficitur scelerisque. Fusce vitae efficitur orci. Praesent placerat neque quis nibh convallis accumsan. Duis gravida orci id est tincidunt imperdiet. Nunc eros enim, accumsan sed odio vitae, mollis varius sem. Etiam quis nulla quam. Proin suscipit turpis in bibendum molestie. Proin egestas, turpis id lacinia varius, lorem felis sodales nisi, vitae scelerisque nulla libero eget nulla. Donec rutrum elementum neque ac mattis. Integer cursus sagittis sem, posuere pellentesque orci rhoncus id. Duis eu quam nisi. </p>\n",
+      "excerpt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at commodo mi, ac lobortis sapien. Curabitur gravida vitae nunc sed bibendum. Aenean tristique elit sed velit hendrerit, ac cursus metus semper. Sed varius dictum odio, eu rutrum magna fringilla a. Nullam porttitor facilisis est ut luctus. Cras fermentum justo at euismod scelerisque. Ut dictum eget &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/2018/10/03/nam-aliquam-vitae-metus-et-ornare/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Nam aliquam vitae metus et ornare&#8221;</span></a></p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/22"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=22"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/22/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 23,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/22/revisions/23"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=22"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories?post=22"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags?post=22"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "099ae931-5fbf-5690-8148-c679b17b745c",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "185e39fb55050fb379e3d09d58d809d8",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "3fac2489-1677-524e-bbaa-fbb6212106d2": {
+      "wordpress_id": 24,
+      "date": "2018-10-01T13:07:49.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?p=24",
+      "modified": "2018-11-05T13:08:03.000Z",
+      "slug": "morbi-congue-nulla-ac",
+      "status": "publish",
+      "type": "post",
+      "link": "https://wpdemo.gatsbycentral.com/2018/10/01/morbi-congue-nulla-ac/",
+      "title": "Morbi congue nulla ac",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere vestibulum condimentum. Nam a massa diam. Phasellus lorem neque, finibus ultrices nisl at, tristique tempus magna. Vestibulum in suscipit elit. Nam ornare, nisi eget consequat tristique, mauris nisi luctus nibh, ut tempor nisi orci ac nisi. Pellentesque sodales mauris magna, vel sagittis est maximus at. Phasellus lobortis nisl eu tellus finibus, quis ornare lorem fringilla. Pellentesque malesuada blandit varius. Maecenas tempus tortor eros, ornare venenatis metus tincidunt ac. Praesent finibus ullamcorper scelerisque. Nunc ut turpis et felis mattis efficitur sit amet non neque. Donec sapien justo, iaculis sit amet dictum ac, malesuada id felis. Quisque dignissim justo ut arcu pulvinar mattis. Suspendisse potenti. Vestibulum ipsum augue, pellentesque sagittis augue a, dapibus rhoncus magna. Suspendisse sagittis vulputate ex, tempus sagittis nisl vehicula ut.</p>\n<p>Morbi congue nulla ac hendrerit scelerisque. Donec quis dui a est vestibulum pellentesque. Sed nisi enim, finibus nec tortor at, fermentum finibus nisl. Aenean quis facilisis nisl. Integer non nisi lacinia, suscipit est in, cursus nisi. Vestibulum ultrices, nisl sit amet lobortis pretium, ligula ipsum blandit arcu, sed elementum augue turpis et felis. Morbi vitae dolor congue, condimentum eros convallis, ornare purus. Praesent vitae rutrum massa. Maecenas in consectetur sapien. Ut vel ipsum pretium, laoreet mi sed, molestie tortor. Nullam at venenatis ante. Morbi auctor enim id sapien iaculis rhoncus. Duis non nisl lectus. Sed congue urna at ante auctor, non vestibulum mi maximus.</p>\n<p>Duis tincidunt mattis eros, sed dignissim diam egestas sed. Vestibulum vel turpis ac elit mollis lacinia. Vestibulum bibendum quis lacus ut aliquet. Nunc vel malesuada orci. Fusce gravida ligula at arcu varius tempus. Sed pulvinar bibendum mauris sit amet fermentum. Nulla interdum nisl aliquet ligula interdum, sit amet varius nisi dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus cursus erat leo, at porttitor tellus placerat lacinia. Proin in mi sit amet orci hendrerit aliquam nec sit amet quam. Donec luctus metus magna, id ultricies nulla elementum sed. Maecenas tristique, nibh eu condimentum ultrices, nibh purus vulputate mi, non cursus velit mi id augue. Suspendisse iaculis pulvinar magna in sagittis. Integer at dolor in leo ultrices euismod in eget mauris. </p>\n",
+      "excerpt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere vestibulum condimentum. Nam a massa diam. Phasellus lorem neque, finibus ultrices nisl at, tristique tempus magna. Vestibulum in suscipit elit. Nam ornare, nisi eget consequat tristique, mauris nisi luctus nibh, ut tempor nisi orci ac nisi. Pellentesque sodales mauris magna, vel sagittis est maximus at. &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/2018/10/01/morbi-congue-nulla-ac/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Morbi congue nulla ac&#8221;</span></a></p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/24"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=24"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/24/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 25,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/24/revisions/25"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=24"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories?post=24"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags?post=24"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "3fac2489-1677-524e-bbaa-fbb6212106d2",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "13962c0cfbfdcceb656425ae6249e07d",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "b150cbb5-9392-5a14-a07b-f444d7f200ad": {
+      "wordpress_id": 26,
+      "date": "2018-09-05T13:08:13.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?p=26",
+      "modified": "2018-11-05T13:08:35.000Z",
+      "slug": "donec-convallis-dictum-quam",
+      "status": "publish",
+      "type": "post",
+      "link": "https://wpdemo.gatsbycentral.com/2018/09/05/donec-convallis-dictum-quam/",
+      "title": "Donec convallis dictum quam",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae sodales ex. Phasellus placerat mauris facilisis neque congue accumsan at at erat. Curabitur maximus libero nec enim malesuada placerat. Pellentesque nec aliquam nunc, posuere commodo ipsum. Curabitur luctus ante id urna efficitur, ac venenatis augue placerat. Etiam nec ante in neque lacinia tempus aliquam non est. Suspendisse elementum quis enim tincidunt cursus. Quisque nec ligula id turpis porttitor hendrerit. Proin et vulputate urna, et rutrum tortor.</p>\n<p>Praesent nec interdum lorem, non faucibus turpis. Duis non ullamcorper massa. Quisque lacinia euismod sapien et aliquet. Cras et tortor lorem. Ut ultricies commodo tellus rhoncus iaculis. Aliquam dapibus laoreet ante, vel dignissim ante gravida vulputate. Nunc velit massa, viverra et nisl a, imperdiet vulputate eros. Cras fermentum pharetra lectus at scelerisque. Donec laoreet felis eget nibh faucibus placerat. In interdum massa risus, non mollis dui pellentesque sit amet. Praesent auctor suscipit malesuada.</p>\n<p>Donec convallis dictum quam, sit amet auctor diam rhoncus id. Integer eleifend mauris eget justo aliquet fermentum. Etiam ut fermentum nisl. Quisque quis risus enim. Nam a hendrerit velit. Vestibulum gravida nisi nec purus ultricies consequat. Aenean odio enim, tempus laoreet iaculis eu, tempor tempus sapien. Suspendisse et tortor commodo, suscipit leo eu, pretium libero. Ut luctus dictum augue ut luctus. Duis tincidunt dictum lacinia. Quisque accumsan mollis sem quis sollicitudin. Phasellus lectus massa, ultrices sed placerat vitae, venenatis eu massa. Morbi sed massa ut massa accumsan elementum. Aenean placerat ut leo at placerat. Curabitur elementum, lectus eget porttitor ornare, lectus justo tincidunt tortor, ut vestibulum neque lacus nec purus. Quisque eu aliquam ipsum, nec vulputate quam. </p>\n",
+      "excerpt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae sodales ex. Phasellus placerat mauris facilisis neque congue accumsan at at erat. Curabitur maximus libero nec enim malesuada placerat. Pellentesque nec aliquam nunc, posuere commodo ipsum. Curabitur luctus ante id urna efficitur, ac venenatis augue placerat. Etiam nec ante in neque lacinia tempus aliquam non &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/2018/09/05/donec-convallis-dictum-quam/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Donec convallis dictum quam&#8221;</span></a></p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/26"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=26"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/26/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 27,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/26/revisions/27"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=26"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories?post=26"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags?post=26"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "b150cbb5-9392-5a14-a07b-f444d7f200ad",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "27bf57299a6412900d0402094a5d2dcb",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "724f15ef-f323-50f5-9ee1-820331e892b1": {
+      "wordpress_id": 36,
+      "date": "2018-07-05T13:10:15.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?p=36",
+      "modified": "2018-11-05T13:10:26.000Z",
+      "slug": "sed-cursus-lacus-a-mi-mollis",
+      "status": "publish",
+      "type": "post",
+      "link": "https://wpdemo.gatsbycentral.com/2018/07/05/sed-cursus-lacus-a-mi-mollis/",
+      "title": "Sed cursus lacus a mi mollis",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit vel elit nec tempus. Sed cursus lacus a mi mollis, vitae iaculis libero fermentum. Sed venenatis sapien neque, vel bibendum risus sollicitudin eget. Duis ac mauris dapibus, placerat ligula sed, dapibus ligula. Nullam nec dolor sed metus placerat tincidunt. Aenean sollicitudin ante a eros consectetur, nec placerat neque euismod. Integer id velit eu nibh lobortis dignissim sed vel lacus. Curabitur porta interdum arcu, vitae tempor lorem pellentesque ut.</p>\n<p>Suspendisse potenti. Cras sed bibendum turpis, vitae gravida ante. Proin imperdiet vulputate sem sit amet pretium. Suspendisse lacinia neque vitae velit hendrerit sagittis. Praesent consectetur viverra justo, vel elementum arcu fermentum sit amet. Nam volutpat lacus ut dui vestibulum, a pharetra ex interdum. In efficitur pellentesque metus, eu hendrerit lorem scelerisque ac.</p>\n<p>Sed dolor diam, tempus in tristique et, pretium vel ex. Vestibulum et augue sed magna cursus venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ac ante quis arcu pretium vulputate id a lorem. Praesent sagittis sapien in velit mattis auctor eu sed magna. Donec luctus metus eu rutrum pharetra. Sed ornare velit neque, et tempus tortor suscipit ut. Sed nulla odio, sagittis vitae diam sed, tincidunt volutpat ipsum. Vestibulum vitae tortor non metus lobortis faucibus. Aenean eu malesuada velit. </p>\n",
+      "excerpt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit vel elit nec tempus. Sed cursus lacus a mi mollis, vitae iaculis libero fermentum. Sed venenatis sapien neque, vel bibendum risus sollicitudin eget. Duis ac mauris dapibus, placerat ligula sed, dapibus ligula. Nullam nec dolor sed metus placerat tincidunt. Aenean sollicitudin ante a eros consectetur, &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/2018/07/05/sed-cursus-lacus-a-mi-mollis/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Sed cursus lacus a mi mollis&#8221;</span></a></p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/36"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=36"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/36/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 37,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/36/revisions/37"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=36"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories?post=36"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags?post=36"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "724f15ef-f323-50f5-9ee1-820331e892b1",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "b27ab61ce25874dcc8934e683fcf710b",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "4691db0c-877b-5938-8f59-c109400bdbfd": {
+      "wordpress_id": 32,
+      "date": "2018-06-05T13:09:24.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?p=32",
+      "modified": "2018-11-05T13:09:42.000Z",
+      "slug": "in-hac-habitasse-platea",
+      "status": "publish",
+      "type": "post",
+      "link": "https://wpdemo.gatsbycentral.com/2018/06/05/in-hac-habitasse-platea/",
+      "title": "In hac habitasse platea",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis dictum lacus. Ut vulputate, nisl sed placerat varius, est sem hendrerit neque, eu faucibus nibh augue vitae nibh. Sed at arcu justo. Cras lobortis diam quis dapibus finibus. Sed facilisis dolor neque, quis maximus mauris venenatis ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam condimentum nibh auctor, feugiat quam vitae, vestibulum libero. Fusce aliquam enim sagittis rhoncus mattis. Integer nec vestibulum tortor, quis tristique dolor. Sed vehicula nunc in molestie sagittis. Pellentesque at odio ligula. Etiam purus dui, molestie id condimentum non, accumsan nec neque. Nullam a diam venenatis, varius dolor at, ultricies tellus. Aliquam sagittis ligula ut dignissim bibendum. Donec tristique, nisi sit amet venenatis tincidunt, ligula dolor gravida mi, sed interdum eros neque vitae felis. Maecenas vitae nisi eu ipsum elementum mattis congue in est.</p>\n<p>Phasellus felis dolor, mattis ut magna id, suscipit iaculis purus. Duis in arcu arcu. Mauris sit amet velit vehicula, ultricies erat vitae, accumsan lacus. Nunc molestie ut turpis semper porta. Donec eget erat quis ante facilisis ullamcorper vitae in dui. Etiam bibendum in velit non tristique. Suspendisse tincidunt metus libero, a mattis diam varius at. Ut viverra ornare lectus, vitae blandit ex luctus eu. Integer nec porta lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur congue, eros ac elementum sagittis, metus dolor convallis dui, pretium scelerisque sapien ipsum eu nibh. In hac habitasse platea dictumst. Sed in pulvinar diam. Maecenas mattis vitae leo condimentum rutrum.</p>\n<p>Nunc ullamcorper dui eu urna tristique mattis. In hac habitasse platea dictumst. Ut laoreet quam at ligula vehicula interdum. Integer neque risus, egestas ac pharetra eu, mattis sit amet enim. Vestibulum nec porta purus. Vivamus quis euismod mauris. Morbi justo quam, sodales ut tincidunt a, malesuada sed erat. Etiam id auctor elit. Quisque turpis orci, interdum sit amet sapien in, imperdiet consectetur velit. Nullam in nulla libero. Ut hendrerit condimentum arcu, sed egestas sapien condimentum sit amet. Etiam bibendum, eros at scelerisque accumsan, magna justo pellentesque justo, quis fermentum diam est nec ipsum. </p>\n",
+      "excerpt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis dictum lacus. Ut vulputate, nisl sed placerat varius, est sem hendrerit neque, eu faucibus nibh augue vitae nibh. Sed at arcu justo. Cras lobortis diam quis dapibus finibus. Sed facilisis dolor neque, quis maximus mauris venenatis ut. Interdum et malesuada fames ac ante ipsum primis &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/2018/06/05/in-hac-habitasse-platea/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;In hac habitasse platea&#8221;</span></a></p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/32"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=32"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/32/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 33,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/32/revisions/33"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=32"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories?post=32"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags?post=32"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "4691db0c-877b-5938-8f59-c109400bdbfd",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "81b5b11c445ac2891d92c32cb41c2b7c",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "ada907ea-1526-5c38-a703-66b37194f664": {
+      "wordpress_id": 30,
+      "date": "2018-06-05T13:09:07.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?p=30",
+      "modified": "2018-11-05T13:09:20.000Z",
+      "slug": "sed-sagittis-nibh",
+      "status": "publish",
+      "type": "post",
+      "link": "https://wpdemo.gatsbycentral.com/2018/06/05/sed-sagittis-nibh/",
+      "title": "Sed sagittis nibh",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mattis sapien. Mauris erat arcu, tristique at vulputate porta, consectetur ac risus. Proin non ornare ligula. Nunc nibh lorem, faucibus eu felis sit amet, consequat congue lectus. Maecenas ante enim, volutpat eget elementum vitae, sollicitudin id ligula. Nulla nisl felis, fermentum et tortor vel, facilisis efficitur magna. Ut placerat rutrum elit molestie facilisis. Donec nec nunc id lacus ornare ultricies ut a enim. Pellentesque et efficitur sem, in maximus nulla.</p>\n<p>Suspendisse porttitor pellentesque elit, ut pulvinar lorem suscipit finibus. Nulla tincidunt consequat massa, et suscipit ligula auctor sit amet. Nunc vulputate malesuada euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc accumsan diam et tortor sollicitudin, quis elementum leo pellentesque. Etiam vel mollis sem, in congue odio. Quisque quis dolor libero. Fusce ultrices, urna ut facilisis rutrum, lectus ante dignissim nulla, a bibendum massa diam at sem.</p>\n<p>Proin vestibulum leo quis mauris porttitor, at aliquet magna condimentum. Sed sagittis nibh ac accumsan fringilla. Donec semper, eros eget lacinia imperdiet, neque lorem semper tortor, ac commodo felis sem condimentum erat. Cras scelerisque quam metus, pharetra sagittis est iaculis quis. Fusce sollicitudin nulla dolor, a faucibus odio tempor nec. Pellentesque suscipit et ante vel rutrum. Proin faucibus sapien ipsum, at auctor tellus accumsan in. </p>\n",
+      "excerpt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mattis sapien. Mauris erat arcu, tristique at vulputate porta, consectetur ac risus. Proin non ornare ligula. Nunc nibh lorem, faucibus eu felis sit amet, consequat congue lectus. Maecenas ante enim, volutpat eget elementum vitae, sollicitudin id ligula. Nulla nisl felis, fermentum et tortor vel, facilisis &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/2018/06/05/sed-sagittis-nibh/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Sed sagittis nibh&#8221;</span></a></p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/30"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=30"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/30/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 31,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/30/revisions/31"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=30"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories?post=30"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags?post=30"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "ada907ea-1526-5c38-a703-66b37194f664",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "801e827ef129090b472e9f25d646b501",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "6d5fda42-6c68-5299-8275-6e9f8716765e": {
+      "wordpress_id": 34,
+      "date": "2018-03-05T13:09:52.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?p=34",
+      "modified": "2018-11-05T13:10:06.000Z",
+      "slug": "aliquam-ac-nulla-egestas",
+      "status": "publish",
+      "type": "post",
+      "link": "https://wpdemo.gatsbycentral.com/2018/03/05/aliquam-ac-nulla-egestas/",
+      "title": "Aliquam ac nulla egestas",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, massa sed finibus eleifend, purus tortor vestibulum est, a ullamcorper eros quam ac leo. In hendrerit tincidunt elit, a pharetra nunc imperdiet a. Nulla quis justo vel dui fermentum consequat ac eget tellus. Quisque molestie sem velit, et semper mauris malesuada a. Vestibulum ac vehicula augue, vitae laoreet velit. Cras tempus dolor libero, non pretium felis interdum eget. In laoreet elit nunc, ut finibus ante sollicitudin in. Pellentesque aliquet rhoncus ligula, vitae imperdiet est sagittis eu. Morbi leo ante, tristique in pharetra at, tristique at erat. Sed at mi faucibus, gravida dolor et, fringilla massa. Curabitur eu ex ante. Nullam et nunc et magna tempus tempus. Vivamus malesuada viverra orci ut faucibus. Vivamus nulla turpis, gravida ut porttitor ut, pulvinar ac est. Donec aliquet at enim porttitor fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>\n<p>Nam sapien nibh, pellentesque sit amet sapien tempor, condimentum pulvinar quam. Phasellus malesuada dictum porttitor. Nam augue tellus, iaculis eget dignissim tincidunt, luctus ut libero. Phasellus non iaculis nunc. Ut interdum dolor at ligula volutpat placerat. Nam velit sapien, lacinia vitae orci consectetur, fermentum tincidunt turpis. Cras turpis arcu, venenatis id tellus ac, pharetra pellentesque ligula. Morbi venenatis bibendum faucibus. Sed et pharetra libero. Duis lobortis mattis est, eu posuere augue gravida ut.</p>\n<p>Vivamus elementum semper nisl, non rutrum nulla rutrum sed. Nunc luctus risus vel velit dictum, nec ornare libero mattis. Sed nec lobortis metus. Nunc luctus est vestibulum erat feugiat, vel mollis massa pulvinar. Proin at odio sit amet risus varius bibendum ut a leo. Quisque vel eleifend enim, vitae placerat lorem. Duis eget nibh quis dui euismod egestas in sed mauris. Quisque eu tortor vitae sapien ornare tristique. Aliquam blandit neque id ligula accumsan, eget sodales massa semper. Integer bibendum est in nulla accumsan congue. In hac habitasse platea dictumst. Nulla semper ullamcorper dolor, eget pellentesque nisi tempus porta. Aliquam ac nulla egestas, facilisis erat vitae, ornare lectus. </p>\n",
+      "excerpt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, massa sed finibus eleifend, purus tortor vestibulum est, a ullamcorper eros quam ac leo. In hendrerit tincidunt elit, a pharetra nunc imperdiet a. Nulla quis justo vel dui fermentum consequat ac eget tellus. Quisque molestie sem velit, et semper mauris malesuada a. Vestibulum ac vehicula &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/2018/03/05/aliquam-ac-nulla-egestas/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Aliquam ac nulla egestas&#8221;</span></a></p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/34"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=34"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/34/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 35,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/34/revisions/35"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=34"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories?post=34"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags?post=34"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "6d5fda42-6c68-5299-8275-6e9f8716765e",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "61e6d96b6094fb66f737b55df9dadb18",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "991e7359-5ba0-5114-91b5-35a968224bcd": {
+      "wordpress_id": 28,
+      "date": "2018-01-05T13:08:36.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?p=28",
+      "modified": "2018-11-05T13:08:52.000Z",
+      "slug": "maecenas-pellentesque-sollicitudin",
+      "status": "publish",
+      "type": "post",
+      "link": "https://wpdemo.gatsbycentral.com/2018/01/05/maecenas-pellentesque-sollicitudin/",
+      "title": "Maecenas pellentesque sollicitudin",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere fringilla rhoncus. Ut at orci suscipit, porttitor leo a, gravida mauris. Morbi vitae accumsan dui, eu pharetra tortor. Morbi et tincidunt dui, at iaculis odio. Nullam non dui accumsan, malesuada ligula a, egestas magna. Suspendisse efficitur, purus sit amet auctor consequat, turpis purus scelerisque erat, ut pulvinar erat purus id enim. Sed accumsan sagittis dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed at elit eros. Phasellus id euismod urna. In eget purus id urna aliquam pellentesque. Vivamus tristique lobortis nisl.</p>\n<p>Mauris hendrerit purus et urna varius, ut dictum tortor molestie. Nulla id iaculis mauris, quis mollis nunc. Mauris neque orci, fermentum euismod arcu et, cursus ultrices est. Donec commodo, metus a pharetra pharetra, lectus justo lacinia nisi, imperdiet mollis turpis nibh nec est. Mauris laoreet arcu non dignissim auctor. Suspendisse ultricies commodo nulla ut dignissim. Praesent semper id magna vel congue. Proin maximus odio ac urna maximus, non dapibus lacus finibus.</p>\n<p>Proin ut fringilla augue. Maecenas pellentesque sollicitudin elit vitae dignissim. Ut eget leo justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse augue metus, lobortis vitae turpis vel, maximus bibendum lectus. Nulla facilisi. Morbi ut leo nec dolor vehicula congue id vel est. Cras accumsan porta tortor sit amet pellentesque. Maecenas aliquam faucibus quam. Suspendisse eu congue turpis. Nulla blandit nunc ut gravida rhoncus. In leo ex, pulvinar eget semper eget, hendrerit quis nunc. Curabitur blandit lorem quis ligula congue consequat. </p>\n",
+      "excerpt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere fringilla rhoncus. Ut at orci suscipit, porttitor leo a, gravida mauris. Morbi vitae accumsan dui, eu pharetra tortor. Morbi et tincidunt dui, at iaculis odio. Nullam non dui accumsan, malesuada ligula a, egestas magna. Suspendisse efficitur, purus sit amet auctor consequat, turpis purus scelerisque erat, &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/2018/01/05/maecenas-pellentesque-sollicitudin/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Maecenas pellentesque sollicitudin&#8221;</span></a></p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/28"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=28"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/28/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 29,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/28/revisions/29"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=28"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories?post=28"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags?post=28"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "991e7359-5ba0-5114-91b5-35a968224bcd",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "e845585fe05e19210925355541a1d2c5",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "bddf8a3b-4830-5208-8b1a-4f5713e95fe5": {
+      "wordpress_id": 19,
+      "date": "2018-10-30T12:10:27.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?page_id=19",
+      "modified": "2018-10-30T12:13:37.000Z",
+      "slug": "child-of-draft",
+      "status": "publish",
+      "type": "page",
+      "link": "https://wpdemo.gatsbycentral.com/draft-page/child-of-draft/",
+      "title": "Child of Draft",
+      "content": "<p>This page is the child of a draft page. WordPress doesn&#8217;t easily allow you to create that structure, but perhaps it&#8217;s possible anyway&#8230; 🙂</p>\n",
+      "excerpt": "<p>This page is the child of a draft page. WordPress doesn&#8217;t easily allow you to create that structure, but perhaps it&#8217;s possible anyway&#8230; 🙂</p>\n",
+      "wordpress_parent": 16,
+      "menu_order": 0,
+      "comment_status": "closed",
+      "ping_status": "closed",
+      "template": "",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages/19"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=19"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages/19/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 20,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages/19/revisions/20"
+          }
+        ],
+        "up": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages/16"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=19"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "bddf8a3b-4830-5208-8b1a-4f5713e95fe5",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__PAGE",
+        "contentDigest": "6e52c3a1989462603fcb38a3c4406a8f",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "6acaebdb-dce6-5542-99fb-1c4511b5194d": {
+      "wordpress_id": 3,
+      "date": "2018-10-03T17:01:19.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?page_id=3",
+      "modified": "2018-10-04T15:58:33.000Z",
+      "slug": "privacy-policy",
+      "status": "publish",
+      "type": "page",
+      "link": "https://wpdemo.gatsbycentral.com/privacy-policy/",
+      "title": "Privacy Policy",
+      "content": "<h2>Who we are</h2>\n<p>Our website address is: http://wpdemo.gatsbycentral.com.</p>\n<h2>What personal data we collect and why we collect it</h2>\n<h3>Comments</h3>\n<p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p>\n<p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p>\n<h3>Media</h3>\n<p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p>\n<h3>Contact forms</h3>\n<h3>Cookies</h3>\n<p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p>\n<p>If you have an account and you log in to this site, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p>\n<p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p>\n<p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p>\n<h3>Embedded content from other websites</h3>\n<p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p>\n<p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p>\n<h3>Analytics</h3>\n<h2>Who we share your data with</h2>\n<h2>How long we retain your data</h2>\n<p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p>\n<p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p>\n<h2>What rights you have over your data</h2>\n<p>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p>\n<h2>Where we send your data</h2>\n<p>Visitor comments may be checked through an automated spam detection service.</p>\n<h2>Your contact information</h2>\n<h2>Additional information</h2>\n<h3>How we protect your data</h3>\n<h3>What data breach procedures we have in place</h3>\n<h3>What third parties we receive data from</h3>\n<h3>What automated decision making and/or profiling we do with user data</h3>\n<h3>Industry regulatory disclosure requirements</h3>\n",
+      "excerpt": "<p>Who we are Our website address is: http://wpdemo.gatsbycentral.com. What personal data we collect and why we collect it Comments When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection. An anonymized string created from &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/privacy-policy/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Privacy Policy&#8221;</span></a></p>\n",
+      "wordpress_parent": 0,
+      "menu_order": 0,
+      "comment_status": "closed",
+      "ping_status": "closed",
+      "template": "",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages/3"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=3"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages/3/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 9,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages/3/revisions/9"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=3"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "6acaebdb-dce6-5542-99fb-1c4511b5194d",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__PAGE",
+        "contentDigest": "c0a4807a824c3ed421274f12c33d81ff",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "147ce629-51d8-5b6f-97a5-bd0c69893bd4": {
+      "wordpress_id": 2,
+      "date": "2018-10-03T17:01:19.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/?page_id=2",
+      "modified": "2018-10-03T17:01:19.000Z",
+      "slug": "sample-page",
+      "status": "publish",
+      "type": "page",
+      "link": "https://wpdemo.gatsbycentral.com/sample-page/",
+      "title": "Sample Page",
+      "content": "<p>This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>\n<blockquote><p>Hi there! I&#8217;m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin&#8217; caught in the rain.)</p></blockquote>\n<p>&#8230;or something like this:</p>\n<blockquote><p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p></blockquote>\n<p>As a new WordPress user, you should go to <a href=\"http://wpdemo.gatsbycentral.com/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>\n",
+      "excerpt": "<p>This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this: Hi there! I&#8217;m a bike messenger &hellip; </p>\n<p class=\"link-more\"><a href=\"https://wpdemo.gatsbycentral.com/sample-page/\" class=\"more-link\">Continue reading<span class=\"screen-reader-text\"> &#8220;Sample Page&#8221;</span></a></p>\n",
+      "wordpress_parent": 0,
+      "menu_order": 0,
+      "comment_status": "closed",
+      "ping_status": "open",
+      "template": "",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages/2"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=2"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 0,
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages/2/revisions"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media?parent=2"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "147ce629-51d8-5b6f-97a5-bd0c69893bd4",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__PAGE",
+        "contentDigest": "ca8ec5465dffa7aa597f3e87a1f98f78",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "7f6e6100-fa9b-5de0-a44f-db4606a84957": {
+      "wordpress_id": 12,
+      "date": "2018-10-04T16:12:40.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1778693-1200x826.jpg",
+      "modified": "2018-10-04T16:12:40.000Z",
+      "slug": "pixnio-1778693-1200x826",
+      "status": "inherit",
+      "type": "attachment",
+      "link": "https://wpdemo.gatsbycentral.com/2018/10/04/sample-media-post/pixnio-1778693-1200x826/",
+      "title": "PIXNIO-1778693-1200&#215;826",
+      "comment_status": "open",
+      "ping_status": "closed",
+      "template": "",
+      "meta": [],
+      "description": "<p class=\"attachment\"><a href='https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1778693-1200x826.jpg'><img width=\"300\" height=\"207\" src=\"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1778693-1200x826-300x207.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1778693-1200x826-300x207.jpg 300w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1778693-1200x826-768x529.jpg 768w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1778693-1200x826-1024x705.jpg 1024w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1778693-1200x826.jpg 1200w\" sizes=\"100vw\" /></a></p>\n",
+      "caption": "",
+      "alt_text": "",
+      "media_type": "image",
+      "mime_type": "image/jpeg",
+      "media_details": {
+        "width": 1200,
+        "height": 826,
+        "file": "2018/10/PIXNIO-1778693-1200x826.jpg",
+        "image_meta": {
+          "aperture": "5.6",
+          "credit": "",
+          "camera": "Canon EOS 100D",
+          "caption": "",
+          "created_timestamp": "0",
+          "copyright": "pixel2013",
+          "focal_length": "76",
+          "iso": "100",
+          "shutter_speed": "0.04",
+          "title": "",
+          "orientation": "0",
+          "keywords": []
+        }
+      },
+      "post": 10,
+      "source_url": "https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1778693-1200x826.jpg",
+      "_links": {
+        "self": [
+          {
+            "attributes": [],
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media/12"
+          }
+        ],
+        "collection": [
+          {
+            "attributes": [],
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media"
+          }
+        ],
+        "about": [
+          {
+            "attributes": [],
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/attachment"
+          }
+        ],
+        "author": [
+          {
+            "attributes": {
+              "embeddable": true
+            },
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "attributes": {
+              "embeddable": true
+            },
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=12"
+          }
+        ]
+      },
+      "id": "7f6e6100-fa9b-5de0-a44f-db4606a84957",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "localFile___NODE": "7ee94779-311a-5a8e-868d-1c1234d11e1a",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_media",
+        "contentDigest": "ac9987496ca43575c967ae44a26ef669",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "dd63726d-698b-5d5e-8ca4-b6605a6c12ed": {
+      "wordpress_id": 11,
+      "date": "2018-10-04T16:12:24.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730.jpg",
+      "modified": "2018-10-04T16:12:24.000Z",
+      "slug": "pixnio-339023-1100x730",
+      "status": "inherit",
+      "type": "attachment",
+      "link": "https://wpdemo.gatsbycentral.com/2018/10/04/sample-media-post/pixnio-339023-1100x730/",
+      "title": "PIXNIO-339023-1100&#215;730",
+      "comment_status": "open",
+      "ping_status": "closed",
+      "template": "",
+      "meta": [],
+      "description": "<p class=\"attachment\"><a href='https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730.jpg'><img width=\"300\" height=\"199\" src=\"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730-300x199.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730-300x199.jpg 300w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730-768x510.jpg 768w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730-1024x680.jpg 1024w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730.jpg 1100w\" sizes=\"100vw\" /></a></p>\n",
+      "caption": "",
+      "alt_text": "",
+      "media_type": "image",
+      "mime_type": "image/jpeg",
+      "media_details": {
+        "width": 1100,
+        "height": 730,
+        "file": "2018/10/PIXNIO-339023-1100x730.jpg",
+        "image_meta": {
+          "aperture": "2.8",
+          "credit": "",
+          "camera": "NIKON D5000",
+          "caption": "",
+          "created_timestamp": "0",
+          "copyright": "",
+          "focal_length": "17",
+          "iso": "162",
+          "shutter_speed": "0.0004",
+          "title": "",
+          "orientation": "0",
+          "keywords": []
+        }
+      },
+      "post": 10,
+      "source_url": "https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-339023-1100x730.jpg",
+      "_links": {
+        "self": [
+          {
+            "attributes": [],
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media/11"
+          }
+        ],
+        "collection": [
+          {
+            "attributes": [],
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media"
+          }
+        ],
+        "about": [
+          {
+            "attributes": [],
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/attachment"
+          }
+        ],
+        "author": [
+          {
+            "attributes": {
+              "embeddable": true
+            },
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "attributes": {
+              "embeddable": true
+            },
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=11"
+          }
+        ]
+      },
+      "id": "dd63726d-698b-5d5e-8ca4-b6605a6c12ed",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "localFile___NODE": "4ca660b8-0c17-5d55-97a0-bdec727eb2d4",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_media",
+        "contentDigest": "049e4cbc50539a3e2faa292f287a7100",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "1f8bdfb0-6b93-51b9-8d04-341dea713002": {
+      "wordpress_id": 7,
+      "date": "2018-10-04T09:35:44.000Z",
+      "guid": "http://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1757540-1167x900.jpg",
+      "modified": "2018-10-04T09:35:44.000Z",
+      "slug": "pixnio-1757540-1167x900",
+      "status": "inherit",
+      "type": "attachment",
+      "link": "https://wpdemo.gatsbycentral.com/pixnio-1757540-1167x900/",
+      "title": "PIXNIO-1757540-1167&#215;900",
+      "comment_status": "open",
+      "ping_status": "closed",
+      "template": "",
+      "meta": [],
+      "description": "<p class=\"attachment\"><a href='https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1757540-1167x900.jpg'><img width=\"300\" height=\"231\" src=\"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1757540-1167x900-300x231.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1757540-1167x900-300x231.jpg 300w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1757540-1167x900-768x592.jpg 768w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1757540-1167x900-1024x790.jpg 1024w, https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1757540-1167x900.jpg 1167w\" sizes=\"100vw\" /></a></p>\n",
+      "caption": "",
+      "alt_text": "",
+      "media_type": "image",
+      "mime_type": "image/jpeg",
+      "media_details": {
+        "width": 1167,
+        "height": 900,
+        "file": "2018/10/PIXNIO-1757540-1167x900.jpg",
+        "image_meta": {
+          "aperture": "5",
+          "credit": "",
+          "camera": "Canon EOS 550D",
+          "caption": "",
+          "created_timestamp": "0",
+          "copyright": "pixel2013",
+          "focal_length": "67",
+          "iso": "100",
+          "shutter_speed": "0.005",
+          "title": "",
+          "orientation": "0",
+          "keywords": []
+        }
+      },
+      "post": null,
+      "source_url": "https://wpdemo.gatsbycentral.com/wp-content/uploads/2018/10/PIXNIO-1757540-1167x900.jpg",
+      "_links": {
+        "self": [
+          {
+            "attributes": [],
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media/7"
+          }
+        ],
+        "collection": [
+          {
+            "attributes": [],
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media"
+          }
+        ],
+        "about": [
+          {
+            "attributes": [],
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types/attachment"
+          }
+        ],
+        "author": [
+          {
+            "attributes": {
+              "embeddable": true
+            },
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "attributes": {
+              "embeddable": true
+            },
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments?post=7"
+          }
+        ]
+      },
+      "id": "1f8bdfb0-6b93-51b9-8d04-341dea713002",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "localFile___NODE": "a54357ab-b57a-5d75-b375-59f114794de6",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_media",
+        "contentDigest": "64158b2ba798cdf2770d0268a4222dc4",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "a2d1aa19-233b-5acb-b193-a8f8dbfb3e80": {
+      "wordpress_id": "post",
+      "description": "",
+      "hierarchical": false,
+      "name": "Posts",
+      "slug": "post",
+      "taxonomies": [
+        "category",
+        "post_tag"
+      ],
+      "rest_base": "posts",
+      "_links": {
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "a2d1aa19-233b-5acb-b193-a8f8dbfb3e80",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_types",
+        "contentDigest": "ee95fe233b64a9ba61e32ab37b686836",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "c8b09b7f-356c-5009-981d-86669dcbafcc": {
+      "wordpress_id": "page",
+      "description": "",
+      "hierarchical": true,
+      "name": "Pages",
+      "slug": "page",
+      "taxonomies": [],
+      "rest_base": "pages",
+      "_links": {
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/pages"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "c8b09b7f-356c-5009-981d-86669dcbafcc",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_types",
+        "contentDigest": "db9bb4e2c44285bc81c1697881710ea0",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "b69811c2-484a-5b8c-9c5a-d0da3737bf18": {
+      "wordpress_id": "attachment",
+      "description": "",
+      "hierarchical": false,
+      "name": "Media",
+      "slug": "attachment",
+      "taxonomies": [],
+      "rest_base": "media",
+      "_links": {
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/types"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/media"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "b69811c2-484a-5b8c-9c5a-d0da3737bf18",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_types",
+        "contentDigest": "db45a4189afba390ddbb5664ecc8f3df",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "59223e42-064c-537b-b2f6-e7a534391e19": {
+      "wordpress_id": "publish",
+      "name": "Published",
+      "public": true,
+      "queryable": true,
+      "slug": "publish",
+      "_links": {
+        "archives": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts"
+          }
+        ]
+      },
+      "id": "59223e42-064c-537b-b2f6-e7a534391e19",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_statuses",
+        "contentDigest": "194a6bc4100b4b9ca0014988e04bec1c",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "a5a9ef9b-18e6-5a52-bce8-ed8b7aa25844": {
+      "wordpress_id": "category",
+      "name": "Categories",
+      "slug": "category",
+      "description": "",
+      "types": [
+        "post"
+      ],
+      "hierarchical": true,
+      "rest_base": "categories",
+      "_links": {
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/taxonomies"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "a5a9ef9b-18e6-5a52-bce8-ed8b7aa25844",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_taxonomies",
+        "contentDigest": "0a4ea15715bd6ba3c1db6c0ebe9bc309",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "92aef5e8-a969-590e-8788-9b65d3c78cce": {
+      "wordpress_id": "post_tag",
+      "name": "Tags",
+      "slug": "post_tag",
+      "description": "",
+      "types": [
+        "post"
+      ],
+      "hierarchical": false,
+      "rest_base": "tags",
+      "_links": {
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/taxonomies"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "92aef5e8-a969-590e-8788-9b65d3c78cce",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_taxonomies",
+        "contentDigest": "fc430c177bfa4ed86ab4f97553e19429",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "f24b5a9e-ed37-56c1-978a-9c95dbc988a9": {
+      "wordpress_id": 1,
+      "count": 11,
+      "description": "",
+      "link": "https://wpdemo.gatsbycentral.com/category/uncategorized/",
+      "name": "Uncategorized",
+      "slug": "uncategorized",
+      "wordpress_parent": 0,
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories/1"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/categories"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/taxonomies/category"
+          }
+        ],
+        "wp_post_type": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts?categories=1"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "f24b5a9e-ed37-56c1-978a-9c95dbc988a9",
+      "taxonomy___NODE": "a5a9ef9b-18e6-5a52-bce8-ed8b7aa25844",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__CATEGORY",
+        "contentDigest": "26ad5d9b8a72a3c9e41b6521a6a0bfea",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "052e5749-9865-5f8b-8e7f-830ebe467c86": {
+      "wordpress_id": 3,
+      "count": 1,
+      "description": "",
+      "link": "https://wpdemo.gatsbycentral.com/tag/bar/",
+      "name": "bar",
+      "slug": "bar",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags/3"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp_post_type": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts?tags=3"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "052e5749-9865-5f8b-8e7f-830ebe467c86",
+      "taxonomy___NODE": "92aef5e8-a969-590e-8788-9b65d3c78cce",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__TAG",
+        "contentDigest": "149cc4355d1241fdcebf9a902cca4dee",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "523491d5-4c21-5c07-a1b5-7f04a6c69e96": {
+      "wordpress_id": 2,
+      "count": 1,
+      "description": "",
+      "link": "https://wpdemo.gatsbycentral.com/tag/foo/",
+      "name": "foo",
+      "slug": "foo",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags/2"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp_post_type": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts?tags=2"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "523491d5-4c21-5c07-a1b5-7f04a6c69e96",
+      "taxonomy___NODE": "92aef5e8-a969-590e-8788-9b65d3c78cce",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__TAG",
+        "contentDigest": "9cc7a49b78eef66d509e9b01ea6ecd19",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "c018acb4-c710-5329-9423-762fa8ea4a48": {
+      "wordpress_id": 1,
+      "name": "gc",
+      "url": "",
+      "description": "",
+      "link": "https://wpdemo.gatsbycentral.com/author/gc/",
+      "slug": "gc",
+      "avatar_urls": {
+        "wordpress_24": "https://secure.gravatar.com/avatar/d1231d12eb450902d62cdeb1645512ce?s=24&d=mm&r=g",
+        "wordpress_48": "https://secure.gravatar.com/avatar/d1231d12eb450902d62cdeb1645512ce?s=48&d=mm&r=g",
+        "wordpress_96": "https://secure.gravatar.com/avatar/d1231d12eb450902d62cdeb1645512ce?s=96&d=mm&r=g"
+      },
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/users"
+          }
+        ]
+      },
+      "id": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "all_authored_entities___NODE": [
+        "7296d607-5f71-5e98-8e73-f6149a0675ca",
+        "73027541-7763-5d83-b88a-6db88158f828",
+        "2347739f-f4fa-5d13-8eac-4a0059e4ff82",
+        "099ae931-5fbf-5690-8148-c679b17b745c",
+        "3fac2489-1677-524e-bbaa-fbb6212106d2",
+        "b150cbb5-9392-5a14-a07b-f444d7f200ad",
+        "724f15ef-f323-50f5-9ee1-820331e892b1",
+        "4691db0c-877b-5938-8f59-c109400bdbfd",
+        "ada907ea-1526-5c38-a703-66b37194f664",
+        "6d5fda42-6c68-5299-8275-6e9f8716765e",
+        "991e7359-5ba0-5114-91b5-35a968224bcd",
+        "bddf8a3b-4830-5208-8b1a-4f5713e95fe5",
+        "6acaebdb-dce6-5542-99fb-1c4511b5194d",
+        "147ce629-51d8-5b6f-97a5-bd0c69893bd4",
+        "7f6e6100-fa9b-5de0-a44f-db4606a84957",
+        "dd63726d-698b-5d5e-8ca4-b6605a6c12ed",
+        "1f8bdfb0-6b93-51b9-8d04-341dea713002"
+      ],
+      "authored_wordpress__POST___NODE": [
+        "7296d607-5f71-5e98-8e73-f6149a0675ca",
+        "73027541-7763-5d83-b88a-6db88158f828",
+        "2347739f-f4fa-5d13-8eac-4a0059e4ff82",
+        "099ae931-5fbf-5690-8148-c679b17b745c",
+        "3fac2489-1677-524e-bbaa-fbb6212106d2",
+        "b150cbb5-9392-5a14-a07b-f444d7f200ad",
+        "724f15ef-f323-50f5-9ee1-820331e892b1",
+        "4691db0c-877b-5938-8f59-c109400bdbfd",
+        "ada907ea-1526-5c38-a703-66b37194f664",
+        "6d5fda42-6c68-5299-8275-6e9f8716765e",
+        "991e7359-5ba0-5114-91b5-35a968224bcd"
+      ],
+      "authored_wordpress__PAGE___NODE": [
+        "bddf8a3b-4830-5208-8b1a-4f5713e95fe5",
+        "6acaebdb-dce6-5542-99fb-1c4511b5194d",
+        "147ce629-51d8-5b6f-97a5-bd0c69893bd4"
+      ],
+      "authored_wordpress__wp_media___NODE": [
+        "7f6e6100-fa9b-5de0-a44f-db4606a84957",
+        "dd63726d-698b-5d5e-8ca4-b6605a6c12ed",
+        "1f8bdfb0-6b93-51b9-8d04-341dea713002"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_users",
+        "contentDigest": "ace95fa0fe4592b837371d9386bb19f3",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "dc03b695-869e-5f7a-b0b8-c82dddeea62f": {
+      "wordpress_id": 1,
+      "post": 1,
+      "wordpress_parent": 0,
+      "author": 0,
+      "author_name": "A WordPress Commenter",
+      "author_url": "https://wordpress.org/",
+      "date": "2018-10-03T17:01:19.000Z",
+      "content": "<p>Hi, this is a comment.<br />\nTo get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.<br />\nCommenter avatars come from <a href=\"https://gravatar.com\">Gravatar</a>.</p>\n",
+      "link": "https://wpdemo.gatsbycentral.com/2018/10/03/hello-world/#comment-1",
+      "status": "approved",
+      "type": "comment",
+      "author_avatar_urls": {
+        "wordpress_24": "https://secure.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=24&d=mm&r=g",
+        "wordpress_48": "https://secure.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=48&d=mm&r=g",
+        "wordpress_96": "https://secure.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=96&d=mm&r=g"
+      },
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments/1"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/comments"
+          }
+        ],
+        "up": [
+          {
+            "embeddable": true,
+            "post_type": "post",
+            "href": "https://wpdemo.gatsbycentral.com/wp-json/wp/v2/posts/1"
+          }
+        ]
+      },
+      "id": "dc03b695-869e-5f7a-b0b8-c82dddeea62f",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_comments",
+        "contentDigest": "3080bdfed8c5b1b55aff174be94a4383",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "038ece9f-326d-5bb0-8f17-1bb72ce06c57": {
+      "wordpress_id": "acf",
+      "id": "038ece9f-326d-5bb0-8f17-1bb72ce06c57",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_options",
+        "contentDigest": "bd3f9e96cbd367813507cc187dcb7512",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "SitePage /child-of-draft/": {
+      "jsonName": "child-of-draft-83c",
+      "internalComponentName": "ComponentChildOfDraft",
+      "path": "/child-of-draft/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/page.js",
+      "componentChunkName": "component---src-templates-page-js",
+      "context": {
+        "id": "bddf8a3b-4830-5208-8b1a-4f5713e95fe5"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/page.js",
+      "id": "SitePage /child-of-draft/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "4bf9031533d361c49fb26bfba6c45432",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /privacy-policy/": {
+      "jsonName": "privacy-policy-6b7",
+      "internalComponentName": "ComponentPrivacyPolicy",
+      "path": "/privacy-policy/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/page.js",
+      "componentChunkName": "component---src-templates-page-js",
+      "context": {
+        "id": "6acaebdb-dce6-5542-99fb-1c4511b5194d"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/page.js",
+      "id": "SitePage /privacy-policy/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "1192de1bd91be602a39d566d40a91267",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /sample-page/": {
+      "jsonName": "sample-page-b1e",
+      "internalComponentName": "ComponentSamplePage",
+      "path": "/sample-page/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/page.js",
+      "componentChunkName": "component---src-templates-page-js",
+      "context": {
+        "id": "147ce629-51d8-5b6f-97a5-bd0c69893bd4"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/page.js",
+      "id": "SitePage /sample-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "13a0fca50188ec0d88ea6af1a23cacd2",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /sample-media-post/": {
+      "jsonName": "sample-media-post-5f4",
+      "internalComponentName": "ComponentSampleMediaPost",
+      "path": "/sample-media-post/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "componentChunkName": "component---src-templates-post-js",
+      "context": {
+        "id": "7296d607-5f71-5e98-8e73-f6149a0675ca"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "id": "SitePage /sample-media-post/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "91953eb4d8f71423f983b451d001362b",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /morbi-rhoncus-malesuada/": {
+      "jsonName": "morbi-rhoncus-malesuada-e2f",
+      "internalComponentName": "ComponentMorbiRhoncusMalesuada",
+      "path": "/morbi-rhoncus-malesuada/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "componentChunkName": "component---src-templates-post-js",
+      "context": {
+        "id": "73027541-7763-5d83-b88a-6db88158f828"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "id": "SitePage /morbi-rhoncus-malesuada/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "007264f160c8335fefac4c363aa271a3",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /hello-world/": {
+      "jsonName": "hello-world-8bc",
+      "internalComponentName": "ComponentHelloWorld",
+      "path": "/hello-world/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "componentChunkName": "component---src-templates-post-js",
+      "context": {
+        "id": "2347739f-f4fa-5d13-8eac-4a0059e4ff82"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "id": "SitePage /hello-world/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5b376db7c00a96a1128b292195926ba9",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /nam-aliquam-vitae-metus-et-ornare/": {
+      "jsonName": "nam-aliquam-vitae-metus-et-ornare-df6",
+      "internalComponentName": "ComponentNamAliquamVitaeMetusEtOrnare",
+      "path": "/nam-aliquam-vitae-metus-et-ornare/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "componentChunkName": "component---src-templates-post-js",
+      "context": {
+        "id": "099ae931-5fbf-5690-8148-c679b17b745c"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "id": "SitePage /nam-aliquam-vitae-metus-et-ornare/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "e80b641c00259c9c0200faa07625ecfb",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /morbi-congue-nulla-ac/": {
+      "jsonName": "morbi-congue-nulla-ac-e0c",
+      "internalComponentName": "ComponentMorbiCongueNullaAc",
+      "path": "/morbi-congue-nulla-ac/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "componentChunkName": "component---src-templates-post-js",
+      "context": {
+        "id": "3fac2489-1677-524e-bbaa-fbb6212106d2"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "id": "SitePage /morbi-congue-nulla-ac/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "43d2f9e2441b10a04bd841791cb87868",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /donec-convallis-dictum-quam/": {
+      "jsonName": "donec-convallis-dictum-quam-f0c",
+      "internalComponentName": "ComponentDonecConvallisDictumQuam",
+      "path": "/donec-convallis-dictum-quam/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "componentChunkName": "component---src-templates-post-js",
+      "context": {
+        "id": "b150cbb5-9392-5a14-a07b-f444d7f200ad"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "id": "SitePage /donec-convallis-dictum-quam/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "1bce1fe9db65b398504afa9e87182dfb",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /sed-cursus-lacus-a-mi-mollis/": {
+      "jsonName": "sed-cursus-lacus-a-mi-mollis-925",
+      "internalComponentName": "ComponentSedCursusLacusAMiMollis",
+      "path": "/sed-cursus-lacus-a-mi-mollis/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "componentChunkName": "component---src-templates-post-js",
+      "context": {
+        "id": "724f15ef-f323-50f5-9ee1-820331e892b1"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "id": "SitePage /sed-cursus-lacus-a-mi-mollis/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0aeadfd32c4582897c6e7bcca80a55bd",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /in-hac-habitasse-platea/": {
+      "jsonName": "in-hac-habitasse-platea-f98",
+      "internalComponentName": "ComponentInHacHabitassePlatea",
+      "path": "/in-hac-habitasse-platea/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "componentChunkName": "component---src-templates-post-js",
+      "context": {
+        "id": "4691db0c-877b-5938-8f59-c109400bdbfd"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "id": "SitePage /in-hac-habitasse-platea/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "a42bd85a0f3614b81b111a1051c6a3c1",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /sed-sagittis-nibh/": {
+      "jsonName": "sed-sagittis-nibh-a6e",
+      "internalComponentName": "ComponentSedSagittisNibh",
+      "path": "/sed-sagittis-nibh/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "componentChunkName": "component---src-templates-post-js",
+      "context": {
+        "id": "ada907ea-1526-5c38-a703-66b37194f664"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "id": "SitePage /sed-sagittis-nibh/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0bdee33cd37dcc5e9546e648553ccc4e",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /aliquam-ac-nulla-egestas/": {
+      "jsonName": "aliquam-ac-nulla-egestas-67f",
+      "internalComponentName": "ComponentAliquamAcNullaEgestas",
+      "path": "/aliquam-ac-nulla-egestas/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "componentChunkName": "component---src-templates-post-js",
+      "context": {
+        "id": "6d5fda42-6c68-5299-8275-6e9f8716765e"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "id": "SitePage /aliquam-ac-nulla-egestas/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b0066dac874f5077fc25ed3cc43099b7",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /maecenas-pellentesque-sollicitudin/": {
+      "jsonName": "maecenas-pellentesque-sollicitudin-b6e",
+      "internalComponentName": "ComponentMaecenasPellentesqueSollicitudin",
+      "path": "/maecenas-pellentesque-sollicitudin/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "componentChunkName": "component---src-templates-post-js",
+      "context": {
+        "id": "991e7359-5ba0-5114-91b5-35a968224bcd"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js",
+      "id": "SitePage /maecenas-pellentesque-sollicitudin/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0a92573160ce739b32ecdab3e6fe1d96",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "jsonName": "index",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/blog.js",
+      "componentChunkName": "component---src-templates-blog-js",
+      "context": {
+        "pageNumber": 0,
+        "humanPageNumber": 1,
+        "skip": 0,
+        "limit": 10,
+        "numberOfPages": 2,
+        "previousPagePath": "",
+        "nextPagePath": "/page/2"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/blog.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "e1a18c6c6a3203c4dc4d120645c1ae9c",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /page/2": {
+      "jsonName": "page-2-b45",
+      "internalComponentName": "ComponentPage2",
+      "path": "/page/2",
+      "component": "/home/kodefant/kode/eiendom/src/templates/blog.js",
+      "componentChunkName": "component---src-templates-blog-js",
+      "context": {
+        "pageNumber": 1,
+        "humanPageNumber": 2,
+        "skip": 10,
+        "limit": 10,
+        "numberOfPages": 2,
+        "previousPagePath": "/",
+        "nextPagePath": ""
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/blog.js",
+      "id": "SitePage /page/2",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b9b8bad6e53d8b7bbfac34d1f1d13062",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /categories/uncategorized/": {
+      "jsonName": "categories-uncategorized-9d2",
+      "internalComponentName": "ComponentCategoriesUncategorized",
+      "path": "/categories/uncategorized/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/category.js",
+      "componentChunkName": "component---src-templates-category-js",
+      "context": {
+        "name": "Uncategorized",
+        "slug": "uncategorized"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/category.js",
+      "id": "SitePage /categories/uncategorized/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "bd2c295b03fae7f35f50b156a45fcad9",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /tags/bar/": {
+      "jsonName": "tags-bar-e5a",
+      "internalComponentName": "ComponentTagsBar",
+      "path": "/tags/bar/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/tag.js",
+      "componentChunkName": "component---src-templates-tag-js",
+      "context": {
+        "name": "bar",
+        "slug": "bar"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/tag.js",
+      "id": "SitePage /tags/bar/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "4ac1c84477188d75df508f8c2c3ba0b4",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /tags/foo/": {
+      "jsonName": "tags-foo-dd2",
+      "internalComponentName": "ComponentTagsFoo",
+      "path": "/tags/foo/",
+      "component": "/home/kodefant/kode/eiendom/src/templates/tag.js",
+      "componentChunkName": "component---src-templates-tag-js",
+      "context": {
+        "name": "foo",
+        "slug": "foo"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/tag.js",
+      "id": "SitePage /tags/foo/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "21af68f164ed29800515cbd86e1e506b",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /author/gc": {
+      "jsonName": "author-gc-5b7",
+      "internalComponentName": "ComponentAuthorGc",
+      "path": "/author/gc",
+      "component": "/home/kodefant/kode/eiendom/src/templates/author.js",
+      "componentChunkName": "component---src-templates-author-js",
+      "context": {
+        "id": "c018acb4-c710-5329-9423-762fa8ea4a48"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/author.js",
+      "id": "SitePage /author/gc",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f821a3622da99f6313ee386064142c0d",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404/": {
+      "jsonName": "404-22d",
+      "internalComponentName": "Component404",
+      "path": "/404/",
+      "component": "/home/kodefant/kode/eiendom/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/home/kodefant/kode/eiendom/src/pages/404.js",
+      "id": "SitePage /404/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "280be913ea0346c5bef7fdff0dd4f49e",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "jsonName": "404-html-516",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/home/kodefant/kode/eiendom/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin prod-404",
+      "pluginCreatorId": "Plugin prod-404",
+      "componentPath": "/home/kodefant/kode/eiendom/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f6587b2eb19422a8d5b511e9016bde40",
+        "description": "Plugin prod-404",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "f859d028658d8e2103a7ff80fcb3bb1b"
+  },
+  "componentDataDependencies": {
+    "nodes": {
+      "Site": [
+        "/author/gc",
+        "/categories/uncategorized/",
+        "/tags/bar/",
+        "/tags/foo/"
+      ],
+      "7296d607-5f71-5e98-8e73-f6149a0675ca": [
+        "/author/gc"
+      ],
+      "73027541-7763-5d83-b88a-6db88158f828": [
+        "/author/gc"
+      ],
+      "2347739f-f4fa-5d13-8eac-4a0059e4ff82": [
+        "/author/gc"
+      ],
+      "099ae931-5fbf-5690-8148-c679b17b745c": [
+        "/author/gc"
+      ],
+      "3fac2489-1677-524e-bbaa-fbb6212106d2": [
+        "/author/gc"
+      ],
+      "b150cbb5-9392-5a14-a07b-f444d7f200ad": [
+        "/author/gc"
+      ],
+      "724f15ef-f323-50f5-9ee1-820331e892b1": [
+        "/author/gc"
+      ],
+      "4691db0c-877b-5938-8f59-c109400bdbfd": [
+        "/author/gc"
+      ],
+      "ada907ea-1526-5c38-a703-66b37194f664": [
+        "/author/gc"
+      ],
+      "6d5fda42-6c68-5299-8275-6e9f8716765e": [
+        "/author/gc"
+      ],
+      "991e7359-5ba0-5114-91b5-35a968224bcd": [
+        "/author/gc"
+      ],
+      "c018acb4-c710-5329-9423-762fa8ea4a48": [
+        "/author/gc",
+        "/",
+        "/page/2",
+        "/categories/uncategorized/",
+        "/sample-media-post/",
+        "/morbi-rhoncus-malesuada/",
+        "/hello-world/",
+        "/nam-aliquam-vitae-metus-et-ornare/",
+        "/morbi-congue-nulla-ac/",
+        "/donec-convallis-dictum-quam/",
+        "/sed-cursus-lacus-a-mi-mollis/",
+        "/in-hac-habitasse-platea/",
+        "/sed-sagittis-nibh/",
+        "/aliquam-ac-nulla-egestas/",
+        "/maecenas-pellentesque-sollicitudin/",
+        "/tags/bar/",
+        "/tags/foo/"
+      ],
+      "f24b5a9e-ed37-56c1-978a-9c95dbc988a9": [
+        "/sample-media-post/",
+        "/morbi-rhoncus-malesuada/",
+        "/hello-world/",
+        "/nam-aliquam-vitae-metus-et-ornare/",
+        "/morbi-congue-nulla-ac/",
+        "/donec-convallis-dictum-quam/",
+        "/sed-cursus-lacus-a-mi-mollis/",
+        "/in-hac-habitasse-platea/",
+        "/sed-sagittis-nibh/",
+        "/aliquam-ac-nulla-egestas/",
+        "/maecenas-pellentesque-sollicitudin/"
+      ],
+      "052e5749-9865-5f8b-8e7f-830ebe467c86": [
+        "/morbi-rhoncus-malesuada/"
+      ],
+      "523491d5-4c21-5c07-a1b5-7f04a6c69e96": [
+        "/morbi-rhoncus-malesuada/"
+      ]
+    },
+    "connections": {
+      "wordpress__PAGE": [
+        "sq--src-components-navbar-js"
+      ],
+      "wordpress__POST": [
+        "/",
+        "/page/2",
+        "/categories/uncategorized/",
+        "/tags/bar/",
+        "/tags/foo/"
+      ]
+    }
+  },
+  "jsonDataPaths": {
+    "sq--src-components-navbar-js": 4089827343,
+    "author-gc-5b7": "761/path---author-gc-5-b-7-820-ufMjEgmAXSmj2paFbIDedG09k",
+    "index": "90/path---index-6a9-4iShzFrHYcVHoChULAgCW4rvQSI",
+    "page-2-b45": "533/path---page-2-b-45-94b-zXdMbdjpU27sVj9W5ZOsCjHkE",
+    "child-of-draft-83c": "516/path---child-of-draft-83-c-669-xGqz4a968s7VI8zjigRUpU3YFnM",
+    "privacy-policy-6b7": "344/path---privacy-policy-6-b-7-610-ahUfAFOg0trDbQPMnrmj2GH4",
+    "sample-page-b1e": "472/path---sample-page-b-1-e-edf-cwaUDvQqo0pIPYe9sjNfAInj4",
+    "categories-uncategorized-9d2": "327/path---categories-uncategorized-9-d-2-65b-OzW2R2aeGlocEpd3ONDBIHnjfo",
+    "sample-media-post-5f4": "809/path---sample-media-post-5-f-4-d84-dgUVtk2HTQIC7dSUfkXzOwLEkx4",
+    "morbi-rhoncus-malesuada-e2f": "530/path---morbi-rhoncus-malesuada-e-2-f-d61-rjDyFqNDx7maou8evaWXJrG0yGI",
+    "nam-aliquam-vitae-metus-et-ornare-df6": "593/path---nam-aliquam-vitae-metus-et-ornare-df-6-4dc-QUt4MOpg1uEefrJ0SOoPYYUNXlw",
+    "hello-world-8bc": "45/path---hello-world-8-bc-b62-UmCl09QDkz3igobdVo85I5wRy0",
+    "morbi-congue-nulla-ac-e0c": "152/path---morbi-congue-nulla-ac-e-0-c-7e4-aVyeFKKkldPxGLcsJDOZv5ATHUw",
+    "donec-convallis-dictum-quam-f0c": "397/path---donec-convallis-dictum-quam-f-0-c-16a-tFFtHqsjh7KaZ59kasq4G97iWG4",
+    "sed-cursus-lacus-a-mi-mollis-925": "580/path---sed-cursus-lacus-a-mi-mollis-925-d4c-Fpx5kD6Swgjx7w1ysd1IfAkdYc",
+    "in-hac-habitasse-platea-f98": "307/path---in-hac-habitasse-platea-f-98-367-5mBzCKm3XccQWvEpLIsNyjtd2dc",
+    "sed-sagittis-nibh-a6e": "347/path---sed-sagittis-nibh-a-6-e-0be-GUci1IZX9XWmQDqI7cuvHrQIWVw",
+    "aliquam-ac-nulla-egestas-67f": "191/path---aliquam-ac-nulla-egestas-67-f-bfa-Fpbjz2kp1oyA5YRHaskTo6zeU6s",
+    "maecenas-pellentesque-sollicitudin-b6e": "359/path---maecenas-pellentesque-sollicitudin-b-6-e-cce-cHk3ZIMLYZXbPabhdYct2s941mQ",
+    "tags-bar-e5a": "147/path---tags-bar-e-5-a-03f-xNM8i6SJNzztaIldMk6oJhqY",
+    "tags-foo-dd2": "996/path---tags-foo-dd-2-8c9-w9TKf0fYD9RRkcppatLebZgTlkw",
+    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
+    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
+    "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E"
+  },
+  "components": {
+    "/home/kodefant/kode/eiendom/src/templates/page.js": {
+      "query": "query PageById(\n  $id: String!\n) {\n  wordpressPage(id: {eq: $id}) {\n    title\n    content\n  }\n}\n",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/page.js"
+    },
+    "/home/kodefant/kode/eiendom/src/templates/post.js": {
+      "query": "query BlogPostByID(\n  $id: String!\n) {\n  wordpressPost(id: {eq: $id}) {\n    id\n    title\n    slug\n    content\n    date(formatString: \"MMMM DD, YYYY\")\n    categories {\n      name\n      slug\n    }\n    tags {\n      name\n      slug\n    }\n    author {\n      name\n      slug\n    }\n  }\n}\n",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/post.js"
+    },
+    "/home/kodefant/kode/eiendom/src/templates/blog.js": {
+      "query": "query IndexQuery(\n  $limit: Int!\n  $skip: Int!\n) {\n  allWordpressPost(sort: {fields: date, order: DESC}, limit: $limit, skip: $skip) {\n    edges {\n      node {\n        ...PostListFields\n      }\n    }\n  }\n}\n\nfragment PostListFields on wordpress__POST {\n  id\n  title\n  excerpt\n  author {\n    name\n    slug\n    avatar_urls {\n      wordpress_48\n    }\n  }\n  date(formatString: \"MMMM DD, YYYY\")\n  slug\n}\n",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/blog.js"
+    },
+    "/home/kodefant/kode/eiendom/src/templates/category.js": {
+      "query": "query CategoryPage(\n  $slug: String!\n) {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n  allWordpressPost(filter: {categories: {slug: {eq: $slug}}}) {\n    totalCount\n    edges {\n      node {\n        ...PostListFields\n      }\n    }\n  }\n}\n\nfragment PostListFields on wordpress__POST {\n  id\n  title\n  excerpt\n  author {\n    name\n    slug\n    avatar_urls {\n      wordpress_48\n    }\n  }\n  date(formatString: \"MMMM DD, YYYY\")\n  slug\n}\n",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/category.js"
+    },
+    "/home/kodefant/kode/eiendom/src/templates/tag.js": {
+      "query": "query TagPage(\n  $slug: String!\n) {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n  allWordpressPost(filter: {tags: {slug: {eq: $slug}}}) {\n    totalCount\n    edges {\n      node {\n        ...PostListFields\n      }\n    }\n  }\n}\n\nfragment PostListFields on wordpress__POST {\n  id\n  title\n  excerpt\n  author {\n    name\n    slug\n    avatar_urls {\n      wordpress_48\n    }\n  }\n  date(formatString: \"MMMM DD, YYYY\")\n  slug\n}\n",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/tag.js"
+    },
+    "/home/kodefant/kode/eiendom/src/templates/author.js": {
+      "query": "query AuthorPage(\n  $id: String!\n) {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n  wordpressWpUsers(id: {eq: $id}) {\n    name\n    authored_wordpress__POST {\n      ...PostListFields\n    }\n  }\n}\n\nfragment PostListFields on wordpress__POST {\n  id\n  title\n  excerpt\n  author {\n    name\n    slug\n    avatar_urls {\n      wordpress_48\n    }\n  }\n  date(formatString: \"MMMM DD, YYYY\")\n  slug\n}\n",
+      "componentPath": "/home/kodefant/kode/eiendom/src/templates/author.js"
+    },
+    "/home/kodefant/kode/eiendom/.cache/dev-404-page.js": {
+      "query": "",
+      "componentPath": "/home/kodefant/kode/eiendom/.cache/dev-404-page.js"
+    },
+    "/home/kodefant/kode/eiendom/src/pages/404.js": {
+      "query": "",
+      "componentPath": "/home/kodefant/kode/eiendom/src/pages/404.js"
+    }
+  },
+  "staticQueryComponents": {
+    "sq--src-components-navbar-js": {
+      "name": "homeKodefantKodeEiendomSrcComponentsNavbarJs4089827343",
+      "componentPath": "/home/kodefant/kode/eiendom/src/components/Navbar.js",
+      "id": "sq--src-components-navbar-js",
+      "jsonName": "sq--src-components-navbar-js",
+      "query": "query homeKodefantKodeEiendomSrcComponentsNavbarJs4089827343 {\n  allWordpressPage(sort: {fields: wordpress_id}, limit: 5) {\n    edges {\n      node {\n        title\n        slug\n      }\n    }\n  }\n}\n",
+      "hash": 4089827343
+    }
+  }
+}
