@@ -6,13 +6,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
-    {
-      resolve: `gatsby-plugin-htaccess-redirects`,
-      options: {
-        prefix: "<IfModule mod_rewrite.c>\nRewriteEngine On",
-        suffix: "</IfModule>",
-      },
-    },
-
+    'gatsby-plugin-htaccess-redirects',
   ],
 };

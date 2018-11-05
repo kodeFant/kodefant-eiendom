@@ -343,15 +343,13 @@
         "owner": "internal-data-bridge"
       }
     },
-    "88cdd4ae-10c4-51f0-8630-7c1f5bb1c5d5": {
+    "2c721bf2-2236-56ae-9749-d3be745bd9ad": {
       "resolve": "/home/kodefant/kode/eiendom/node_modules/gatsby-plugin-htaccess-redirects",
-      "id": "88cdd4ae-10c4-51f0-8630-7c1f5bb1c5d5",
+      "id": "2c721bf2-2236-56ae-9749-d3be745bd9ad",
       "name": "gatsby-plugin-htaccess-redirects",
       "version": "0.2.0",
       "pluginOptions": {
-        "plugins": [],
-        "prefix": "<IfModule mod_rewrite.c>\nRewriteEngine On",
-        "suffix": "</IfModule>"
+        "plugins": []
       },
       "nodeAPIs": [
         "onPostBuild"
@@ -394,7 +392,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "3737a94fcd416ef27a6d0dadf7fb21e0",
+        "contentDigest": "0a0eca6fca61ffc67174262397b5fad2",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -403,7 +401,7 @@
       "resolve": "/home/kodefant/kode/eiendom",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "175740d4b4794922e1180d546fd4a802",
+      "version": "8d4c4d975204413a1a9c031b5e45d8da",
       "pluginOptions": {
         "plugins": []
       },
@@ -519,7 +517,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f091b6664ad2b325d6e2a2de28acd440",
+        "contentDigest": "aa63239e79a8098d89718b2c7322d657",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -627,12 +625,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-05T22:58:24.987Z",
+      "buildTime": "2018-11-05T23:03:17.235Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "06212ab9e71862b37da6084835d7f5d8",
+        "contentDigest": "2a8f8854a19f468b8c389814c19ae6fd",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -722,7 +720,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "36c7324de2fae147318810251593a8b0"
+    "PLUGINS_HASH": "fbcd651b29b38961809ccb6f45b265b5"
   },
   "componentDataDependencies": {
     "nodes": {
