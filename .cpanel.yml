@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/public_html/eiendom
+    - export DEPLOYPATH=/home/drifters/public_html/eiendom
     - /bin/cp index.html $DEPLOYPATH
