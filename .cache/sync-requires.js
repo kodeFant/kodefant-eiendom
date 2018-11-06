@@ -3,8 +3,8 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---src-pages-404-jsx": preferDefault(require("/home/kodefant/kode/eiendom/src/pages/404.jsx")),
-  "component---src-pages-index-jsx": preferDefault(require("/home/kodefant/kode/eiendom/src/pages/index.jsx")),
-  "component---src-pages-page-2-jsx": preferDefault(require("/home/kodefant/kode/eiendom/src/pages/page-2.jsx"))
+  "component---src-pages-404-js": preferDefault(require("/Users/kodefant/kode/eiendom/src/pages/404.js")),
+  "component---src-pages-index-js": preferDefault(require("/Users/kodefant/kode/eiendom/src/pages/index.js")),
+  "component---src-pages-page-2-js": preferDefault(require("/Users/kodefant/kode/eiendom/src/pages/page-2.js"))
 }
 
