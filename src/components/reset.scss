@@ -1,3 +1,5 @@
+@import 'modules/variables';
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -133,15 +135,13 @@
 	border-spacing: 0;
 }
 
-:global(.container) {
+.container {
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-}
 
-@media (min-width: 992px) {
-	:global(.container) {
+	@include breakpoint(laptop) {
 		width: 970px;
 	}
 }

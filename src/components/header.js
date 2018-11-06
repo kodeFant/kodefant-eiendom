@@ -1,11 +1,12 @@
 import React from 'react'
 import HeaderTop from './headerTop'
+import HeaderBottom from './headerBottom'
 import PropTypes from 'prop-types'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header>
     <HeaderTop />
-    <div className="container">{siteTitle}</div>
+    <HeaderBottom />
   </header>
 )
 

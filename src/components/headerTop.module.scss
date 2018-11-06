@@ -1,10 +1,20 @@
+@import 'modules/variables';
 @import 'modules/fonts';
 @import 'modules/colors';
 @import 'modules/tags';
 
 $fontSize: 0.8rem;
 
-.border {
+.topContainer {
+  composes: container from global;
+
+  @include breakpoint(smallmobileonly) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.headerTop {
   border: 0.025rem solid $lightgray;
 }
 
@@ -22,18 +32,24 @@ $fontSize: 0.8rem;
 .topElements {
   justify-content: space-between;
 
+  @include breakpoint(tablet) {
+    justify-content: space-between;
+  }
+
   a {
     color: $darkgray;
 
     &:hover {
-      color: $red;
+      color: $main;
     }
   }
 }
 
 .topLeft {
   .react_icons {
-    margin-right: 0.5rem;
+    @include breakpoint(tablet) {
+      margin-right: 0.5rem;
+    }
   }
 }
 
@@ -57,5 +73,10 @@ $fontSize: 0.8rem;
 
   span {
     vertical-align: middle;
+    display: none;
+
+    @include breakpoint(tablet) {
+      display: inline-block;
+    }
   }
 }

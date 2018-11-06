@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import styles from './headerTop.module.scss'
 import { IconContext } from 'react-icons'
 import {
@@ -11,21 +12,24 @@ import {
 } from 'react-icons/fa'
 
 const HeaderTop = () => (
-  <div className={styles.border}>
-    <div className={`container ${styles.topElements}`}>
+  <div className={styles.headerTop}>
+    <div className={`${styles.topContainer} ${styles.topElements}`}>
       <IconContext.Provider value={{ className: styles.react_icons }}>
         <div className={styles.topLeft}>
           <div className={styles.child}>
-            <FaMapMarkerAlt /> <span>Freserveien 39, 0195 Oslo</span>
+            <Link to="kontakt">
+              <FaMapMarkerAlt /> <span>Freserveien 39, 0195 Oslo</span>
+            </Link>
           </div>
           <div className={styles.child}>
-            <FaEnvelope />{' '}
-            <span>
-              <a href="mailto:dineiendom@kodefant.no">dineiendom@kodefant.no</a>
-            </span>
+            <a href="mailto:dineiendom@kodefant.no">
+              <FaEnvelope /> <span>dineiendom@kodefant.no</span>
+            </a>
           </div>
           <div className={styles.child}>
-            <FaPhone /> <span>(+47) 413 999 420</span>
+            <Link to="kontakt">
+              <FaPhone /> <span>(+47) 413 999 420</span>
+            </Link>
           </div>
         </div>
         <div className={styles.topRight}>

@@ -1,0 +1,20 @@
+@import 'modules/variables';
+@import 'modules/fonts';
+@import 'modules/colors';
+@import 'modules/tags';
+
+.active {
+  border-bottom: 0.1rem solid $main
+}
+
+a.navLink {
+  text-transform: uppercase;
+  margin: 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $black;
+
+  &:hover {
+    border-bottom: 0.1rem solid $main;
+  }
+}
