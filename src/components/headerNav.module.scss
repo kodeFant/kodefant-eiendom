@@ -18,3 +18,50 @@ a.navLink {
     border-bottom: 0.1rem solid $main;
   }
 }
+
+.navbar {
+  display: none;
+
+  @include breakpoint(phablet) {
+    display: block;
+  }
+}
+
+.mobileMenuVisible {
+  @include breakpoint(mobileonly) {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+
+    a {
+      font-size: 2rem;
+      border-bottom: 0.1rem solid transparent;
+    }
+  }
+}
+
+.hamburger {
+  display: flex;
+  cursor: pointer;
+  z-index: 999;
+
+  @include breakpoint(phablet) {
+    display: none;
+  }
+}
+
+.menuText {
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $black;
+  vertical-align: middle;
+}

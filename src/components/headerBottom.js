@@ -1,14 +1,11 @@
 import React from 'react'
 import styles from './headerBottom.module.scss'
 import Navigation from './headerNav'
+import Logo from './Logo'
 
 const HeaderBottom = () => (
   <div className={styles.headerBottom}>
-    <div className={styles.brand}>
-      <span>Din</span>
-      <br />
-      Eiendomsbedrift
-    </div>
+    <Logo />
     <div className={styles.nav}>
       <Navigation />
     </div>

@@ -13,5 +13,25 @@
         "componentChunkName": "component---src-pages-404-js",
         "jsonName": "404-22d",
         "path": "/404/"
+    },
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-eiendommer-js",
+        "jsonName": "eiendommer-722",
+        "path": "/eiendommer/"
+    },
+    {
+        "componentChunkName": "component---src-pages-kontakt-js",
+        "jsonName": "kontakt-8ac",
+        "path": "/kontakt/"
+    },
+    {
+        "componentChunkName": "component---src-pages-om-js",
+        "jsonName": "om-054",
+        "path": "/om/"
     }
 ]
