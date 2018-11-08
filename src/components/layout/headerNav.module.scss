@@ -1,0 +1,110 @@
+@import '../modules/variables';
+@import '../modules/fonts';
+@import '../modules/colors';
+@import '../modules/tags';
+
+.navLink {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $black;
+  line-height: 1.5rem;
+  border-bottom: 0.1rem transparent solid;
+
+  &:hover {
+    border-bottom: 0.1rem solid $main;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.nav {
+  z-index: 1;
+}
+
+.navbar {
+  display: none;
+
+  @include breakpoint(phablet) {
+    display: block;
+  }
+}
+
+.mobileMenuVisible {
+  @include breakpoint(mobileonly) {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;
+
+    a.navLink {
+      font-size: 2rem;
+      line-height: 3rem;
+      border-width: 0.3rem;
+    }
+
+    a.navLink.active {
+      border-width: 0.3rem;
+    }
+  }
+}
+
+.hamburger {
+  display: flex;
+  cursor: pointer;
+
+  &.inMenu {
+    position: fixed;
+    top: $container;
+    right: $container;
+    z-index: 3;
+  }
+
+  div {
+    z-index: 2;
+  }
+
+  @include breakpoint(phablet) {
+    display: none;
+  }
+}
+
+.menuText {
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $black;
+  vertical-align: middle;
+}
+
+a.navLink.active {
+  border-bottom: 0.1rem solid $main
+}
+
+.mobileOnly {
+  display: none;
+
+  @include breakpoint(mobileonly) {
+    display: block;
+  }
+}
+
+.mobileBrand {
+  composes: mobileOnly;
+  position: absolute;
+  top: $container;
+}
