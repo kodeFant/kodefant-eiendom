@@ -1,0 +1,88 @@
+@import 'modules/variables';
+@import 'modules/fonts';
+@import 'modules/colors';
+@import 'modules/tags';
+
+.filterGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
+
+  @include breakpoint(phablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(laptop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.col {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  input,
+  select {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px white solid;
+    color: $white;
+    outline-color: black;
+
+    &::placeholder {
+      color: white;
+      opacity: 1;
+      /* Firefox */
+    }
+  }
+
+  label {
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+  }
+}
+
+select {
+  border-radius: 0;
+  outline: none;
+}
+
+.col1 {
+  composes: col;
+  background-color: $main;
+}
+
+.col2 {
+  composes: col;
+  background-color: rgba($main, 0.8);
+}
+
+.col3 {
+  composes: col;
+  background-color: rgba($main, 0.6);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 2rem;
+
+  @include breakpoint(phablet) {
+    grid-column: 1 / -1;
+  }
+
+  @include breakpoint(laptop) {
+    grid-column: 3 / 3;
+  }
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  label {
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+    background-color: transparent;
+  }
+}
