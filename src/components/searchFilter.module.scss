@@ -3,10 +3,12 @@
 @import 'modules/colors';
 @import 'modules/tags';
 
+$filterStroke: $white;
+
 .filterGrid {
   display: grid;
   grid-template-columns: 1fr;
-  color: white;
+  color: $filterStroke;
 
   @include breakpoint(phablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -22,24 +24,38 @@
   display: flex;
   flex-direction: column;
 
-  input,
-  select {
+  input:not([type=checkbox]),
+  select,
+  .dd__selectControl {
     padding: 0.5rem;
     background-color: transparent;
-    border: 1px white solid;
-    color: $white;
+    border: 1px $filterStroke solid;
+    border-radius: 0;
+    color: $filterStroke;
     outline-color: black;
+    margin: 0;
+    height: 2rem;
+    font-size: 0.7rem;
 
     &::placeholder {
-      color: white;
+      color: $filterStroke;
       opacity: 1;
       /* Firefox */
     }
   }
 
+
+  .dd__list {
+    background-color: rgba($white, 0.9)
+  }
+
+  .dd__expandIcon {
+    fill: $filterStroke;
+  }
+
   label {
-    margin-bottom: 0.6rem;
-    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 }
 
@@ -50,20 +66,20 @@ select {
 
 .col1 {
   composes: col;
-  background-color: $main;
+  background-color: $maindark;
 }
 
 .col2 {
   composes: col;
-  background-color: rgba($main, 0.8);
+  background-color: rgba($main, 1);
 }
 
 .col3 {
   composes: col;
-  background-color: rgba($main, 0.6);
+  background-color: rgba($main, 0.8);
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 2rem;
+  padding: 3rem;
 
   @include breakpoint(phablet) {
     grid-column: 1 / -1;
@@ -72,6 +88,7 @@ select {
   @include breakpoint(laptop) {
     grid-column: 3 / 3;
   }
+
 }
 
 .checkbox {
@@ -85,4 +102,30 @@ select {
     margin-left: 0.3rem;
     background-color: transparent;
   }
+
+  &:nth-of-type(even) {
+    @include breakpoint(phablet) {
+      margin-left: 3rem;
+    }
+
+    @include breakpoint(laptop) {
+      margin-left: 0;
+    }
+  }
+
+}
+
+.twoFields {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    width: 40%;
+  }
+}
+
+.searchButtonContainer {
+  display: flex;
+  padding: 2.5rem;
+  justify-content: center;
 }
