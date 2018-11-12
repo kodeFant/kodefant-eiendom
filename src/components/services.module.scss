@@ -1,0 +1,144 @@
+@import 'modules/variables';
+@import 'modules/fonts';
+@import 'modules/colors';
+@import 'modules/tags';
+
+.services {
+  composes: container from global;
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $darkgray;
+    line-height: 1.8rem;
+  }
+
+}
+
+// Service Header
+
+
+
+.serviceHeader {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(tablet) {
+    flex-direction: row;
+  }
+}
+
+.horizontalDecoration {
+  display: flex;
+  justify-content: center;
+
+  .headerIcon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: $borderLine solid $lightgray;
+    height: 3rem;
+    width: 3rem;
+    vertical-align: middle;
+    color: $lightgray;
+
+
+  }
+
+  &:before {
+    background: black;
+    height: 2px;
+    flex: 1;
+    content: '';
+    left: 100%;
+  }
+
+}
+
+.serviceHeaderContent {
+  margin: 0;
+  margin-top: 1rem;
+
+  @include breakpoint(tablet) {
+    margin: 0 $container;
+    margin-top: 0;
+  }
+}
+
+// Service Grid
+
+.serviceGrid {
+  display: grid;
+
+  @include breakpoint(phablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  margin-top: 3rem;
+  grid-gap: 1.5rem;
+}
+
+.service {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  p {
+    color: $darkgray;
+    font-size: 0.9rem;
+    padding: 1rem;
+    line-height: 1.8rem;
+  }
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 50%;
+  background-color: $main;
+  margin: 1.5rem 0;
+}
+
+.iconContainer:hover {
+  background-color: $maindark;
+
+  &+h3 {
+    border-bottom: 2px main solid;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  border: 1px white solid;
+}

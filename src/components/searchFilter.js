@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Formik, Form, Field } from 'formik'
 import styles from './searchFilter.module.scss'
 import ReactSelect from './reactSelect'
+import ReactCheckbox from './reactCheckbox'
 
 class SearchFilter extends Component {
   render() {
@@ -124,46 +125,86 @@ class SearchFilter extends Component {
                 </div>
               </div>
               <div className={styles.col3}>
-                <div className={styles.checkbox}>
-                  <Field type="checkbox" name="balcony" />
-                  <label htmlFor="balcony">Balkong</label>
-                </div>
-                <div className={styles.checkbox}>
-                  <Field type="checkbox" name="parking" />
-                  <label htmlFor="parking">Garasje/P-plass</label>
-                </div>
-                <div className={styles.checkbox}>
-                  <Field type="checkbox" name="elevator" />
-                  <label htmlFor="elevator">Heis</label>
-                </div>
-                <div className={styles.checkbox}>
-                  <Field type="checkbox" name="noRedwellers" />
-                  <label htmlFor="noRedwellers">Ingen gjenboere</label>
-                </div>
-                <div className={styles.checkbox}>
-                  <Field type="checkbox" name="swimmingpool" />
-                  <label htmlFor="swimmingpool">Svømmebasseng</label>
-                </div>
-                <div className={styles.checkbox}>
-                  <Field type="checkbox" name="fireplace" />
-                  <label htmlFor="fireplace">Peis/Ildsted</label>
-                </div>
-                <div className={styles.checkbox}>
-                  <Field type="checkbox" name="beach" />
-                  <label htmlFor="beach">Strandlinje</label>
-                </div>
-                <div className={styles.checkbox}>
-                  <Field type="checkbox" name="hiking" />
-                  <label htmlFor="hiking">Turterreng</label>
-                </div>
-                <div className={styles.checkbox}>
-                  <Field type="checkbox" name="view" />
-                  <label htmlFor="view">Utsikt</label>
-                </div>
-                <div className={styles.checkbox}>
-                  <Field type="checkbox" name="janitor" />
-                  <label htmlFor="janitor">Vaktmester</label>
-                </div>
+                <ReactCheckbox
+                  style={styles.checkbox}
+                  onChange={props.setFieldValue}
+                  onBlur={props.setFieldTouched}
+                  value={props.values.balcony}
+                  name="balcony"
+                  label="Balkong"
+                />
+                <ReactCheckbox
+                  style={styles.checkbox}
+                  onChange={props.setFieldValue}
+                  onBlur={props.setFieldTouched}
+                  value={props.values.parking}
+                  name="parking"
+                  label="Garasje/P-plass"
+                />
+                <ReactCheckbox
+                  style={styles.checkbox}
+                  onChange={props.setFieldValue}
+                  onBlur={props.setFieldTouched}
+                  value={props.values.elevator}
+                  name="elevator"
+                  label="Heis"
+                />
+                <ReactCheckbox
+                  style={styles.checkbox}
+                  onChange={props.setFieldValue}
+                  onBlur={props.setFieldTouched}
+                  value={props.values.noRedwellers}
+                  name="noRedwellers"
+                  label="Ingen gjenboere"
+                />
+                <ReactCheckbox
+                  style={styles.checkbox}
+                  onChange={props.setFieldValue}
+                  onBlur={props.setFieldTouched}
+                  value={props.values.swimmingpool}
+                  name="swimmingpool"
+                  label="Svømmebasseng"
+                />
+                <ReactCheckbox
+                  style={styles.checkbox}
+                  onChange={props.setFieldValue}
+                  onBlur={props.setFieldTouched}
+                  value={props.values.fireplace}
+                  name="fireplace"
+                  label="Peis/ildsted"
+                />
+                <ReactCheckbox
+                  style={styles.checkbox}
+                  onChange={props.setFieldValue}
+                  onBlur={props.setFieldTouched}
+                  value={props.values.beach}
+                  name="beach"
+                  label="Strandlinje"
+                />
+                <ReactCheckbox
+                  style={styles.checkbox}
+                  onChange={props.setFieldValue}
+                  onBlur={props.setFieldTouched}
+                  value={props.values.hiking}
+                  name="hiking"
+                  label="Turterreng"
+                />
+                <ReactCheckbox
+                  style={styles.checkbox}
+                  onChange={props.setFieldValue}
+                  onBlur={props.setFieldTouched}
+                  value={props.values.view}
+                  name="view"
+                  label="Utsikt"
+                />
+                <ReactCheckbox
+                  style={styles.checkbox}
+                  onChange={props.setFieldValue}
+                  onBlur={props.setFieldTouched}
+                  value={props.values.janitor}
+                  name="janitor"
+                  label="Vaktmester"
+                />
               </div>
             </div>
             <div className={styles.searchButtonContainer}>

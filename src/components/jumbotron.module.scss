@@ -51,13 +51,13 @@
 
   .vertical-line {
     display: inline-block;
-    border-right: 0.1rem solid white;
+    border-right: $borderLine solid white;
     height: 4rem;
     justify-self: center;
   }
 
   .symbolBox {
-    border: 0.1rem white solid;
+    border: $borderLine white solid;
     height: 3rem;
     width: 3rem;
     display: flex;
