@@ -4,7 +4,9 @@ import styles from './horizontalHeader.module.scss'
 
 const horizontalHeader = props => (
   <div className={styles.horizontalDecoration}>
-    <div className={styles.serviceHeader}>
+    <div className={styles.horizontalLine} />
+
+    <div className={styles.iconContainer}>
       <div className={styles.headerIcon}>{props.iconComponent()}</div>
     </div>
 
@@ -12,6 +14,8 @@ const horizontalHeader = props => (
       <h2>{props.title}</h2>
       <p>{props.description}</p>
     </div>
+
+    <div className={styles.containerMargin} />
   </div>
 )
 

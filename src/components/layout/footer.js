@@ -11,7 +11,7 @@ import {
 } from '../contactInfo'
 import { IconContext } from 'react-icons'
 
-import Logo from './Logo'
+import Logo from './logo'
 
 const FooterArea1 = () => (
   <div className={styles.footerArea}>

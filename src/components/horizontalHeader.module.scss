@@ -3,70 +3,83 @@
 @import 'modules/colors';
 @import 'modules/tags';
 
-.serviceHeader {
-  display: flex;
-  flex-direction: column;
-  padding-left: $container;
-  padding-right: $container;
-
-  @include breakpoint(phablet) {
-    flex-direction: row;
-  }
-
-  @include breakpoint(laptop) {
-    width: 970px;
-  }
-}
-
 .horizontalDecoration {
+  display: grid;
   text-align: center;
+  grid-template-columns: $container 1fr $container;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'filler1 icon container' 'filler1 content filler2';
 
   margin-left: 0;
   position: relative;
 
   @include breakpoint(tablet) {
     text-align: left;
+    grid-template-columns: $container auto 1fr $container;
+    grid-template-areas: 'line icon content filler1';
   }
 
-  .headerIcon {
-    background-color: white;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: $borderLine solid $lightgray;
-    height: 3rem;
-    width: 3rem;
-    vertical-align: middle;
-    color: $lightgray;
-    overflow: hidden;
-    z-index: 0;
+  @include breakpoint(laptop) {
+    text-align: left;
+    grid-template-columns:
+      minmax($container, auto)
+      48px 922px
+      minmax($container, auto);
+    grid-template-areas: 'line icon content container';
   }
 
-  &:before {
+  .horizontalLine {
+    display: block;
+    grid-area: line;
     background-color: $lightgray;
-    content: "";
-    display: inline-block;
     height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-    z-index: -1;
-
+    align-self: center;
   }
 
-  &:before {
-    right: -0.5em;
-    margin-left: -50%;
+  .iconContainer {
+    grid-area: icon;
+    flex-direction: column;
+    align-self: center;
+
+    @include breakpoint(phablet) {
+      flex-direction: row;
+    }
+
+    .headerIcon {
+      background-color: white;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border: $borderLine solid $lightgray;
+      height: 3rem;
+      width: 3rem;
+      vertical-align: middle;
+      color: $lightgray;
+      overflow: hidden;
+      z-index: 0;
+    }
   }
 
+  .main {
+    grid-area: main;
+  }
+
+  .containerMargin {
+    grid-area: container;
+  }
 }
 
 .serviceHeaderContent {
+  grid-area: content;
   margin: 0;
   margin-top: 1rem;
 
   @include breakpoint(tablet) {
     margin: 0 $container;
     margin-top: 0;
+  }
+
+  @include breakpoint(laptop) {
+    max-width: 30rem;
   }
 }

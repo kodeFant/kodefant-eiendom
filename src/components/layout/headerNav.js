@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styles from './headerNav.module.scss'
 import { HamburgerButton } from 'react-hamburger-button'
-import Logo from './Logo'
+import Logo from './logo'
 
 const NavLink = props => (
   <Link {...props} activeClassName={styles.active} className={styles.navLink}>
