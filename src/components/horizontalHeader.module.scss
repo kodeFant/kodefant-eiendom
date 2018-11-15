@@ -8,10 +8,43 @@
   text-align: center;
   grid-template-columns: $container 1fr $container;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: 'filler1 icon container' 'filler1 content filler2';
+  grid-template-areas: 'icon icon icon' 'filler1 content filler2';
 
   margin-left: 0;
   position: relative;
+
+  @include breakpoint(phabletAndMobileonly) {
+    .iconContainer {
+      position: relative;
+      overflow: hidden;
+
+      span {
+        display: inline-flex;
+        vertical-align: middle;
+        zoom: 1;
+        *display: inline;
+        *vertical-align: auto;
+        position: relative;
+        padding: 0;
+
+        &:before {
+          content: '';
+          align-self: center;
+          justify-self: center;
+          display: block;
+          width: 1000px;
+
+          position: absolute;
+          top: 50%;
+          border-top: 0.1rem solid $lightgray;
+        }
+
+        &:before {
+          right: 100%;
+        }
+      }
+    }
+  }
 
   @include breakpoint(tablet) {
     text-align: left;
@@ -32,7 +65,7 @@
     display: block;
     grid-area: line;
     background-color: $lightgray;
-    height: 1px;
+    height: 0.1rem;
     align-self: center;
   }
 
@@ -71,11 +104,12 @@
 
 .serviceHeaderContent {
   grid-area: content;
+  align-self: center;
   margin: 0;
   margin-top: 1rem;
 
   @include breakpoint(tablet) {
-    margin: 0 $container;
+    margin: 0 2rem;
     margin-top: 0;
   }
 

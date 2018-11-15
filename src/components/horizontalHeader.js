@@ -7,7 +7,9 @@ const horizontalHeader = props => (
     <div className={styles.horizontalLine} />
 
     <div className={styles.iconContainer}>
-      <div className={styles.headerIcon}>{props.iconComponent()}</div>
+      <span>
+        <div className={styles.headerIcon}>{props.iconComponent()}</div>
+      </span>
     </div>
 
     <div className={styles.serviceHeaderContent}>
