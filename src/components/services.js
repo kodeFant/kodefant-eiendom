@@ -8,29 +8,17 @@ import {
   FaFlag,
   FaStar,
 } from 'react-icons/fa/'
+import HorizontalHeader from './horizontalHeader'
 
 import styles from './services.module.scss'
 
 const services = () => (
   <div className={styles.services}>
-    <div className={styles.serviceHeader}>
-      <div className={styles.horizontalDecoration}>
-        <div className={styles.lineContainer}>
-          <div className={styles.horizontalLine} />
-        </div>
-        <div className={styles.headerIcon}>
-          <FaStar />
-        </div>
-      </div>
-
-      <div className={styles.serviceHeaderContent}>
-        <h2>Presenter dine tjenester enkelt</h2>
-        <p>
-          Ved hjelp av simple grafiske elementer kan du gi boligkjøpere et kjapt
-          overblikk over dine tjenester.
-        </p>
-      </div>
-    </div>
+    <HorizontalHeader
+      title="Presenter dine tjenester"
+      description="Ved hjelp av grafiske elementer kan du gi boligkjøpere et kjapt overblikk over dine tjenester."
+      iconComponent={() => <FaStar />}
+    />
     <div className={styles.container}>
       <div className={styles.serviceGrid}>
         <div className={styles.service}>

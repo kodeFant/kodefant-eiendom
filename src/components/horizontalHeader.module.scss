@@ -1,0 +1,72 @@
+@import 'modules/variables';
+@import 'modules/fonts';
+@import 'modules/colors';
+@import 'modules/tags';
+
+.serviceHeader {
+  display: flex;
+  flex-direction: column;
+  padding-left: $container;
+  padding-right: $container;
+
+  @include breakpoint(phablet) {
+    flex-direction: row;
+  }
+
+  @include breakpoint(laptop) {
+    width: 970px;
+  }
+}
+
+.horizontalDecoration {
+  text-align: center;
+
+  margin-left: 0;
+  position: relative;
+
+  @include breakpoint(tablet) {
+    text-align: left;
+  }
+
+  .headerIcon {
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: $borderLine solid $lightgray;
+    height: 3rem;
+    width: 3rem;
+    vertical-align: middle;
+    color: $lightgray;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  &:before {
+    background-color: $lightgray;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    z-index: -1;
+
+  }
+
+  &:before {
+    right: -0.5em;
+    margin-left: -50%;
+  }
+
+}
+
+.serviceHeaderContent {
+  margin: 0;
+  margin-top: 1rem;
+
+  @include breakpoint(tablet) {
+    margin: 0 $container;
+    margin-top: 0;
+  }
+}

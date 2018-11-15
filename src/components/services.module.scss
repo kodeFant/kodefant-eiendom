@@ -4,7 +4,6 @@
 @import 'modules/tags';
 
 .services {
-  composes: container from global;
   margin-top: 4.5rem;
   margin-bottom: 4.5rem;
 
@@ -27,55 +26,11 @@
 
 }
 
-// Service Header
-
-
-
-.serviceHeader {
-  display: flex;
-  flex-direction: column;
-
-  @include breakpoint(tablet) {
-    flex-direction: row;
-  }
+.container {
+  composes: container from global;
 }
 
-.horizontalDecoration {
-  display: flex;
-  justify-content: center;
 
-  .headerIcon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: $borderLine solid $lightgray;
-    height: 3rem;
-    width: 3rem;
-    vertical-align: middle;
-    color: $lightgray;
-
-
-  }
-
-  &:before {
-    background: black;
-    height: 2px;
-    flex: 1;
-    content: '';
-    left: 100%;
-  }
-
-}
-
-.serviceHeaderContent {
-  margin: 0;
-  margin-top: 1rem;
-
-  @include breakpoint(tablet) {
-    margin: 0 $container;
-    margin-top: 0;
-  }
-}
 
 // Service Grid
 
