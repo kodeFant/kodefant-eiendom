@@ -1,5 +1,6 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
 import PropTypes from 'prop-types'
 import styles from './ourAgents.module.scss'
 import { FaUser } from 'react-icons/fa'
@@ -9,15 +10,24 @@ import HorizontalHeader from './horizontalHeader'
 
 const AgentBox = props => (
   <div className={styles.agentBox}>
-    <div className={styles.img} />
-    <div>{props.name}</div>
+    <div className={styles.img}>{props.children}</div>
+    <div className={styles.agentName}>{props.name}</div>
   </div>
 )
 AgentBox.propTypes = {
   name: PropTypes.string,
+  children: PropTypes.node,
 }
 
-const ourAgents = () => (
+const gatsbyImageStyle = {
+  height: '100%',
+}
+
+const imgStyle = {
+  objectFit: 'cover',
+}
+
+const OurAgents = ({ data }) => (
   <HeroLayout className={styles.ourAgents}>
     <HorizontalHeader
       icon={<FaUser />}
@@ -26,27 +36,60 @@ const ourAgents = () => (
     />
     <div className={styles.container}>
       <div className={styles.agentGrid}>
-        <AgentBox name="Ola Jensen" />
-        <AgentBox name="Siv Ulltveit" />
-        <AgentBox name="Silje Arnesen" />
+        <AgentBox name="Ola Jensen">
+          <Img
+            style={gatsbyImageStyle}
+            imgStyle={imgStyle}
+            fluid={data.imageOne.childImageSharp.fluid}
+          />
+        </AgentBox>
+        <AgentBox name="Jens Ulltveit">
+          <Img
+            style={gatsbyImageStyle}
+            imgStyle={imgStyle}
+            fluid={data.imageTwo.childImageSharp.fluid}
+          />
+        </AgentBox>
+        <AgentBox name="Silje Arnesen">
+          <Img
+            style={gatsbyImageStyle}
+            imgStyle={imgStyle}
+            fluid={data.imageThree.childImageSharp.fluid}
+          />
+        </AgentBox>
       </div>
     </div>
   </HeroLayout>
 )
 
-export default ourAgents
+OurAgents.propTypes = {
+  data: PropTypes.any,
+}
 
-export const query = graphql`
-  query {
-    agent1: file(relativePath: { eq: "agents/agent1.jpg" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 700) {
-          # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
-          ...GatsbyImageSharpFluid_noBase64
+const ourAgentswithQuery = props => (
+  <StaticQuery
+    query={graphql`
+      fragment fluidImage on File {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
-    }
-  }
-`
+      query {
+        imageOne: file(relativePath: { eq: "agents/agent1.jpg" }) {
+          ...fluidImage
+        }
+        imageTwo: file(relativePath: { eq: "agents/agent2.jpg" }) {
+          ...fluidImage
+        }
+        imageThree: file(relativePath: { eq: "agents/agent3.jpg" }) {
+          ...fluidImage
+        }
+      }
+    `}
+    render={data => <OurAgents data={data} {...props} />}
+  />
+)
+
+export default ourAgentswithQuery
