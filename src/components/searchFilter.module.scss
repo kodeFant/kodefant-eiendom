@@ -24,7 +24,7 @@ $filterStroke: $white;
   display: flex;
   flex-direction: column;
 
-  input:not([type=checkbox]),
+  input:not([type='checkbox']),
   select,
   .dd__selectControl {
     padding: 0.5rem;
@@ -44,9 +44,8 @@ $filterStroke: $white;
     }
   }
 
-
   .dd__list {
-    background-color: rgba($white, 0.9)
+    background-color: rgba($white, 0.9);
   }
 
   .dd__expandIcon {
@@ -87,8 +86,12 @@ select {
 
   @include breakpoint(laptop) {
     grid-column: 3 / 3;
+    padding: 3rem 2rem;
   }
 
+  @include breakpoint(desktop) {
+    padding: 3rem;
+  }
 }
 
 .checkbox {
@@ -102,6 +105,9 @@ select {
     margin-left: 0.3rem;
     background-color: transparent;
     cursor: pointer;
+    @include breakpoint(laptop) {
+      font-size: 0.7rem;
+    }
   }
 
   &:nth-of-type(even) {
@@ -113,7 +119,6 @@ select {
       margin-left: 0;
     }
   }
-
 }
 
 .twoFields {

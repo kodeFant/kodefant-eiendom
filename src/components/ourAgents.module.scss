@@ -1,0 +1,28 @@
+@import 'modules/variables';
+@import 'modules/fonts';
+@import 'modules/colors';
+@import 'modules/tags';
+
+.container {
+  composes: container from global;
+}
+
+.ourAgents {
+  padding-top: 4.5rem;
+}
+
+.agentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.agentBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  background: $black;
+  height: 22rem;
+}

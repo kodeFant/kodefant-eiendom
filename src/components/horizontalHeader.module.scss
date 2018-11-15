@@ -7,11 +7,11 @@
   display: grid;
   text-align: center;
   grid-template-columns: $container 1fr $container;
-  grid-template-rows: 1fr 1fr;
   grid-template-areas: 'icon icon icon' 'filler1 content filler2';
 
   margin-left: 0;
   position: relative;
+  margin-bottom: 2rem;
 
   @include breakpoint(phabletAndMobileonly) {
     .iconContainer {
@@ -108,12 +108,23 @@
   margin: 0;
   margin-top: 1rem;
 
+  h2.header {
+    font-size: $serviceHeaderContentH2;
+  }
+
+  p.paragraph {
+    margin-top: 0.5rem;
+    font-size: $serviceHeaderContentP;
+    line-height: 1.5rem;
+    color: $darkgray;
+  }
+
   @include breakpoint(tablet) {
     margin: 0 2rem;
     margin-top: 0;
   }
 
   @include breakpoint(laptop) {
-    max-width: 30rem;
+    max-width: 25rem;
   }
 }

@@ -1,0 +1,42 @@
+@import 'modules/variables';
+@import 'modules/fonts';
+@import 'modules/colors';
+@import 'modules/tags';
+
+.iconContainer {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .verticalLine {
+    display: inline-block;
+    border-right: 0.08rem solid white;
+    height: 4rem;
+    justify-self: center;
+  }
+
+  .iconBox {
+    border: 0.08rem white solid;
+    height: 3rem;
+    width: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.headerContent {
+  max-width: 20rem;
+  h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $serviceHeaderContentH2;
+    margin-top: 1rem;
+  }
+
+  p {
+    color: $darkgray;
+    font-size: $serviceHeaderContentP;
+    margin: 1rem 0;
+  }
+}

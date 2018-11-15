@@ -4,33 +4,11 @@
 @import 'modules/tags';
 
 .services {
-  margin-top: 4.5rem;
-  margin-bottom: 4.5rem;
-
-  h2 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  p {
-    color: $darkgray;
-    line-height: 1.8rem;
-  }
-
 }
 
 .container {
   composes: container from global;
 }
-
-
 
 // Service Grid
 
@@ -62,38 +40,4 @@
     padding: 1rem;
     line-height: 1.8rem;
   }
-}
-
-.iconContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3.7rem;
-  height: 3.7rem;
-  border-radius: 50%;
-  background-color: $main;
-  margin: 1.5rem 0;
-}
-
-.iconContainer:hover {
-  background-color: $maindark;
-
-  &+h3 {
-    border-bottom: 2px main solid;
-  }
-}
-
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  color: white;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-}
-
-.icon:hover {
-  border: 1px white solid;
 }

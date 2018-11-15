@@ -8,13 +8,13 @@ const horizontalHeader = props => (
 
     <div className={styles.iconContainer}>
       <span>
-        <div className={styles.headerIcon}>{props.iconComponent()}</div>
+        <div className={styles.headerIcon}>{props.icon}</div>
       </span>
     </div>
 
     <div className={styles.serviceHeaderContent}>
-      <h2>{props.title}</h2>
-      <p>{props.description}</p>
+      <h2 className={styles.header}>{props.title}</h2>
+      <p className={styles.paragraph}>{props.description}</p>
     </div>
 
     <div className={styles.containerMargin} />
@@ -24,7 +24,7 @@ const horizontalHeader = props => (
 horizontalHeader.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  iconComponent: PropTypes.func,
+  icon: PropTypes.element,
 }
 
 export default horizontalHeader

@@ -10,8 +10,8 @@ const JumbotronImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "jumbotron.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
-              ...GatsbyImageSharpFluid
+            fluid(maxWidth: 2500) {
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
