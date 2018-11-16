@@ -1,13 +1,14 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout/layout'
-import Jumbotron from '../components/jumbotron'
-import SearchFilter from '../components/searchFilter'
-import Services from '../components/services'
-import KeyNumbers from '../components/keyNumbers'
-import OurAgents from '../components/ourAgents'
+import Jumbotron from '../components/heroes/jumbotron'
+import SearchFilter from '../components/heroes/externalSearchFilter'
+import Services from '../components/heroes/services'
+import KeyNumbers from '../components/heroes/keyNumbers'
+import OurAgents from '../components/heroes/ourAgents'
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <Jumbotron />
     <SearchFilter />

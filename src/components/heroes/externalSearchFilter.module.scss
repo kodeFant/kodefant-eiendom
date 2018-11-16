@@ -1,0 +1,137 @@
+@import '../modules/variables';
+@import '../modules/fonts';
+@import '../modules/colors';
+@import '../modules/tags';
+
+$filterStroke: $white;
+
+.filterGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: $filterStroke;
+
+  @include breakpoint(phablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(laptop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.col {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  input:not([type='checkbox']),
+  select,
+  .dd__selectControl {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px $filterStroke solid;
+    border-radius: 0;
+    color: $filterStroke;
+    outline-color: black;
+    margin: 0;
+    height: 2rem;
+    font-size: 0.7rem;
+
+    &::placeholder {
+      color: $filterStroke;
+      opacity: 1;
+      /* Firefox */
+    }
+  }
+
+  .dd__list {
+    background-color: rgba($white, 0.9);
+  }
+
+  .dd__expandIcon {
+    fill: $filterStroke;
+  }
+
+  label {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+select {
+  border-radius: 0;
+  outline: none;
+}
+
+.col1 {
+  composes: col;
+  background-color: $maindark;
+}
+
+.col2 {
+  composes: col;
+  background-color: rgba($main, 1);
+}
+
+.col3 {
+  composes: col;
+  background-color: rgba($main, 0.8);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 3rem;
+
+  @include breakpoint(phablet) {
+    grid-column: 1 / -1;
+  }
+
+  @include breakpoint(laptop) {
+    grid-column: 3 / 3;
+    padding: 3rem 2rem;
+  }
+
+  @include breakpoint(desktop) {
+    padding: 3rem;
+  }
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  label {
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+    background-color: transparent;
+    cursor: pointer;
+    @include breakpoint(laptop) {
+      font-size: 0.7rem;
+    }
+  }
+
+  &:nth-of-type(even) {
+    @include breakpoint(phablet) {
+      margin-left: 3rem;
+    }
+
+    @include breakpoint(laptop) {
+      margin-left: 0;
+    }
+  }
+}
+
+.twoFields {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    width: 40%;
+  }
+}
+
+.searchButtonContainer {
+  display: flex;
+  padding: 2.5rem;
+  justify-content: center;
+}

@@ -1,0 +1,46 @@
+@import '../modules/variables';
+@import '../modules/fonts';
+@import '../modules/colors';
+@import '../modules/tags';
+
+.container {
+  composes: container from global;
+}
+
+.ourAgents {
+  padding-top: 4.5rem;
+}
+
+.agentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.agentBox {
+  display: flex;
+  flex-direction: column;
+
+  &:hover .agentName {
+    background-color: $maindark;
+  }
+}
+
+.img {
+  background: $black;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.agentBoxImg {
+  object-fit: fill;
+  height: 100%;
+}
+
+.agentName {
+  background-color: $darkgray;
+  color: $white;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}

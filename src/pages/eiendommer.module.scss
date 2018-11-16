@@ -1,0 +1,27 @@
+@import '../components/modules/variables';
+@import '../components/modules/fonts';
+@import '../components/modules/colors';
+@import '../components/modules/tags';
+
+.container {
+  composes: container from global;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'searchFilter' 'searchResults';
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  grid-gap: 2rem;
+
+  @include breakpoint(phablet) {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'searchFilter searchResults';
+  }
+}
+
+.searchFilter {
+  grid-area: searchFilter;
+}
+
+.searchResults {
+  grid-area: searchResults;
+}

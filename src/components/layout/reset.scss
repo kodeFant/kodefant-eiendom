@@ -85,12 +85,12 @@
 :global(mark),
 :global(audio),
 :global(video) {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -105,48 +105,55 @@
 :global(menu),
 :global(nav),
 :global(section) {
-	display: block;
+  display: block;
 }
 
 :global(body) {
-	line-height: 1;
+  line-height: 1;
 }
 
 :global(ol),
 :global(ul) {
-	list-style: none;
+  list-style: none;
 }
 
 :global(blockquote),
 :global(q) {
-	quotes: none;
+  quotes: none;
 }
 
 :global(blockquote:before),
 :global(blockquote:after),
 :global(q:before),
 :global(q:after) {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 
 :global(table) {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .container {
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: $container;
-	padding-right: $container;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container;
+  padding-right: $container;
 
-	@include breakpoint(laptop) {
-		width: 970px;
-	}
+  @include breakpoint(laptop) {
+    width: 970px;
+  }
+}
+
+html,
+body,
+#___gatsby,
+#___gatsby > div {
+  height: 100%;
 }
 
 body {
-	font-family: 'Lato', sans-serif;
-	box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
 }

@@ -1,0 +1,15 @@
+@import 'modules/variables';
+@import 'modules/fonts';
+@import 'modules/colors';
+@import 'modules/tags';
+
+.searchResults {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 2.5rem;
+
+  @include breakpoint(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+}

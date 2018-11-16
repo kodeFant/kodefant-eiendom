@@ -20,6 +20,10 @@
   & + h3 {
     border-bottom: 2px main solid;
   }
+
+  & .icon {
+    border: 1px white solid;
+  }
 }
 
 .icon {
@@ -31,8 +35,4 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-}
-
-.icon:hover {
-  border: 1px white solid;
 }

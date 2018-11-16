@@ -1,0 +1,72 @@
+@import 'modules/variables';
+@import 'modules/fonts';
+@import 'modules/colors';
+@import 'modules/tags';
+
+$cardPadding: 1rem;
+$smallFont: 0.8rem;
+$cardInfoHeight: 10rem;
+
+.propertyCard {
+  border: 1px $lightgray solid;
+  position: relative;
+  height: 22rem;
+  position: relative;
+}
+
+.cardInfoContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.image {
+  height: calc(100% - #{$cardInfoHeight});
+  background-color: $black;
+  overflow: hidden;
+}
+
+.cardInfo {
+  height: $cardInfoHeight;
+  position: relative;
+
+  .cardTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem $cardPadding;
+
+    background-color: $maindark;
+    color: white;
+    font-size: $smallFont;
+  }
+
+  .cardHeader {
+    padding: $cardPadding;
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .cardDescription {
+      font-size: $smallFont;
+      line-height: 1.5rem;
+      color: $darkgray;
+    }
+  }
+
+  .cardFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: $cardPadding;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    border-top: 1px $lightgray solid;
+    font-size: $smallFont;
+    color: $darkgray;
+  }
+}
