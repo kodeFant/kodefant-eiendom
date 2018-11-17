@@ -4,8 +4,13 @@ import PropTypes from 'prop-types'
 import { Formik, Form, Field } from 'formik'
 import ReactSelect from './reactSelect'
 import ReactCheckbox from './reactCheckbox'
+import { navigate } from 'gatsby'
 
 class searchFilter extends Component {
+  state = {
+    queryString: {},
+  }
+
   render() {
     const reactFilterStyles = {
       dd__selectControl: styles.dd__selectControl,
@@ -39,6 +44,11 @@ class searchFilter extends Component {
       { value: '2', label: '2' },
       { value: '3+', label: '3+' },
     ]
+    const handleInputChange = event => {
+      //eslint-disable-next-line
+      this.setState({queryString: {...this.state.queryString, [event.target.name]: event.target.value}})
+      /* navigate(`/eiendommer/?${event.target.name}=${event.target.value}`) */
+    }
     return (
       <div className={` ${this.props.gridClass}`}>
         {' '}
@@ -65,6 +75,10 @@ class searchFilter extends Component {
             view: false,
             janitor: false,
           }}
+          onSubmit={values => {
+            //eslint-disable-next-line
+            console.log(values)
+          }}
           render={props => (
             <Form>
               <div className={styles.searchFilter}>
@@ -74,6 +88,10 @@ class searchFilter extends Component {
                     type="text"
                     name="keyword"
                     placeholder="Søk etter stikkord"
+                    onBlur={event => {
+                      handleInputChange(event)
+                      props.setFieldTouched
+                    }}
                   />
                 </div>
 
@@ -102,6 +120,10 @@ class searchFilter extends Component {
                     type="text"
                     name="place"
                     placeholder="Skriv inn sted"
+                    onBlur={event => {
+                      handleInputChange(event)
+                      props.setFieldTouched
+                    }}
                   />
                 </div>
                 <label htmlFor="bedrooms">Soverom</label>

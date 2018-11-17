@@ -43,8 +43,8 @@
   view: true
   janitor: false
   images:
-    - enebolig2.jpg
-    - enebolig2a.jpg
+    - '../images/properties/enebolig2.jpg'
+    - '../images/properties/enebolig2a.jpg'
 
 - title: Porteruds fineste
   description: Koselig liten enebolig med kort avstand til sjøen
@@ -67,8 +67,8 @@
   view: true
   janitor: false
   images:
-    - enebolig3.jpg
-    - enebolig3a.jpg
+    - '../images/properties/enebolig3.jpg'
+    - '../images/properties/enebolig3a.jpg'
 
 - title: Klepsodden marina
   description: Havnær enebolig med båtplass inkludert
@@ -91,8 +91,8 @@
   view: true
   janitor: false
   images:
-    - enebolig4.jpg
-    - enebolig4a.jpg
+    - '../images/properties/enebolig4.jpg'
+    - '../images/properties/enebolig4a.jpg'
 
 - title: Rasvik sentrum sameie
   description: Studioleilighet med byens beste beliggenhet
@@ -115,8 +115,8 @@
   view: false
   janitor: false
   images:
-    - leilighet1.jpg
-    - leilighet1a.jpg
+    - '../images/properties/leilighet1.jpg'
+    - '../images/properties/leilighet1a.jpg'
 
 - title: Porterud borettslag
   description: Romslig leilighet utenfor Rasvik
@@ -139,8 +139,8 @@
   view: true
   janitor: true
   images:
-    - leilighet2.jpg
-    - leilighet2a.jpg
+    - '../images/properties/leilighet2.jpg'
+    - '../images/properties/leilighet2a.jpg'
 
 - title: Rasviktoppen borettslag
   description: Koselig liten leilighet med kort avstand til sjøen
@@ -163,8 +163,8 @@
   view: true
   janitor: false
   images:
-    - leilighet3.jpg
-    - leilighet3a.jpg
+    - '../images/properties/leilighet3.jpg'
+    - '../images/properties/leilighet3a.jpg'
 
 - title: Ravsik sentrum
   description: Familieleilighet nær skole, butikk og kjøpesenter
@@ -187,8 +187,8 @@
   view: true
   janitor: false
   images:
-    - leilighet4.jpg
-    - leilighet4a.jpg
+    - '../images/properties/leilighet4.jpg'
+    - '../images/properties/leilighet4a.jpg'
 
 - title: Sameiet Rasvik allé
   description: To etasjer og flott beliggenhet til havet
@@ -211,8 +211,8 @@
   view: true
   janitor: false
   images:
-    - rekehus1.jpg
-    - rekkehus1a.jpg
+    - '../images/properties/rekkehus1.jpg'
+    - '../images/properties/rekkehus1a.jpg'
 
 - title: Porterud borettslag
   description: Romslig rekkehus utenfor Rasvik
@@ -235,8 +235,8 @@
   view: true
   janitor: true
   images:
-    - rekkehus2.jpg
-    - rekkehus2a.jpg
+    - '../images/properties/rekkehus3a.jpg'
+    - '../images/properties/rekkehus3.jpg'
 
 - title: Rasviktoppen borettslag
   description: Koselig liten rekkehus med kort avstand til sjøen
@@ -259,5 +259,5 @@
   view: true
   janitor: false
   images:
-    - rekkehus3.jpg
-    - rekkehus3a.jpg
+    - '../images/properties/rekkehus2.jpg'
+    - '../images/properties/rekkehus2a.jpg'

@@ -4,18 +4,15 @@ import Img from 'gatsby-image'
 import PropTypes from 'prop-types'
 
 const propertyCard = props => {
-  //eslint-disable-next-line no-console
-  console.log(props.images)
-
   const data = props.data.node
   const price = data.price / 1000000
   return (
     <div className={styles.propertyCard}>
       <div className={styles.image}>
-        {/* <Img
+        <Img
           style={{ height: '100%' }}
-          fluid={data.images[0]}
-        /> */}
+          fluid={data.images[0].childImageSharp.fluid}
+        />
       </div>
       <div className={styles.cardInfoContainer}>
         <div className={styles.cardInfo}>

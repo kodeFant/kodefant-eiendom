@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
@@ -8,17 +8,23 @@ import SearchResults from '../components/propertySearchResults'
 
 import grid from './eiendommer.module.scss'
 
-const PropertyPage = ({ data }) => {
-  //eslint-disable-next-line no-console
-  console.log(data)
-  return (
-    <Layout>
-      <div className={grid.container}>
-        <SearchFilter gridClass={grid.searchFilter} />
-        <SearchResults gridClass={grid.searchResults} data={data} />
-      </div>
-    </Layout>
-  )
+class PropertyPage extends Component {
+  state = {
+    data: { ...this.props.data },
+  }
+  render() {
+    return (
+      <Layout>
+        <div className={grid.container}>
+          <SearchFilter gridClass={grid.searchFilter} />
+          <SearchResults
+            gridClass={grid.searchResults}
+            data={this.state.data}
+          />
+        </div>
+      </Layout>
+    )
+  }
 }
 
 PropertyPage.propTypes = {
