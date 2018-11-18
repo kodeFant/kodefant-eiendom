@@ -10,6 +10,12 @@ const NavLink = props => (
   </Link>
 )
 
+const isPartiallyActive = props => {
+  return props.isPartiallyCurrent
+    ? { className: `${styles.active} ${styles.navLink}` }
+    : null
+}
+
 class HeaderNav extends Component {
   state = {
     mobileMenuVisible: false,
@@ -35,7 +41,9 @@ class HeaderNav extends Component {
             </div>
             <NavLink to="/">Hjem</NavLink>
             <NavLink to="om">Om</NavLink>
-            <NavLink to="eiendommer/?">Eiendommer</NavLink>
+            <NavLink getProps={isPartiallyActive} to="eiendommer/">
+              Eiendommer
+            </NavLink>
             <NavLink to="kontakt">Kontakt</NavLink>
           </div>
           <div

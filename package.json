@@ -16,6 +16,7 @@
     "gatsby-transformer-sharp": "^2.1.4",
     "gatsby-transformer-yaml": "^2.1.5",
     "node-sass": "^4.10.0",
+    "query-string": "5",
     "rc-checkbox": "^2.1.5",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",

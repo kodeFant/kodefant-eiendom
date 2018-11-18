@@ -5,6 +5,7 @@ import { Formik, Form, Field } from 'formik'
 import ReactSelect from './reactSelect'
 import ReactCheckbox from './reactCheckbox'
 import { navigate } from 'gatsby'
+import queryString from 'query-string'
 
 class searchFilter extends PureComponent {
   render() {
@@ -50,6 +51,7 @@ class FormikForm extends PureComponent {
     options: {},
     queryString: '',
   }
+
   componentDidUpdate(prevProps, prevState) {
     if (this.state.options !== prevState.options) {
       const options = this.state.options
@@ -57,8 +59,6 @@ class FormikForm extends PureComponent {
       for (const option in options) {
         queryString === '' ? (queryString += '?') : (queryString += '&')
         if (typeof options[option] === 'object') {
-          //eslint-disable-next-line
-          console.log("is object", options[option]) 
           queryString += `${option}=${options[option].value}`
         } else {
           queryString += `${option}=${options[option]}`
@@ -66,15 +66,22 @@ class FormikForm extends PureComponent {
         this.props.setFieldValue(option, options[option])
       }
       this.setState({ queryString: queryString })
-      //eslint-disable-next-line
-    console.log(queryString)
-      //eslint-disable-next-line
-    console.log("current", this.state.options)
-      //eslint-disable-next-line
-    console.log('prev', prevState.options)
       navigate(`/eiendommer/${queryString}`)
     }
   }
+
+  componentDidMount() {
+    this.queryStringToOptions()
+  }
+
+  queryStringToOptions = () => {
+    const parsedQueryString = queryString.parse(location.search)
+
+    this.setState({
+      options: parsedQueryString,
+    })
+  }
+
   handleInputChange = event => {
     this.setState({
       options: {
@@ -86,10 +93,6 @@ class FormikForm extends PureComponent {
   }
 
   handleSelect = (name, prop) => {
-    //eslint-disable-next-line no-console
-    console.log(name, prop)
-    //eslint-disable-next-line no-console
-    console.log(this.props.values.houseType)
     this.props.setFieldValue(name, prop)
     this.setState({
       options: {
