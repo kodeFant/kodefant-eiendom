@@ -35,7 +35,7 @@ class HeaderNav extends Component {
             </div>
             <NavLink to="/">Hjem</NavLink>
             <NavLink to="om">Om</NavLink>
-            <NavLink to="eiendommer">Eiendommer</NavLink>
+            <NavLink to="eiendommer/?">Eiendommer</NavLink>
             <NavLink to="kontakt">Kontakt</NavLink>
           </div>
           <div

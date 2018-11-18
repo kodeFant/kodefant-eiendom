@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import styles from './propertySearchFilter.module.scss'
 import PropTypes from 'prop-types'
 import { Formik, Form, Field } from 'formik'
@@ -6,9 +6,97 @@ import ReactSelect from './reactSelect'
 import ReactCheckbox from './reactCheckbox'
 import { navigate } from 'gatsby'
 
-class searchFilter extends Component {
+class searchFilter extends PureComponent {
+  render() {
+    return (
+      <div className={` ${this.props.gridClass}`}>
+        {' '}
+        <Formik
+          initialValues={{
+            keyword: '',
+            houseType: { value: 'alle', label: 'Alle' },
+            ownerType: { value: 'alle', label: 'Alle' },
+            place: '',
+            bedrooms: { value: '0', label: '0+' },
+            bathrooms: { value: '1', label: '1' },
+            minSize: 0,
+            maxSize: 1000,
+            minPrice: 0,
+            maxPrice: 10000000,
+            balcony: false,
+            parking: false,
+            elevator: false,
+            noRedwellers: false,
+            svimmingpool: false,
+            fireplace: false,
+            beach: false,
+            hiking: false,
+            view: false,
+            janitor: false,
+          }}
+          onSubmit={values => {
+            //eslint-disable-next-line
+            console.log(values)
+          }}
+          component={FormikForm}
+        />
+      </div>
+    )
+  }
+}
+
+class FormikForm extends PureComponent {
   state = {
-    queryString: {},
+    options: {},
+    queryString: '',
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.options !== prevState.options) {
+      const options = this.state.options
+      let queryString = ''
+      for (const option in options) {
+        queryString === '' ? (queryString += '?') : (queryString += '&')
+        if (typeof options[option] === 'object') {
+          //eslint-disable-next-line
+          console.log("is object", options[option]) 
+          queryString += `${option}=${options[option].value}`
+        } else {
+          queryString += `${option}=${options[option]}`
+        }
+        this.props.setFieldValue(option, options[option])
+      }
+      this.setState({ queryString: queryString })
+      //eslint-disable-next-line
+    console.log(queryString)
+      //eslint-disable-next-line
+    console.log("current", this.state.options)
+      //eslint-disable-next-line
+    console.log('prev', prevState.options)
+      navigate(`/eiendommer/${queryString}`)
+    }
+  }
+  handleInputChange = event => {
+    this.setState({
+      options: {
+        ...this.state.options,
+        [event.target.name]: event.target.value,
+      },
+    })
+    this.props.setFieldTouched(event.target.name)
+  }
+
+  handleSelect = (name, prop) => {
+    //eslint-disable-next-line no-console
+    console.log(name, prop)
+    //eslint-disable-next-line no-console
+    console.log(this.props.values.houseType)
+    this.props.setFieldValue(name, prop)
+    this.setState({
+      options: {
+        ...this.state.options,
+        [name]: prop,
+      },
+    })
   }
 
   render() {
@@ -44,208 +132,203 @@ class searchFilter extends Component {
       { value: '2', label: '2' },
       { value: '3+', label: '3+' },
     ]
-    const handleInputChange = event => {
-      //eslint-disable-next-line
-      this.setState({queryString: {...this.state.queryString, [event.target.name]: event.target.value}})
-      /* navigate(`/eiendommer/?${event.target.name}=${event.target.value}`) */
-    }
+
     return (
-      <div className={` ${this.props.gridClass}`}>
-        {' '}
-        <Formik
-          initialValues={{
-            keyword: '',
-            houseType: { value: 'alle', label: 'Alle' },
-            ownerType: { value: 'alle', label: 'Alle' },
-            place: '',
-            bedrooms: { value: '0', label: '0+' },
-            bathrooms: { value: '1', label: '1' },
-            minSize: 0,
-            maxSize: 1000,
-            minPrice: 0,
-            maxPrice: 10000000,
-            balcony: false,
-            parking: false,
-            elevator: false,
-            noRedwellers: false,
-            svimmingpool: false,
-            fireplace: false,
-            beach: false,
-            hiking: false,
-            view: false,
-            janitor: false,
-          }}
-          onSubmit={values => {
-            //eslint-disable-next-line
-            console.log(values)
-          }}
-          render={props => (
-            <Form>
-              <div className={styles.searchFilter}>
-                <div className={styles.formikInput}>
-                  <label htmlFor="keyword">Stikkord</label>
-                  <Field
-                    type="text"
-                    name="keyword"
-                    placeholder="Søk etter stikkord"
-                    onBlur={event => {
-                      handleInputChange(event)
-                      props.setFieldTouched
-                    }}
-                  />
-                </div>
+      <Form>
+        <div className={styles.searchFilter}>
+          <div className={styles.formikInput}>
+            <label htmlFor="keyword">Stikkord</label>
+            <Field
+              type="text"
+              name="keyword"
+              placeholder="Søk etter stikkord"
+              onBlur={event => {
+                this.handleInputChange(event)
+              }}
+            />
+          </div>
 
-                <label htmlFor="houseType">Boligtype</label>
-                <ReactSelect
-                  name="houseType"
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.houseType}
-                  options={houseType}
-                  classNames={reactFilterStyles}
-                />
+          <label htmlFor="houseType">Boligtype</label>
+          <ReactSelect
+            name="houseType"
+            onChange={(name, label) => this.handleSelect(name, label)}
+            onBlur={this.props.setFieldTouched}
+            value={this.props.values.houseType}
+            options={houseType}
+            classNames={reactFilterStyles}
+          />
 
-                <label htmlFor="ownerType">Eierform</label>
-                <ReactSelect
-                  name="ownerType"
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.ownerType}
-                  options={ownerType}
-                  classNames={reactFilterStyles}
-                />
-                <div className={styles.formikInput}>
-                  <label htmlFor="place">Sted</label>
-                  <Field
-                    type="text"
-                    name="place"
-                    placeholder="Skriv inn sted"
-                    onBlur={event => {
-                      handleInputChange(event)
-                      props.setFieldTouched
-                    }}
-                  />
-                </div>
-                <label htmlFor="bedrooms">Soverom</label>
-                <ReactSelect
-                  name="bedrooms"
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.bedrooms}
-                  options={bedrooms}
-                  classNames={reactFilterStyles}
-                />
-                <label htmlFor="bathrooms">Bad</label>
-                <ReactSelect
-                  name="bathrooms"
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.bathrooms}
-                  options={bathrooms}
-                  classNames={reactFilterStyles}
-                />
-                <label htmlFor="size">Areal</label>
-                <div className={styles.twoFields}>
-                  <Field type="number" name="minSize" placeholder="Minimum" />
-                  <Field type="number" name="maxSize" placeholder="Maksimum" />
-                </div>
-                <label htmlFor="price">Pris</label>
-                <div className={styles.twoFields}>
-                  <Field type="number" name="minPrice" placeholder="Minimum" />
-                  <Field type="number" name="maxPrice" placeholder="Maksimum" />
-                </div>
-                <div className={styles.checkboxContainer}>
-                  <ReactCheckbox
-                    style={styles.checkbox}
-                    onChange={props.setFieldValue}
-                    onBlur={props.setFieldTouched}
-                    value={props.values.balcony}
-                    name="balcony"
-                    label="Balkong"
-                  />
-                  <ReactCheckbox
-                    style={styles.checkbox}
-                    onChange={props.setFieldValue}
-                    onBlur={props.setFieldTouched}
-                    value={props.values.parking}
-                    name="parking"
-                    label="Garasje/P-plass"
-                  />
-                  <ReactCheckbox
-                    style={styles.checkbox}
-                    onChange={props.setFieldValue}
-                    onBlur={props.setFieldTouched}
-                    value={props.values.elevator}
-                    name="elevator"
-                    label="Heis"
-                  />
-                  <ReactCheckbox
-                    style={styles.checkbox}
-                    onChange={props.setFieldValue}
-                    onBlur={props.setFieldTouched}
-                    value={props.values.noRedwellers}
-                    name="noRedwellers"
-                    label="Ingen gjenboere"
-                  />
-                  <ReactCheckbox
-                    style={styles.checkbox}
-                    onChange={props.setFieldValue}
-                    onBlur={props.setFieldTouched}
-                    value={props.values.swimmingpool}
-                    name="swimmingpool"
-                    label="Svømmebasseng"
-                  />
-                  <ReactCheckbox
-                    style={styles.checkbox}
-                    onChange={props.setFieldValue}
-                    onBlur={props.setFieldTouched}
-                    value={props.values.fireplace}
-                    name="fireplace"
-                    label="Peis/ildsted"
-                  />
-                  <ReactCheckbox
-                    style={styles.checkbox}
-                    onChange={props.setFieldValue}
-                    onBlur={props.setFieldTouched}
-                    value={props.values.beach}
-                    name="beach"
-                    label="Strandlinje"
-                  />
-                  <ReactCheckbox
-                    style={styles.checkbox}
-                    onChange={props.setFieldValue}
-                    onBlur={props.setFieldTouched}
-                    value={props.values.hiking}
-                    name="hiking"
-                    label="Turterreng"
-                  />
-                  <ReactCheckbox
-                    style={styles.checkbox}
-                    onChange={props.setFieldValue}
-                    onBlur={props.setFieldTouched}
-                    value={props.values.view}
-                    name="view"
-                    label="Utsikt"
-                  />
-                  <ReactCheckbox
-                    style={styles.checkbox}
-                    onChange={props.setFieldValue}
-                    onBlur={props.setFieldTouched}
-                    value={props.values.janitor}
-                    name="janitor"
-                    label="Vaktmester"
-                  />
-                </div>
-              </div>
-              <div className={styles.searchButtonContainer}>
-                <button type="submit">Søk</button>
-              </div>
-            </Form>
-          )}
-        />
-      </div>
+          <label htmlFor="ownerType">Eierform</label>
+          <ReactSelect
+            name="ownerType"
+            onChange={(name, label) => this.handleSelect(name, label)}
+            onBlur={this.props.setFieldTouched}
+            value={this.props.values.ownerType}
+            options={ownerType}
+            classNames={reactFilterStyles}
+          />
+          <div className={styles.formikInput}>
+            <label htmlFor="place">Sted</label>
+            <Field
+              type="text"
+              name="place"
+              placeholder="Skriv inn sted"
+              onBlur={event => {
+                this.handleInputChange(event)
+              }}
+            />
+          </div>
+          <label htmlFor="bedrooms">Soverom</label>
+          <ReactSelect
+            name="bedrooms"
+            onChange={(name, label) => this.handleSelect(name, label)}
+            onBlur={this.props.setFieldTouched}
+            value={this.props.values.bedrooms}
+            options={bedrooms}
+            classNames={reactFilterStyles}
+          />
+          <label htmlFor="bathrooms">Bad</label>
+          <ReactSelect
+            name="bathrooms"
+            onChange={(name, label) => this.handleSelect(name, label)}
+            onBlur={this.props.setFieldTouched}
+            value={this.props.values.bathrooms}
+            options={bathrooms}
+            classNames={reactFilterStyles}
+          />
+          <label htmlFor="size">Areal</label>
+          <div className={styles.twoFields}>
+            <Field
+              type="number"
+              name="minSize"
+              placeholder="Minimum"
+              onBlur={event => {
+                this.handleInputChange(event)
+              }}
+            />
+            <Field
+              type="number"
+              name="maxSize"
+              placeholder="Maksimum"
+              onBlur={event => {
+                this.handleInputChange(event)
+              }}
+            />
+          </div>
+          <label htmlFor="price">Pris</label>
+          <div className={styles.twoFields}>
+            <Field
+              type="number"
+              name="minPrice"
+              placeholder="Minimum"
+              onBlur={event => {
+                this.handleInputChange(event)
+              }}
+            />
+            <Field
+              type="number"
+              name="maxPrice"
+              placeholder="Maksimum"
+              onBlur={event => {
+                this.handleInputChange(event)
+              }}
+            />
+          </div>
+          <div className={styles.checkboxContainer}>
+            <ReactCheckbox
+              style={styles.checkbox}
+              onChange={this.props.setFieldValue}
+              onBlur={this.props.setFieldTouched}
+              value={this.props.values.balcony}
+              name="balcony"
+              label="Balkong"
+            />
+            <ReactCheckbox
+              style={styles.checkbox}
+              onChange={this.props.setFieldValue}
+              onBlur={this.props.setFieldTouched}
+              value={this.props.values.parking}
+              name="parking"
+              label="Garasje/P-plass"
+            />
+            <ReactCheckbox
+              style={styles.checkbox}
+              onChange={this.props.setFieldValue}
+              onBlur={this.props.setFieldTouched}
+              value={this.props.values.elevator}
+              name="elevator"
+              label="Heis"
+            />
+            <ReactCheckbox
+              style={styles.checkbox}
+              onChange={this.props.setFieldValue}
+              onBlur={this.props.setFieldTouched}
+              value={this.props.values.noRedwellers}
+              name="noRedwellers"
+              label="Ingen gjenboere"
+            />
+            <ReactCheckbox
+              style={styles.checkbox}
+              onChange={this.props.setFieldValue}
+              onBlur={this.props.setFieldTouched}
+              value={this.props.values.swimmingpool}
+              name="swimmingpool"
+              label="Svømmebasseng"
+            />
+            <ReactCheckbox
+              style={styles.checkbox}
+              onChange={this.props.setFieldValue}
+              onBlur={this.props.setFieldTouched}
+              value={this.props.values.fireplace}
+              name="fireplace"
+              label="Peis/ildsted"
+            />
+            <ReactCheckbox
+              style={styles.checkbox}
+              onChange={this.props.setFieldValue}
+              onBlur={this.props.setFieldTouched}
+              value={this.props.values.beach}
+              name="beach"
+              label="Strandlinje"
+            />
+            <ReactCheckbox
+              style={styles.checkbox}
+              onChange={this.props.setFieldValue}
+              onBlur={this.props.setFieldTouched}
+              value={this.props.values.hiking}
+              name="hiking"
+              label="Turterreng"
+            />
+            <ReactCheckbox
+              style={styles.checkbox}
+              onChange={this.props.setFieldValue}
+              onBlur={this.props.setFieldTouched}
+              value={this.props.values.view}
+              name="view"
+              label="Utsikt"
+            />
+            <ReactCheckbox
+              style={styles.checkbox}
+              onChange={this.props.setFieldValue}
+              onBlur={this.props.setFieldTouched}
+              value={this.props.values.janitor}
+              name="janitor"
+              label="Vaktmester"
+            />
+          </div>
+        </div>
+        <div className={styles.searchButtonContainer}>
+          <button type="submit">Søk</button>
+        </div>
+      </Form>
     )
   }
+}
+
+FormikForm.propTypes = {
+  values: PropTypes.any,
+  setFieldTouched: PropTypes.func,
+  setFieldValue: PropTypes.func,
 }
 
 searchFilter.propTypes = {

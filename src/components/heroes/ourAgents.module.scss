@@ -13,8 +13,12 @@
 
 .agentGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
+
+  @include breakpoint(phablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .agentBox {
