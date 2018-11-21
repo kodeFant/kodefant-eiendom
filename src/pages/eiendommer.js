@@ -54,15 +54,51 @@ class PropertyPage extends PureComponent {
           )
         })
       }
+
       // HouseType-filter
       if (this.state.options.houseType) {
         filteredData = filteredData.filter(property => {
-          return property.node.houseType.includes(
-            this.state.options.houseType.value
+          return (
+            property.node.houseType.includes(
+              this.state.options.houseType.value
+            ) || this.state.options.houseType.value === 'alle'
           )
         })
       }
+
+      // OwnerType-filter
+      if (this.state.options.ownerType) {
+        filteredData = filteredData.filter(property => {
+          return (
+            property.node.ownerType.includes(
+              this.state.options.ownerType.value
+            ) || this.state.options.ownerType.value === 'alle'
+          )
+        })
+      }
+      // Place Filter
+      if (this.state.options.place) {
+        filteredData = filteredData.filter(property => {
+          return property.node.place
+            .toLowerCase()
+            .includes(this.state.options.place.toLowerCase())
+        })
+      }
+
+      // Bedroom Filter
+      if (this.state.options.bedrooms) {
+        filteredData = filteredData.filter(property => {
+          return property.node.bedrooms >= this.state.options.bedrooms.value
+        })
+      }
+      // Bathroom Filter
+      if (this.state.options.bathrooms) {
+        filteredData = filteredData.filter(property => {
+          return property.node.bathrooms >= this.state.options.bathrooms.value
+        })
+      }
     }
+
     this.setState({ filteredData: filteredData })
   }
 
