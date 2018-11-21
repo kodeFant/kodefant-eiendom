@@ -3,7 +3,7 @@
   address: Snorresgate 48
   place: Rasvik
   postCode: 7345
-  houseType: enebolog
+  houseType: enebolig
   ownerType: borettslag
   bedrooms: 0
   bathrooms: 1
@@ -261,3 +261,75 @@
   images:
     - '../images/properties/rekkehus2.jpg'
     - '../images/properties/rekkehus2a.jpg'
+
+- title: Sameiet Rasvik allé
+  description: To etasjer og flott beliggenhet til havet
+  address: Snorresgate 3
+  place: Rasvik
+  postCode: 7345
+  houseType: tomannsbolig
+  ownerType: selveier
+  bedrooms: 3
+  bathrooms: 2
+  size: 170
+  price: 3400000
+  balcony: true
+  parking: true
+  elevator: false
+  noRedwellers: true
+  swimmingpool: false
+  fireplace: false
+  hiking: true
+  view: true
+  janitor: false
+  images:
+    - '../images/properties/tomannsbolig1.jpg'
+    - '../images/properties/tomannsbolig1a.jpg'
+
+- title: Porterud borettslag
+  description: Romslig tomannsbolig utenfor Rasvik
+  address: Porterudkrysset 79
+  place: Porterud
+  postCode: 5675
+  houseType: tomannsbolig
+  ownerType: andel
+  bedrooms: 4
+  bathrooms: 2
+  size: 70
+  price: 1200000
+  balcony: true
+  parking: false
+  elevator: true
+  noRedwellers: true
+  swimmingpool: false
+  fireplace: false
+  hiking: true
+  view: true
+  janitor: true
+  images:
+    - '../images/properties/tomannsbolig3a.jpg'
+    - '../images/properties/tomannsbolig3.jpg'
+
+- title: Rasviktoppen borettslag
+  description: Koselig liten tomannsbolig med kort avstand til sjøen
+  address: Rasviktoppen 22
+  place: Rasvik
+  postCode: 5675
+  houseType: tomannsbolig
+  ownerType: borettslag
+  bedrooms: 1
+  bathrooms: 1
+  size: 50
+  price: 2300000
+  balcony: false
+  parking: true
+  elevator: false
+  noRedwellers: false
+  swimmingpool: false
+  fireplace: false
+  hiking: true
+  view: true
+  janitor: false
+  images:
+    - '../images/properties/tomannsbolig2.jpg'
+    - '../images/properties/tomannsbolig2a.jpg'

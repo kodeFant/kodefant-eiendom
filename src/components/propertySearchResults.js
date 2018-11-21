@@ -6,15 +6,13 @@ import Card from './propertyCard'
 
 class searchResults extends Component {
   render() {
-    const propertyCards = this.props.data.allPropertiesYaml.edges.map(
-      property => (
-        <Card
-          key={property.node.id}
-          data={property}
-          images={property.node.images}
-        />
-      )
-    )
+    const propertyCards = this.props.data.map(property => (
+      <Card
+        key={property.node.id}
+        data={property}
+        images={property.node.images}
+      />
+    ))
 
     return (
       <div className={`${styles.searchResults} ${this.props.gridClass}`}>

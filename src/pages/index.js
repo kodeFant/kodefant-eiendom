@@ -8,14 +8,16 @@ import Services from '../components/heroes/services'
 import KeyNumbers from '../components/heroes/keyNumbers'
 import OurAgents from '../components/heroes/ourAgents'
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <Jumbotron />
-    <SearchFilter />
-    <Services />
-    <KeyNumbers />
-    <OurAgents />
-  </Layout>
-)
+const IndexPage = ({ data }) => {
+  return (
+    <Layout>
+      <Jumbotron />
+      <SearchFilter />
+      <Services />
+      <KeyNumbers />
+      <OurAgents />
+    </Layout>
+  )
+}
 
 export default IndexPage

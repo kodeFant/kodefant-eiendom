@@ -1,11 +1,13 @@
 import React, { PureComponent } from 'react'
-import styles from './propertySearchFilter.module.scss'
-import PropTypes from 'prop-types'
+import { navigate } from 'gatsby'
 import { Formik, Form, Field } from 'formik'
+import queryString from 'query-string'
+import PropTypes from 'prop-types'
+
 import ReactSelect from './reactSelect'
 import ReactCheckbox from './reactCheckbox'
-import { navigate } from 'gatsby'
-import queryString from 'query-string'
+
+import styles from './propertySearchFilter.module.scss'
 
 class searchFilter extends PureComponent {
   render() {
@@ -39,7 +41,17 @@ class searchFilter extends PureComponent {
             //eslint-disable-next-line
             console.log(values)
           }}
-          component={FormikForm}
+          render={props => {
+            return (
+              <FormikForm
+                {...props}
+                setState={this.props.setState}
+                state={this.props.state}
+                fieldValue={this.props.fieldValue}
+                dataFilter={this.props.dataFilter}
+              />
+            )
+          }}
         />
       </div>
     )
@@ -52,9 +64,9 @@ class FormikForm extends PureComponent {
     queryString: '',
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (this.state.options !== prevState.options) {
-      const options = this.state.options
+  componentDidUpdate(prevProps) {
+    if (this.props.state.options !== prevProps.state.options) {
+      const options = this.props.state.options
       let queryString = ''
       for (const option in options) {
         queryString === '' ? (queryString += '?') : (queryString += '&')
@@ -65,7 +77,8 @@ class FormikForm extends PureComponent {
         }
         this.props.setFieldValue(option, options[option])
       }
-      this.setState({ queryString: queryString })
+      this.props.setState({ queryString: queryString })
+      this.props.dataFilter()
       navigate(`/eiendommer/${queryString}`)
     }
   }
@@ -77,15 +90,15 @@ class FormikForm extends PureComponent {
   queryStringToOptions = () => {
     const parsedQueryString = queryString.parse(location.search)
 
-    this.setState({
+    this.props.setState({
       options: parsedQueryString,
     })
   }
 
   handleInputChange = event => {
-    this.setState({
+    this.props.setState({
       options: {
-        ...this.state.options,
+        ...this.props.state.options,
         [event.target.name]: event.target.value,
       },
     })
@@ -94,9 +107,9 @@ class FormikForm extends PureComponent {
 
   handleSelect = (name, prop) => {
     this.props.setFieldValue(name, prop)
-    this.setState({
+    this.props.setState({
       options: {
-        ...this.state.options,
+        ...this.props.state.options,
         [name]: prop,
       },
     })
@@ -117,10 +130,9 @@ class FormikForm extends PureComponent {
     ]
     const ownerType = [
       { value: 'alle', label: 'Alle' },
-      { value: 'andel', label: 'Enebolig' },
-      { value: 'leilighet', label: 'Leilighet' },
-      { value: 'rekkehus', label: 'Rekkehus' },
-      { value: 'tomannsbolig', label: 'Tomannsbolig' },
+      { value: 'borettslag', label: 'Borettslag' },
+      { value: 'sameie', label: 'Sameie' },
+      { value: 'andel', label: 'Andel' },
     ]
     const bedrooms = [
       { value: '0', label: '0+' },
@@ -321,7 +333,12 @@ class FormikForm extends PureComponent {
           </div>
         </div>
         <div className={styles.searchButtonContainer}>
-          <button type="submit">Søk</button>
+          <button
+            type="submit"
+            onClick={() => this.props.fieldValue.call(this)}
+          >
+            Søk
+          </button>
         </div>
       </Form>
     )
@@ -332,10 +349,12 @@ FormikForm.propTypes = {
   values: PropTypes.any,
   setFieldTouched: PropTypes.func,
   setFieldValue: PropTypes.func,
+  setState: PropTypes.func,
 }
 
 searchFilter.propTypes = {
   gridClass: PropTypes.string,
+  setState: PropTypes.func,
 }
 
 export default searchFilter
