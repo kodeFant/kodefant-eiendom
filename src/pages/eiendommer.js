@@ -97,6 +97,30 @@ class PropertyPage extends PureComponent {
           return property.node.bathrooms >= this.state.options.bathrooms.value
         })
       }
+      // MinSize Filter
+      if (this.state.options.minSize) {
+        filteredData = filteredData.filter(property => {
+          return property.node.size >= this.state.options.minSize
+        })
+      }
+      // MaxSize Filter
+      if (this.state.options.maxSize) {
+        filteredData = filteredData.filter(property => {
+          return property.node.size <= this.state.options.maxSize
+        })
+      }
+      // MinPrice Filter
+      if (this.state.options.minPrice) {
+        filteredData = filteredData.filter(property => {
+          return property.node.price >= this.state.options.minPrice
+        })
+      }
+      // MaxPrice Filter
+      if (this.state.options.maxPrice) {
+        filteredData = filteredData.filter(property => {
+          return property.node.price <= this.state.options.maxPrice
+        })
+      }
     }
 
     this.setState({ filteredData: filteredData })
