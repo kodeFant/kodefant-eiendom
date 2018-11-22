@@ -6,10 +6,18 @@
 .searchResults {
   display: grid;
   grid-template-columns: 1fr;
-  padding-top: 2.5rem;
 
   @include breakpoint(tablet) {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
   }
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.headerClass {
+  grid-column: 1 / -1;
+  text-align: right;
 }

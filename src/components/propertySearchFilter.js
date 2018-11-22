@@ -89,7 +89,7 @@ class FormikForm extends PureComponent {
 
   queryStringToOptions = () => {
     const parsedQueryString = queryString.parse(location.search)
-
+    console.log('parsedQueryString', parsedQueryString)
     this.props.setState({
       options: parsedQueryString,
     })
@@ -110,7 +110,7 @@ class FormikForm extends PureComponent {
     this.props.setState({
       options: {
         ...this.props.state.options,
-        [name]: prop,
+        [name]: prop.value,
       },
     })
   }
@@ -131,7 +131,7 @@ class FormikForm extends PureComponent {
     const ownerType = [
       { value: 'alle', label: 'Alle' },
       { value: 'borettslag', label: 'Borettslag' },
-      { value: 'sameie', label: 'Sameie' },
+      { value: 'selveier', label: 'Selveier' },
       { value: 'andel', label: 'Andel' },
     ]
     const bedrooms = [
@@ -350,6 +350,7 @@ FormikForm.propTypes = {
   setFieldTouched: PropTypes.func,
   setFieldValue: PropTypes.func,
   setState: PropTypes.func,
+  dataFilter: PropTypes.func,
 }
 
 searchFilter.propTypes = {

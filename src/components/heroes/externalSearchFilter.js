@@ -4,6 +4,7 @@ import { Formik, Form, Field } from 'formik'
 import styles from './externalSearchFilter.module.scss'
 import ReactSelect from '../reactSelect'
 import ReactCheckbox from '../reactCheckbox'
+import { navigate } from '@reach/router'
 
 class SearchFilter extends Component {
   render() {

@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaRegMap, FaRegBookmark, FaMoneyBillAlt } from 'react-icons/fa'
+import { navigate } from 'gatsby'
 
 import styles from './keyNumbers.module.scss'
 
@@ -29,7 +30,9 @@ const keyNumbers = () => (
           <div className={styles.keyFactText}>Snittpris: 2.5 millioner</div>
         </div>
       </div>
-      <button>Bla i våre eiendommer</button>
+      <button onClick={() => navigate('eiendommer')}>
+        Bla i våre eiendommer
+      </button>
     </div>
   </HeroLayout>
 )

@@ -59,9 +59,8 @@ class PropertyPage extends PureComponent {
       if (this.state.options.houseType) {
         filteredData = filteredData.filter(property => {
           return (
-            property.node.houseType.includes(
-              this.state.options.houseType.value
-            ) || this.state.options.houseType.value === 'alle'
+            property.node.houseType.includes(this.state.options.houseType) ||
+            this.state.options.houseType === 'alle'
           )
         })
       }
@@ -70,9 +69,8 @@ class PropertyPage extends PureComponent {
       if (this.state.options.ownerType) {
         filteredData = filteredData.filter(property => {
           return (
-            property.node.ownerType.includes(
-              this.state.options.ownerType.value
-            ) || this.state.options.ownerType.value === 'alle'
+            property.node.ownerType.includes(this.state.options.ownerType) ||
+            this.state.options.ownerType === 'alle'
           )
         })
       }
@@ -88,13 +86,13 @@ class PropertyPage extends PureComponent {
       // Bedroom Filter
       if (this.state.options.bedrooms) {
         filteredData = filteredData.filter(property => {
-          return property.node.bedrooms >= this.state.options.bedrooms.value
+          return property.node.bedrooms >= this.state.options.bedrooms
         })
       }
       // Bathroom Filter
       if (this.state.options.bathrooms) {
         filteredData = filteredData.filter(property => {
-          return property.node.bathrooms >= this.state.options.bathrooms.value
+          return property.node.bathrooms >= this.state.options.bathrooms
         })
       }
       // MinSize Filter

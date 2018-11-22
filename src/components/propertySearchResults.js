@@ -16,6 +16,12 @@ class searchResults extends Component {
 
     return (
       <div className={`${styles.searchResults} ${this.props.gridClass}`}>
+        <header className={styles.headerClass}>
+          <p>
+            <span>{propertyCards.length}</span> av våre eiendommer treffer ditt
+            søkekriterium
+          </p>
+        </header>
         {propertyCards}
       </div>
     )
