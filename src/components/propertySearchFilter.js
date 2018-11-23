@@ -89,7 +89,6 @@ class FormikForm extends PureComponent {
 
   queryStringToOptions = () => {
     const parsedQueryString = queryString.parse(location.search)
-    console.log('parsedQueryString', parsedQueryString)
     this.props.setState({
       options: parsedQueryString,
     })
@@ -346,11 +345,13 @@ class FormikForm extends PureComponent {
 }
 
 FormikForm.propTypes = {
-  values: PropTypes.any,
+  values: PropTypes.object,
   setFieldTouched: PropTypes.func,
   setFieldValue: PropTypes.func,
   setState: PropTypes.func,
   dataFilter: PropTypes.func,
+  fieldValue: PropTypes.func,
+  state: PropTypes.object,
 }
 
 searchFilter.propTypes = {

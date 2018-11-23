@@ -32,8 +32,11 @@
 
 .img {
   background: $black;
-  height: 25rem;
+  height: 30rem;
   overflow: hidden;
+  @include breakpoint(phablet) {
+    height: 25rem;
+  }
 }
 
 .agentBoxImg {

@@ -7,7 +7,45 @@ import ReactCheckbox from '../reactCheckbox'
 import { navigate } from '@reach/router'
 
 class SearchFilter extends Component {
+  state = {
+    options: {},
+  }
+
   render() {
+    const handleInputChange = (event, setFieldValue) => {
+      this.setState({
+        options: {
+          ...this.state.options,
+          [event.target.name]: event.target.value,
+        },
+      })
+      setFieldValue(event.target.name, event.target.value)
+    }
+
+    const handleSelect = (name, prop, setFieldValue) => {
+      setFieldValue(name, prop)
+      this.setState({
+        options: {
+          ...this.state.options,
+          [name]: prop.value,
+        },
+      })
+    }
+
+    const sendSearch = () => {
+      const options = this.state.options
+      let queryString = ''
+      for (const option in options) {
+        queryString === '' ? (queryString += '?') : (queryString += '&')
+        if (typeof options[option] === 'object') {
+          queryString += `${option}=${options[option].value}`
+        } else {
+          queryString += `${option}=${options[option]}`
+        }
+      }
+      navigate(`/eiendommer/${queryString}`)
+    }
+
     const reactFilterStyles = {
       dd__selectControl: styles.dd__selectControl,
       dd__list: styles.dd__list,
@@ -22,10 +60,9 @@ class SearchFilter extends Component {
     ]
     const ownerType = [
       { value: 'alle', label: 'Alle' },
-      { value: 'andel', label: 'Enebolig' },
-      { value: 'leilighet', label: 'Leilighet' },
-      { value: 'rekkehus', label: 'Rekkehus' },
-      { value: 'tomannsbolig', label: 'Tomannsbolig' },
+      { value: 'borettslag', label: 'Borettslag' },
+      { value: 'selveier', label: 'Selveier' },
+      { value: 'andel', label: 'Andel' },
     ]
     const bedrooms = [
       { value: '0', label: '0+' },
@@ -73,11 +110,16 @@ class SearchFilter extends Component {
                   type="text"
                   name="keyword"
                   placeholder="Søk etter stikkord"
+                  onChange={event =>
+                    handleInputChange.call(this, event, props.setFieldValue)
+                  }
                 />
                 <label htmlFor="houseType">Boligtype</label>
                 <ReactSelect
                   name="houseType"
-                  onChange={props.setFieldValue}
+                  onChange={(name, label) =>
+                    handleSelect.call(this, name, label, props.setFieldValue)
+                  }
                   onBlur={props.setFieldTouched}
                   value={props.values.houseType}
                   options={houseType}
@@ -86,20 +128,31 @@ class SearchFilter extends Component {
                 <label htmlFor="ownerType">Eierform</label>
                 <ReactSelect
                   name="ownerType"
-                  onChange={props.setFieldValue}
+                  onChange={(name, label) =>
+                    handleSelect.call(this, name, label, props.setFieldValue)
+                  }
                   onBlur={props.setFieldTouched}
                   value={props.values.ownerType}
                   options={ownerType}
                   classNames={reactFilterStyles}
                 />
                 <label htmlFor="place">Sted</label>
-                <Field type="text" name="place" placeholder="Skriv inn sted" />
+                <Field
+                  type="text"
+                  name="place"
+                  placeholder="Skriv inn sted"
+                  onChange={event =>
+                    handleInputChange.call(this, event, props.setFieldValue)
+                  }
+                />
               </div>
               <div className={styles.col2}>
                 <label htmlFor="bedrooms">Soverom</label>
                 <ReactSelect
                   name="bedrooms"
-                  onChange={props.setFieldValue}
+                  onChange={(name, label) =>
+                    handleSelect.call(this, name, label, props.setFieldValue)
+                  }
                   onBlur={props.setFieldTouched}
                   value={props.values.bedrooms}
                   options={bedrooms}
@@ -108,7 +161,9 @@ class SearchFilter extends Component {
                 <label htmlFor="bathrooms">Bad</label>
                 <ReactSelect
                   name="bathrooms"
-                  onChange={props.setFieldValue}
+                  onChange={(name, label) =>
+                    handleSelect.call(this, name, label, props.setFieldValue)
+                  }
                   onBlur={props.setFieldTouched}
                   value={props.values.bathrooms}
                   options={bathrooms}
@@ -116,13 +171,41 @@ class SearchFilter extends Component {
                 />
                 <label htmlFor="size">Areal</label>
                 <div className={styles.twoFields}>
-                  <Field type="number" name="minSize" placeholder="Minimum" />
-                  <Field type="number" name="maxSize" placeholder="Maksimum" />
+                  <Field
+                    type="number"
+                    name="minSize"
+                    placeholder="Minimum"
+                    onChange={event =>
+                      handleInputChange.call(this, event, props.setFieldValue)
+                    }
+                  />
+                  <Field
+                    type="number"
+                    name="maxSize"
+                    placeholder="Maksimum"
+                    onChange={event =>
+                      handleInputChange.call(this, event, props.setFieldValue)
+                    }
+                  />
                 </div>
                 <label htmlFor="price">Pris</label>
                 <div className={styles.twoFields}>
-                  <Field type="number" name="minPrice" placeholder="Minimum" />
-                  <Field type="number" name="maxPrice" placeholder="Maksimum" />
+                  <Field
+                    type="number"
+                    name="minPrice"
+                    placeholder="Minimum"
+                    onChange={event =>
+                      handleInputChange.call(this, event, props.setFieldValue)
+                    }
+                  />
+                  <Field
+                    type="number"
+                    name="maxPrice"
+                    placeholder="Maksimum"
+                    onChange={event =>
+                      handleInputChange.call(this, event, props.setFieldValue)
+                    }
+                  />
                 </div>
               </div>
               <div className={styles.col3}>
@@ -209,7 +292,9 @@ class SearchFilter extends Component {
               </div>
             </div>
             <div className={styles.searchButtonContainer}>
-              <button type="submit">Finn din drømmebolig</button>
+              <button type="submit" onClick={sendSearch}>
+                Finn din drømmebolig
+              </button>
             </div>
           </Form>
         )}
