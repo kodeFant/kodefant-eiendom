@@ -16,25 +16,58 @@ class PropertyPage extends PureComponent {
     queryString: '',
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log(
-      'filteredData',
-      this.state.filteredData.map(property => property)
-    )
-    console.log(
-      'rawData',
-      this.state.data.allPropertiesYaml.edges.map(property => property)
-    )
-  }
-
   changeStateHandler = state => {
     this.setState(state)
   }
 
   dataFilter = () => {
     let filteredData = this.state.data.allPropertiesYaml.edges
-    console.log('dataFilter()', filteredData)
+
+    const filter = (type, filterCheck, value) => {
+      const option = this.state.options[filterCheck]
+      let filterValue
+      if (!value) {
+        filterValue = filterCheck
+      } else {
+        filterValue = value
+      }
+      if (option) {
+        switch (type) {
+          case 'type':
+            filteredData = filteredData.filter(property => {
+              return (
+                property.node[filterCheck].includes(option) || option === 'alle'
+              )
+            })
+            break
+          case 'min':
+            filteredData = filteredData.filter(property => {
+              return (
+                property.node[filterValue] >= this.state.options[filterCheck]
+              )
+            })
+            break
+          case 'max':
+            filteredData = filteredData.filter(property => {
+              return (
+                property.node[filterValue] <= this.state.options[filterCheck]
+              )
+            })
+            break
+        }
+      }
+    }
+
     if (filteredData[0].node !== undefined) {
+      filter('type', 'houseType')
+      filter('type', 'ownerType')
+      filter('min', 'bedrooms')
+      filter('min', 'bathrooms')
+      filter('min', 'minPrice', 'price')
+      filter('max', 'maxPrice', 'price')
+      filter('min', 'minSize', 'size')
+      filter('min', 'maxSize', 'size')
+
       // Keyword Filter
       if (this.state.options.keyword) {
         filteredData = filteredData.filter(property => {
@@ -55,25 +88,6 @@ class PropertyPage extends PureComponent {
         })
       }
 
-      // HouseType-filter
-      if (this.state.options.houseType) {
-        filteredData = filteredData.filter(property => {
-          return (
-            property.node.houseType.includes(this.state.options.houseType) ||
-            this.state.options.houseType === 'alle'
-          )
-        })
-      }
-
-      // OwnerType-filter
-      if (this.state.options.ownerType) {
-        filteredData = filteredData.filter(property => {
-          return (
-            property.node.ownerType.includes(this.state.options.ownerType) ||
-            this.state.options.ownerType === 'alle'
-          )
-        })
-      }
       // Place Filter
       if (this.state.options.place) {
         filteredData = filteredData.filter(property => {
@@ -82,45 +96,7 @@ class PropertyPage extends PureComponent {
             .includes(this.state.options.place.toLowerCase())
         })
       }
-
-      // Bedroom Filter
-      if (this.state.options.bedrooms) {
-        filteredData = filteredData.filter(property => {
-          return property.node.bedrooms >= this.state.options.bedrooms
-        })
-      }
-      // Bathroom Filter
-      if (this.state.options.bathrooms) {
-        filteredData = filteredData.filter(property => {
-          return property.node.bathrooms >= this.state.options.bathrooms
-        })
-      }
-      // MinSize Filter
-      if (this.state.options.minSize) {
-        filteredData = filteredData.filter(property => {
-          return property.node.size >= this.state.options.minSize
-        })
-      }
-      // MaxSize Filter
-      if (this.state.options.maxSize) {
-        filteredData = filteredData.filter(property => {
-          return property.node.size <= this.state.options.maxSize
-        })
-      }
-      // MinPrice Filter
-      if (this.state.options.minPrice) {
-        filteredData = filteredData.filter(property => {
-          return property.node.price >= this.state.options.minPrice
-        })
-      }
-      // MaxPrice Filter
-      if (this.state.options.maxPrice) {
-        filteredData = filteredData.filter(property => {
-          return property.node.price <= this.state.options.maxPrice
-        })
-      }
     }
-
     this.setState({ filteredData: filteredData })
   }
 
