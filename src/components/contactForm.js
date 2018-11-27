@@ -18,11 +18,17 @@ const contactForm = () => (
         message: "I'm also temp",
       }}
       render={() => (
-        <form name="contact" method="POST" netlify>
+        <form
+          name="DinEiendom"
+          method="POST"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+        >
           <div className={styles.contactGrid}>
             <Field type="text" name="name" placeholder="Ditt navn" />
             <Field type="email" name="email" placeholder="Din epost" />
             <Field type="text" name="subject" placeholder="Emne" />
+            <input type="hidden" name="bot-field" />
           </div>
           <Field component="textarea" name="message" />
           <button type="submit">Submit</button>
