@@ -25,6 +25,7 @@
     "react-hamburger-button": "0.0.1",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
+    "react-recaptcha": "^2.3.10",
     "react-select-me": "^1.1.0",
     "yup": "^0.26.6"
   },

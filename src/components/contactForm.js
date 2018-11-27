@@ -33,6 +33,7 @@ const contactForm = () => (
             <input type="hidden" name="form-name" value="contact" />
           </div>
           <Field component="textarea" name="message" />
+          <div data-netlify-recaptcha />
           <button type="submit">Submit</button>
         </form>
       )}
