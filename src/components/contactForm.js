@@ -23,6 +23,7 @@ const contactForm = () => (
           method="POST"
           netlify-honeypot="bot-field"
           data-netlify="true"
+          action="/eiendommer"
         >
           <div className={styles.contactGrid}>
             <Field type="text" name="name" placeholder="Ditt navn" />
