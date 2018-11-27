@@ -18,7 +18,7 @@ const contactForm = () => (
         message: "I'm also temp",
       }}
       render={() => (
-        <form name="contact" netlify="true">
+        <form name="contact" method="POST" netlify="true">
           <div className={styles.contactGrid}>
             <Field type="text" name="name" placeholder="Ditt navn" />
             <Field type="email" name="email" placeholder="Din epost" />
