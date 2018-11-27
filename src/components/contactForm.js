@@ -1,6 +1,6 @@
 import React from 'react'
 import { Formik, Field, Form } from 'formik'
-import mg from './mailgun'
+import mg from './mg'
 
 import styles from './contactForm.module.scss'
 
