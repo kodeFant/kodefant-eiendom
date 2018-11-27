@@ -30,6 +30,7 @@ const contactForm = () => (
             <Field type="email" name="email" placeholder="Din epost" />
             <Field type="text" name="subject" placeholder="Emne" />
             <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
           </div>
           <Field component="textarea" name="message" />
           <button type="submit">Submit</button>
