@@ -66,7 +66,7 @@ class PropertyPage extends PureComponent {
       filter('min', 'minPrice', 'price')
       filter('max', 'maxPrice', 'price')
       filter('min', 'minSize', 'size')
-      filter('min', 'maxSize', 'size')
+      filter('max', 'maxSize', 'size')
 
       // Keyword Filter
       if (this.state.options.keyword) {

@@ -248,6 +248,15 @@ class FormikForm extends PureComponent {
               }}
             />
           </div>
+          <div className={styles.searchButtonContainer}>
+            <button
+              type="submit"
+              onClick={() => navigate('eiendommer')}
+              className={styles.resetButton}
+            >
+              Tilbakestill søk
+            </button>
+          </div>
           <div className={styles.checkboxContainer}>
             <ReactCheckbox
               style={styles.checkbox}
@@ -330,14 +339,6 @@ class FormikForm extends PureComponent {
               label="Vaktmester"
             />
           </div>
-        </div>
-        <div className={styles.searchButtonContainer}>
-          <button
-            type="submit"
-            onClick={() => this.props.fieldValue.call(this)}
-          >
-            Søk
-          </button>
         </div>
       </Form>
     )

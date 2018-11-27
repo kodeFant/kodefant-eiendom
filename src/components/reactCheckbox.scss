@@ -1,4 +1,3 @@
-/* 一般状态 */
 .rc-checkbox {
   white-space: nowrap;
   cursor: pointer;
@@ -9,8 +8,7 @@
   vertical-align: middle;
 }
 
-
-.rc-checkbox-input:focus+.rc-checkbox-inner {
+.rc-checkbox-input:focus + .rc-checkbox-inner {
   border-color: #333;
 }
 

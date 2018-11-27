@@ -8,24 +8,52 @@ import {
   FaTwitter,
   FaGithub,
 } from 'react-icons/fa'
+import PropTypes from 'prop-types'
 
-export const Address = () => (
-  <Link to="kontakt">
+const nolink = (e, bool) => {
+  bool ? e.preventDefault() : null
+}
+
+const nocursor = { cursor: 'default' }
+
+export const Address = props => (
+  <Link
+    to="kontakt"
+    onClick={e => nolink(e, props.nolink)}
+    style={props.nocursor ? nocursor : null}
+  >
     <FaMapMarkerAlt /> <span>Freserveien 39, 0195 Oslo</span>
   </Link>
 )
 
-export const Email = () => (
-  <a href="mailto:dineiendom@kodefant.no">
+export const Email = props => (
+  <a
+    onClick={e => nolink(e, props.nolink)}
+    style={props.nocursor ? nocursor : null}
+    href="mailto:dineiendom@kodefant.no"
+  >
     <FaEnvelope /> <span>dineiendom@kodefant.no</span>
   </a>
 )
 
-export const Phone = () => (
-  <Link to="kontakt">
+export const Phone = props => (
+  <Link
+    onClick={e => nolink(e, props.nolink)}
+    style={props.nocursor ? nocursor : null}
+    to="kontakt"
+  >
     <FaPhone /> <span>(+47) 413 999 420</span>
   </Link>
 )
+
+const sharedPropTypes = {
+  nolink: PropTypes.bool,
+  nocursor: PropTypes.bool,
+}
+
+Address.propTypes = sharedPropTypes
+Email.propTypes = sharedPropTypes
+Phone.propTypes = sharedPropTypes
 
 export const Facebook = () => (
   <a

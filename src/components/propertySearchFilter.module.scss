@@ -25,7 +25,7 @@ $filterStroke: $black;
   }
 
   .dd__list {
-    background-color: rgba($white, 0.9);
+    background-color: rgba($black, 0.9);
   }
 
   .dd__expandIcon {
@@ -42,16 +42,37 @@ $filterStroke: $black;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: 0.7rem 0;
 
     label {
       display: inline;
       font-size: 0.8rem;
       margin-left: 0.3rem;
       background-color: transparent;
+      margin-bottom: 0rem;
+      margin-top: 0rem;
       cursor: pointer;
       @include breakpoint(laptop) {
         font-size: 0.7rem;
       }
+    }
+    &:hover {
+      color: blue;
+      :global(.rc-checkbox-inner) {
+        border-color: blue;
+      }
+    }
+  }
+
+  :global(.rc-checkbox-inner) {
+    border-color: $black;
+  }
+  :global(.rc-checkbox-inner:hover) {
+    background-color: blue;
+  }
+  :global(.rc-checkbox-checked) {
+    :global(.rc-checkbox-inner) {
+      background-color: orange;
     }
   }
 
@@ -63,10 +84,6 @@ $filterStroke: $black;
     input {
       width: 40%;
     }
-  }
-
-  .checkboxContainer {
-    display: none;
   }
 }
 
@@ -82,4 +99,8 @@ $filterStroke: $black;
 .formikInput {
   display: flex;
   flex-direction: column;
+}
+
+.resetButton {
+  margin-bottom: 1rem;
 }

@@ -1,0 +1,71 @@
+@import 'modules/variables';
+@import 'modules/fonts';
+@import 'modules/colors';
+@import 'modules/tags';
+
+.contactForm {
+  margin-top: 4rem;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    background-color: $darkgray;
+    color: $white;
+    padding: 0.3rem;
+    padding-left: 1rem;
+    border: none;
+  }
+
+  button {
+    @include breakpoint(tablet) {
+      align-self: center;
+    }
+  }
+
+  textarea {
+    background-color: $darkgray;
+    color: $white;
+    padding: 0.3rem;
+    border: none;
+    height: 10rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+  }
+
+  $placeholder: $white;
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $placeholder;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $placeholder;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $placeholder;
+  }
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  @include breakpoint(tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.infoText {
+  color: $darkgray;
+  margin-bottom: 3.5rem;
+  line-height: 1.7rem;
+  font-size: 1.1rem;
+}

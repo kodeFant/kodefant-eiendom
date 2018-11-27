@@ -1,7 +1,18 @@
 import React from 'react'
 
-import Layout from '../components/layout/layout'
+import styles from './kontakt.module.scss'
 
-const ContactPage = () => <Layout>Kontaktside</Layout>
+import Layout from '../components/layout/layout'
+import MapBox from '../components/contactMapBox'
+import ContactForm from '../components/contactForm'
+
+const ContactPage = () => (
+  <Layout>
+    <div className={styles.container}>
+      <MapBox />
+      <ContactForm />
+    </div>
+  </Layout>
+)
 
 export default ContactPage

@@ -1,0 +1,40 @@
+@import 'modules/variables';
+@import 'modules/fonts';
+@import 'modules/colors';
+@import 'modules/tags';
+
+.map {
+  height: 30rem;
+  background-color: $lightgray;
+}
+
+.contactInfo {
+  background-color: $maindark;
+  color: $white;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include breakpoint(phablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contactColumn {
+  text-align: center;
+  padding: 2rem 0;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+  }
+
+  span {
+    margin-top: 1.2rem;
+  }
+
+  &:hover {
+    background-color: $darkgray;
+  }
+}
