@@ -12,24 +12,34 @@ const contactForm = () => (
       <a href="https://kodefant.no">kodefant.no</a>.
     </p>
     <Formik
-      initialValues={{ name: '', email: '', subject: '', message: '' }}
-      onSubmit={values => {
+      initialValues={{
+        name: 'Temp name',
+        email: 'temp@name.com',
+        subject: 'You temp!',
+        message: "I'm also temp",
+      }}
+      /*  onSubmit={({ subject, message }) => {
         mg.messages
           .create('mg.kodefant.no', {
-            from: `DinRestaurant-henvendelse <postmaster@mg.kodefant.no>`,
+            from: `DinEiendom-henvendelse <postmaster@mg.kodefant.no>`,
             to: ['lillo@kodefant.no'],
-            subject: values.subject,
-            text: values.message,
+            subject: subject,
+            text: message,
           })
           .then((
             msg // eslint-disable-next-line no-console
-          ) => console.log(msg))
+          ) => console.log('msg', msg))
           .catch((
             err // eslint-disable-next-line no-console
-          ) => console.log(err))
-      }}
+          ) => console.log('err', err))
+      }} */
       render={() => (
-        <Form>
+        <Form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
           <div className={styles.contactGrid}>
             <Field type="text" name="name" placeholder="Ditt navn" />
             <Field type="email" name="email" placeholder="Din epost" />
