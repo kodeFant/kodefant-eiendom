@@ -1,7 +1,18 @@
 import React from 'react'
-import { Formik, Field } from 'formik'
+import { Formik, Field, ErrorMessage } from 'formik'
 
 import styles from './contactForm.module.scss'
+import * as yup from 'yup'
+
+const contactSchema = yup.object().shape({
+  name: yup.string().required('Navn er påkrevd'),
+  email: yup
+    .string()
+    .required('En epost-adresse er påkrevd')
+    .email('Oppgi en gyldig epost-adresse'),
+  subject: yup.string().required('Emnefelt er påkrevd'),
+  message: yup.string().required('Skriv en beskjed'),
+})
 
 const contactForm = () => (
   <div className={styles.contactForm}>
@@ -12,12 +23,13 @@ const contactForm = () => (
     </p>
     <Formik
       initialValues={{
-        name: 'Temp name',
-        email: 'temp@name.com',
-        subject: 'You temp!',
-        message: "I'm also temp",
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
       }}
-      render={() => (
+      validationSchema={contactSchema}
+      render={({ isValid }) => (
         <form
           name="DinEiendom"
           method="POST"
@@ -26,15 +38,32 @@ const contactForm = () => (
           action="/suksess"
         >
           <div className={styles.contactGrid}>
-            <Field type="text" name="name" placeholder="Ditt navn" />
-            <Field type="email" name="email" placeholder="Din epost" />
-            <Field type="text" name="subject" placeholder="Emne" />
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
+            <div className={styles.contactCol}>
+              <Field type="text" name="name" placeholder="Ditt navn" required />
+              <ErrorMessage name="name" component="div" />
+            </div>
+            <div className={styles.contactCol}>
+              <Field
+                type="email"
+                name="email"
+                placeholder="Din epost"
+                required
+              />
+              <ErrorMessage name="email" component="div" />
+            </div>
+            <div className={styles.contactCol}>
+              <Field type="text" name="subject" placeholder="Emne" required />
+              <ErrorMessage name="subject" component="div" />
+            </div>
           </div>
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="DinEiendom" required />
           <Field component="textarea" name="message" />
+          <ErrorMessage name="message" component="div" />
           <div data-netlify-recaptcha />
-          <button type="submit">Submit</button>
+          <button type="submit" disabled={!isValid}>
+            Send forespørsel
+          </button>
         </form>
       )}
     />

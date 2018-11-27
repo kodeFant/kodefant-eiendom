@@ -19,18 +19,26 @@
   }
 
   button {
+    margin-top: 3rem;
     @include breakpoint(tablet) {
       align-self: center;
+    }
+    &[disabled]:hover {
+      background-color: $lightgray;
+      cursor: not-allowed;
+      &::after {
+        content: ' - Fyll inn alle felter først';
+      }
     }
   }
 
   textarea {
+    margin-bottom: 0.5rem;
     background-color: $darkgray;
     color: $white;
     padding: 0.3rem;
     border: none;
     height: 10rem;
-    margin-bottom: 3rem;
     padding: 1rem;
   }
 
@@ -60,6 +68,11 @@
 
   @include breakpoint(tablet) {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contactCol {
+    display: flex;
+    flex-direction: column;
   }
 }
 
