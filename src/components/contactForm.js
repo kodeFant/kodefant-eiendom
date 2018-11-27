@@ -1,5 +1,5 @@
 import React from 'react'
-import { Formik, Field, Form } from 'formik'
+import { Formik, Field } from 'formik'
 
 import styles from './contactForm.module.scss'
 
@@ -18,7 +18,7 @@ const contactForm = () => (
         message: "I'm also temp",
       }}
       render={() => (
-        <Form name="contact" netlify="true">
+        <form name="contact" netlify="true">
           <div className={styles.contactGrid}>
             <Field type="text" name="name" placeholder="Ditt navn" />
             <Field type="email" name="email" placeholder="Din epost" />
@@ -26,7 +26,7 @@ const contactForm = () => (
           </div>
           <Field component="textarea" name="message" />
           <button type="submit">Submit</button>
-        </Form>
+        </form>
       )}
     />
   </div>
