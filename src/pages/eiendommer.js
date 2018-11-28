@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { graphql, Router } from 'gatsby'
+import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import Layout from '../components/layout/layout'
@@ -14,7 +14,6 @@ class PropertyPage extends PureComponent {
     filteredData: [],
     options: {},
     queryString: '',
-    singlePage: null,
   }
 
   changeStateHandler = state => {
@@ -55,6 +54,14 @@ class PropertyPage extends PureComponent {
               )
             })
             break
+          case 'checkbox':
+            filteredData = filteredData.filter(property => {
+              return (
+                property.node[filterValue] !== false &&
+                property.node[filterValue] !== 'false'
+              )
+            })
+            break
         }
       }
     }
@@ -68,6 +75,17 @@ class PropertyPage extends PureComponent {
       filter('max', 'maxPrice', 'price')
       filter('min', 'minSize', 'size')
       filter('max', 'maxSize', 'size')
+
+      filter('checkbox', 'balcony')
+      filter('checkbox', 'parking')
+      filter('checkbox', 'elevator')
+      filter('checkbox', 'noRedwellers')
+      filter('checkbox', 'swimmingpool')
+      filter('checkbox', 'fireplace')
+      filter('checkbox', 'beach')
+      filter('checkbox', 'hiking')
+      filter('checkbox', 'view')
+      filter('checkbox', 'janitor')
 
       // Keyword Filter
       if (this.state.options.keyword) {
@@ -116,6 +134,7 @@ class PropertyPage extends PureComponent {
             gridClass={grid.searchResults}
             data={this.state.filteredData}
             state={this.state}
+            queryString={this.state.queryString}
           />
         </div>
       </Layout>

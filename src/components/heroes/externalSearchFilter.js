@@ -5,6 +5,7 @@ import styles from './externalSearchFilter.module.scss'
 import ReactSelect from '../reactSelect'
 import ReactCheckbox from '../reactCheckbox'
 import { navigate } from '@reach/router'
+import { houseType, ownerType, bedrooms, bathrooms } from '../initialFilter'
 
 class SearchFilter extends Component {
   state = {
@@ -32,6 +33,16 @@ class SearchFilter extends Component {
       })
     }
 
+    const toggleInput = (name, value, setFieldValue) => {
+      setFieldValue(name, value)
+      this.setState({
+        options: {
+          ...this.state.options,
+          [name]: value,
+        },
+      })
+    }
+
     const sendSearch = () => {
       const options = this.state.options
       let queryString = ''
@@ -51,32 +62,16 @@ class SearchFilter extends Component {
       dd__list: styles.dd__list,
       dd__expandIcon: styles.dd__expandIcon,
     }
-    const houseType = [
-      { value: 'alle', label: 'Alle' },
-      { value: 'enebolig', label: 'Enebolig' },
-      { value: 'leilighet', label: 'Leilighet' },
-      { value: 'rekkehus', label: 'Rekkehus' },
-      { value: 'tomannsbolig', label: 'Tomannsbolig' },
-    ]
-    const ownerType = [
-      { value: 'alle', label: 'Alle' },
-      { value: 'borettslag', label: 'Borettslag' },
-      { value: 'selveier', label: 'Selveier' },
-      { value: 'andel', label: 'Andel' },
-    ]
-    const bedrooms = [
-      { value: '0', label: '0+' },
-      { value: '1', label: '1+' },
-      { value: '2', label: '2+' },
-      { value: '3', label: '3+' },
-      { value: '4', label: '4+' },
-      { value: '5', label: '5+' },
-    ]
-    const bathrooms = [
-      { value: '1', label: '1' },
-      { value: '2', label: '2' },
-      { value: '3+', label: '3+' },
-    ]
+    const Checkbox = ({ name, label, onChange }) => (
+      <ReactCheckbox
+        style={styles.checkbox}
+        onChange={onChange}
+        onBlur={this.props.setFieldTouched}
+        value={this.state.options[name]}
+        name={name}
+        label={label}
+      />
+    )
     return (
       <Formik
         initialValues={{
@@ -101,6 +96,7 @@ class SearchFilter extends Component {
           view: false,
           janitor: false,
         }}
+        onSubmit={sendSearch}
         render={props => (
           <Form>
             <div className={styles.filterGrid}>
@@ -209,92 +205,80 @@ class SearchFilter extends Component {
                 </div>
               </div>
               <div className={styles.col3}>
-                <ReactCheckbox
-                  style={styles.checkbox}
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.balcony}
+                <Checkbox
+                  onChange={(name, value) =>
+                    toggleInput.call(this, name, value, props.setFieldValue)
+                  }
                   name="balcony"
                   label="Balkong"
                 />
-                <ReactCheckbox
-                  style={styles.checkbox}
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.parking}
+                <Checkbox
+                  onChange={(name, value) =>
+                    toggleInput.call(this, name, value, props.setFieldValue)
+                  }
                   name="parking"
                   label="Garasje/P-plass"
                 />
-                <ReactCheckbox
-                  style={styles.checkbox}
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.elevator}
+                <Checkbox
+                  onChange={(name, value) =>
+                    toggleInput.call(this, name, value, props.setFieldValue)
+                  }
                   name="elevator"
                   label="Heis"
                 />
-                <ReactCheckbox
-                  style={styles.checkbox}
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.noRedwellers}
+                <Checkbox
+                  onChange={(name, value) =>
+                    toggleInput.call(this, name, value, props.setFieldValue)
+                  }
                   name="noRedwellers"
                   label="Ingen gjenboere"
                 />
-                <ReactCheckbox
-                  style={styles.checkbox}
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.swimmingpool}
+                <Checkbox
+                  onChange={(name, value) =>
+                    toggleInput.call(this, name, value, props.setFieldValue)
+                  }
                   name="swimmingpool"
                   label="Svømmebasseng"
                 />
-                <ReactCheckbox
-                  style={styles.checkbox}
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.fireplace}
+                <Checkbox
+                  onChange={(name, value) =>
+                    toggleInput.call(this, name, value, props.setFieldValue)
+                  }
                   name="fireplace"
                   label="Peis/ildsted"
                 />
-                <ReactCheckbox
-                  style={styles.checkbox}
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.beach}
+                <Checkbox
+                  onChange={(name, value) =>
+                    toggleInput.call(this, name, value, props.setFieldValue)
+                  }
                   name="beach"
                   label="Strandlinje"
                 />
-                <ReactCheckbox
-                  style={styles.checkbox}
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.hiking}
+                <Checkbox
+                  onChange={(name, value) =>
+                    toggleInput.call(this, name, value, props.setFieldValue)
+                  }
                   name="hiking"
                   label="Turterreng"
                 />
-                <ReactCheckbox
-                  style={styles.checkbox}
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.view}
+                <Checkbox
+                  onChange={(name, value) =>
+                    toggleInput.call(this, name, value, props.setFieldValue)
+                  }
                   name="view"
                   label="Utsikt"
                 />
-                <ReactCheckbox
-                  style={styles.checkbox}
-                  onChange={props.setFieldValue}
-                  onBlur={props.setFieldTouched}
-                  value={props.values.janitor}
+                <Checkbox
+                  onChange={(name, value) =>
+                    toggleInput.call(this, name, value, props.setFieldValue)
+                  }
                   name="janitor"
                   label="Vaktmester"
                 />
               </div>
             </div>
             <div className={styles.searchButtonContainer}>
-              <button type="submit" onClick={sendSearch}>
-                Finn din drømmebolig
-              </button>
+              <button type="submit">Finn din drømmebolig</button>
             </div>
           </Form>
         )}

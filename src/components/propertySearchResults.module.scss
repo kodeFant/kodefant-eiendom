@@ -6,6 +6,7 @@
 .searchResults {
   display: grid;
   grid-template-columns: 1fr;
+  align-content: start;
 
   @include breakpoint(tablet) {
     grid-template-columns: repeat(2, 1fr);

@@ -11,6 +11,7 @@ class searchResults extends Component {
         key={property.node.id}
         data={property}
         images={property.node.images}
+        queryString={this.props.queryString}
       />
     ))
 
@@ -31,6 +32,7 @@ class searchResults extends Component {
 searchResults.propTypes = {
   gridClass: PropTypes.string,
   data: PropTypes.any,
+  queryString: PropTypes.string,
 }
 
 export default searchResults

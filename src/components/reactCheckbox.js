@@ -7,12 +7,16 @@ class ReactCheckbox extends Component {
   handleChange = value => {
     // this is going to call setFieldValue and manually update values.topcis
     //eslint-disable-next-line
-    this.props.onChange(this.props.name, value.target.checked)
+    if (this.props.onChange) {
+      this.props.onChange(this.props.name, value.target.checked)
+    }
   }
 
   handleBlur = () => {
-    // this is going to call setFieldTouched and manually update touched.topcis
-    this.props.onBlur(this.props.name, true)
+    // this is going to call setFieldTouched and manually update touched.topics
+    if (this.props.onChange) {
+      this.props.onBlur(this.props.name, true)
+    }
   }
 
   render() {
@@ -27,7 +31,9 @@ class ReactCheckbox extends Component {
         <label
           htmlFor={this.props.name}
           onClick={() =>
-            this.props.onChange(this.props.name, !this.props.value)
+            this.props.onChange
+              ? this.props.onChange(this.props.name, !this.props.value)
+              : null
           }
         >
           {this.props.label}
@@ -40,8 +46,8 @@ class ReactCheckbox extends Component {
 ReactCheckbox.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.bool,
-  onChange: PropTypes.func.isRequired,
-  onBlur: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
+  onBlur: PropTypes.func,
   label: PropTypes.string.isRequired,
   style: PropTypes.string,
 }

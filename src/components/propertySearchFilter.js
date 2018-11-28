@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 
 import ReactSelect from './reactSelect'
 import ReactCheckbox from './reactCheckbox'
+import { houseType, ownerType, bedrooms, bathrooms } from './initialFilter'
 
 import styles from './propertySearchFilter.module.scss'
 
@@ -104,6 +105,16 @@ class FormikForm extends PureComponent {
     this.props.setFieldTouched(event.target.name)
   }
 
+  toggleInput = (name, value) => {
+    this.props.setFieldValue(name, value)
+    this.props.setState({
+      options: {
+        ...this.props.state.options,
+        [name]: value,
+      },
+    })
+  }
+
   handleSelect = (name, prop) => {
     this.props.setFieldValue(name, prop)
     this.props.setState({
@@ -120,33 +131,30 @@ class FormikForm extends PureComponent {
       dd__list: styles.dd__list,
       dd__expandIcon: styles.dd__expandIcon,
     }
-    const houseType = [
-      { value: 'alle', label: 'Alle' },
-      { value: 'enebolig', label: 'Enebolig' },
-      { value: 'leilighet', label: 'Leilighet' },
-      { value: 'rekkehus', label: 'Rekkehus' },
-      { value: 'tomannsbolig', label: 'Tomannsbolig' },
-    ]
-    const ownerType = [
-      { value: 'alle', label: 'Alle' },
-      { value: 'borettslag', label: 'Borettslag' },
-      { value: 'selveier', label: 'Selveier' },
-      { value: 'andel', label: 'Andel' },
-    ]
-    const bedrooms = [
-      { value: '0', label: '0+' },
-      { value: '1', label: '1+' },
-      { value: '2', label: '2+' },
-      { value: '3', label: '3+' },
-      { value: '4', label: '4+' },
-      { value: '5', label: '5+' },
-    ]
-    const bathrooms = [
-      { value: '1', label: '1' },
-      { value: '2', label: '2' },
-      { value: '3+', label: '3+' },
-    ]
 
+    const queryStringToBoolean = input => {
+      if (typeof string !== 'boolean') {
+        if (input === 'true') {
+          return true
+        }
+        if (input === 'false') {
+          return false
+        }
+      }
+      return input
+    }
+    const Checkbox = ({ name, label }) => (
+      <ReactCheckbox
+        style={styles.checkbox}
+        onChange={(name, value) => {
+          this.toggleInput(name, value)
+        }}
+        onBlur={this.props.setFieldTouched}
+        value={queryStringToBoolean(this.props.values[name])}
+        name={name}
+        label={label}
+      />
+    )
     return (
       <Form>
         <div className={styles.searchFilter}>
@@ -258,86 +266,16 @@ class FormikForm extends PureComponent {
             </button>
           </div>
           <div className={styles.checkboxContainer}>
-            <ReactCheckbox
-              style={styles.checkbox}
-              onChange={this.props.setFieldValue}
-              onBlur={this.props.setFieldTouched}
-              value={this.props.values.balcony}
-              name="balcony"
-              label="Balkong"
-            />
-            <ReactCheckbox
-              style={styles.checkbox}
-              onChange={this.props.setFieldValue}
-              onBlur={this.props.setFieldTouched}
-              value={this.props.values.parking}
-              name="parking"
-              label="Garasje/P-plass"
-            />
-            <ReactCheckbox
-              style={styles.checkbox}
-              onChange={this.props.setFieldValue}
-              onBlur={this.props.setFieldTouched}
-              value={this.props.values.elevator}
-              name="elevator"
-              label="Heis"
-            />
-            <ReactCheckbox
-              style={styles.checkbox}
-              onChange={this.props.setFieldValue}
-              onBlur={this.props.setFieldTouched}
-              value={this.props.values.noRedwellers}
-              name="noRedwellers"
-              label="Ingen gjenboere"
-            />
-            <ReactCheckbox
-              style={styles.checkbox}
-              onChange={this.props.setFieldValue}
-              onBlur={this.props.setFieldTouched}
-              value={this.props.values.swimmingpool}
-              name="swimmingpool"
-              label="Svømmebasseng"
-            />
-            <ReactCheckbox
-              style={styles.checkbox}
-              onChange={this.props.setFieldValue}
-              onBlur={this.props.setFieldTouched}
-              value={this.props.values.fireplace}
-              name="fireplace"
-              label="Peis/ildsted"
-            />
-            <ReactCheckbox
-              style={styles.checkbox}
-              onChange={this.props.setFieldValue}
-              onBlur={this.props.setFieldTouched}
-              value={this.props.values.beach}
-              name="beach"
-              label="Strandlinje"
-            />
-            <ReactCheckbox
-              style={styles.checkbox}
-              onChange={this.props.setFieldValue}
-              onBlur={this.props.setFieldTouched}
-              value={this.props.values.hiking}
-              name="hiking"
-              label="Turterreng"
-            />
-            <ReactCheckbox
-              style={styles.checkbox}
-              onChange={this.props.setFieldValue}
-              onBlur={this.props.setFieldTouched}
-              value={this.props.values.view}
-              name="view"
-              label="Utsikt"
-            />
-            <ReactCheckbox
-              style={styles.checkbox}
-              onChange={this.props.setFieldValue}
-              onBlur={this.props.setFieldTouched}
-              value={this.props.values.janitor}
-              name="janitor"
-              label="Vaktmester"
-            />
+            <Checkbox name="balcony" label="Balkong" />
+            <Checkbox name="parking" label="Garasje/P-plass" />
+            <Checkbox name="elevator" label="Heis" />
+            <Checkbox name="noRedwellers" label="Ingen gjenboere" />
+            <Checkbox name="swimmingpool" label="Svømmebasseng" />
+            <Checkbox name="fireplace" label="Peis/ildsted" />
+            <Checkbox name="beach" label="Strandlinje" />
+            <Checkbox name="hiking" label="Turterreng" />
+            <Checkbox name="view" label="Utsikt" />
+            <Checkbox name="janitor" label="Vaktmester" />
           </div>
         </div>
       </Form>

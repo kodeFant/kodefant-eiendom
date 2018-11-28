@@ -20,6 +20,11 @@
         "path": "/dev-404-page/"
     },
     {
+        "componentChunkName": "component---src-pages-eiendom-js",
+        "jsonName": "eiendom-f70",
+        "path": "/eiendom/"
+    },
+    {
         "componentChunkName": "component---src-pages-eiendommer-js",
         "jsonName": "eiendommer-722",
         "path": "/eiendommer/"
