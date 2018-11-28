@@ -5,6 +5,9 @@ import SingleProperty from '../components/singleProperty'
 import queryString from 'query-string'
 
 class Property extends Component {
+  state = {
+    data: undefined,
+  }
   data = () => {
     const id = queryString.parse(location.search).id
     return this.props.data.allPropertiesYaml.edges.find(property => {
@@ -12,14 +15,21 @@ class Property extends Component {
     })
   }
 
+  componentDidMount() {
+    this.setState({ data: this.data() })
+  }
+
   render() {
+    const data = this.state.data
     return (
       <Layout>
         <div className="container">
-          <SingleProperty
-            data={this.data()}
-            queryString={this.props.location.state.queryString}
-          />
+          {data ? (
+            <SingleProperty
+              data={data}
+              queryString={this.props.location.state.queryString}
+            />
+          ) : null}
         </div>
       </Layout>
     )
