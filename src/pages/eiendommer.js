@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Router } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import Layout from '../components/layout/layout'
@@ -14,6 +14,7 @@ class PropertyPage extends PureComponent {
     filteredData: [],
     options: {},
     queryString: '',
+    singlePage: null,
   }
 
   changeStateHandler = state => {
