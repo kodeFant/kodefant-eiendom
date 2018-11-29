@@ -20,7 +20,7 @@ const JumbotronContent = () => (
               price
               images {
                 childImageSharp {
-                  fluid(maxWidth: 2560, maxHeight: 1440) {
+                  fluid(maxWidth: 1600, maxHeight: 900) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -31,16 +31,18 @@ const JumbotronContent = () => (
       }
     `}
     render={data => {
-      const propertyData = data ? data.allPropertiesYaml.edges[0].node : null
       return (
         <>
           <Img
             style={{ height: '100%' }}
-            fluid={propertyData.images[0].childImageSharp.fluid}
+            fluid={
+              data.allPropertiesYaml.edges[0].node.images[0].childImageSharp
+                .fluid
+            }
           />
           <div className={styles.overlay}>
             <Link
-              to={`/eiendom/?id=${propertyData.id}`}
+              to={`/eiendom/?id=${data.allPropertiesYaml.edges[0].node.id}`}
               className={styles.overlayBox}
             >
               <div className={styles.addressBox}>
@@ -49,12 +51,19 @@ const JumbotronContent = () => (
                 <div className={styles.symbolBox}>
                   <FaMapMarkerAlt />
                 </div>
-                <div className={styles.address}>{propertyData.address}</div>
+                <div className={styles.address}>
+                  {data.allPropertiesYaml.edges[0].node.address}
+                </div>
               </div>
-              <div className={styles.header}>{propertyData.title}</div>
+              <div className={styles.header}>
+                {data.allPropertiesYaml.edges[0].node.title}
+              </div>
               <div className={styles.priceHeader}>Prisantydning:</div>
               <div className={styles.price}>
-                {decimalFix(propertyData.price / 1000000)} millioner kroner
+                {decimalFix(
+                  data.allPropertiesYaml.edges[0].node.price / 1000000
+                )}{' '}
+                millioner kroner
               </div>
             </Link>
           </div>
