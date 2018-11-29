@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import { decimalFix } from '../helperFunctions'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 
-const JumbotronContent = () => (
+const Jumbotron = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -31,18 +31,16 @@ const JumbotronContent = () => (
       }
     `}
     render={data => {
+      const propertyData = data.allPropertiesYaml.edges[0].node
       return (
-        <>
+        <div className={styles.jumbotron}>
           <Img
             style={{ height: '100%' }}
-            fluid={
-              data.allPropertiesYaml.edges[0].node.images[0].childImageSharp
-                .fluid
-            }
+            fluid={propertyData.images[0].childImageSharp.fluid}
           />
           <div className={styles.overlay}>
             <Link
-              to={`/eiendom/?id=${data.allPropertiesYaml.edges[0].node.id}`}
+              to={`/eiendom/?id=${propertyData.id}`}
               className={styles.overlayBox}
             >
               <div className={styles.addressBox}>
@@ -51,32 +49,19 @@ const JumbotronContent = () => (
                 <div className={styles.symbolBox}>
                   <FaMapMarkerAlt />
                 </div>
-                <div className={styles.address}>
-                  {data.allPropertiesYaml.edges[0].node.address}
-                </div>
+                <div className={styles.address}>{propertyData.address}</div>
               </div>
-              <div className={styles.header}>
-                {data.allPropertiesYaml.edges[0].node.title}
-              </div>
+              <div className={styles.header}>{propertyData.title}</div>
               <div className={styles.priceHeader}>Prisantydning:</div>
               <div className={styles.price}>
-                {decimalFix(
-                  data.allPropertiesYaml.edges[0].node.price / 1000000
-                )}{' '}
-                millioner kroner
+                {decimalFix(propertyData.price / 1000000)} millioner kroner
               </div>
             </Link>
           </div>
-        </>
+        </div>
       )
     }}
   />
-)
-
-const Jumbotron = () => (
-  <div className={styles.jumbotron}>
-    <JumbotronContent />
-  </div>
 )
 
 export default Jumbotron
