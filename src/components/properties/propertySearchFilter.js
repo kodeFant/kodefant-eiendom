@@ -4,9 +4,9 @@ import { Formik, Form, Field } from 'formik'
 import queryString from 'query-string'
 import PropTypes from 'prop-types'
 
-import ReactSelect from './reactSelect'
-import ReactCheckbox from './reactCheckbox'
-import { houseType, ownerType, bedrooms, bathrooms } from './initialFilter'
+import ReactSelect from '../reactSelect'
+import ReactCheckbox from '../reactCheckbox'
+import { houseType, ownerType, bedrooms, bathrooms } from '../initialFilter'
 
 import styles from './propertySearchFilter.module.scss'
 
@@ -86,6 +86,7 @@ class FormikForm extends PureComponent {
 
   componentDidMount() {
     this.queryStringToOptions()
+    window.scrollTo(250, 250)
   }
 
   queryStringToOptions = () => {

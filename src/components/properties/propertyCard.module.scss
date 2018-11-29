@@ -1,11 +1,15 @@
-@import 'modules/variables';
-@import 'modules/fonts';
-@import 'modules/colors';
-@import 'modules/tags';
+@import '../modules/variables';
+@import '../modules/fonts';
+@import '../modules/colors';
+@import '../modules/tags';
 
 $cardPadding: 1rem;
 $smallFont: 0.8rem;
 $cardInfoHeight: 10rem;
+
+.linkStyle {
+  color: $black;
+}
 
 .propertyCard {
   border: 1px $lightgray solid;

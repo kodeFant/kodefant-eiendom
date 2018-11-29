@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { decimalFix } from '../helperFunctions'
 
 import { FaMapMarkerAlt } from 'react-icons/fa'
 
@@ -9,7 +10,7 @@ const propertyCardTop = props => (
       <FaMapMarkerAlt />{' '}
       <span style={{ verticalAlign: 'middle' }}>{props.address}</span>
     </div>
-    <div>{props.price / 1000000} millioner</div>
+    <div>{decimalFix(props.price / 1000000)} millioner</div>
   </div>
 )
 

@@ -3,8 +3,8 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import Layout from '../components/layout/layout'
-import SearchFilter from '../components/propertySearchFilter'
-import SearchResults from '../components/propertySearchResults'
+import SearchFilter from '../components/properties/propertySearchFilter'
+import SearchResults from '../components/properties/propertySearchResults'
 
 import grid from './eiendommer.module.scss'
 

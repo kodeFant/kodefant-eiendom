@@ -1,0 +1,48 @@
+@import './modules/variables';
+@import './modules/fonts';
+@import './modules/colors';
+@import './modules/tags';
+
+$margin: 1.5rem;
+
+.singlePropertySlider {
+  z-index: 0;
+}
+
+.next {
+  right: 10px;
+  left: auto;
+}
+
+.prev {
+  left: 10px;
+  right: auto;
+}
+
+.next,
+.prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  background-color: rgba($black, 0.5);
+  color: white;
+
+  position: absolute;
+  top: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: -22px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+:local(.pagination) {
+  :global(.swiper-pagination-bullet) {
+    background-color: rgba($main, 0.7);
+  }
+}
+
+:global(.swiper-container) {
+  z-index: 0;
+}

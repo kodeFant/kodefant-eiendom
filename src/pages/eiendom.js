@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
+import Link from 'gatsby-link'
 import Layout from '../components/layout/layout'
 import SingleProperty from '../components/singleProperty'
 import queryString from 'query-string'
@@ -21,18 +22,31 @@ class Property extends Component {
 
   render() {
     const data = this.state.data
-    return (
-      <Layout>
-        <div className="container">
-          {data ? (
-            <SingleProperty
-              data={data}
-              queryString={this.props.location.state.queryString}
-            />
-          ) : null}
-        </div>
-      </Layout>
-    )
+    if (this.state.data === undefined) {
+      return (
+        <Layout>
+          <div className="container">
+            <p>
+              Denne eiendommen ble ikke funnet. Bla gjerne videre i våre{' '}
+              <Link to="eiendommer">eiendommer</Link> for å gjøre et nytt søk.
+            </p>
+          </div>
+        </Layout>
+      )
+    } else {
+      return (
+        <Layout>
+          <div className="container">
+            {data ? (
+              <SingleProperty
+                data={data}
+                historyQuery={this.props.location.state.queryString}
+              />
+            ) : null}
+          </div>
+        </Layout>
+      )
+    }
   }
 }
 

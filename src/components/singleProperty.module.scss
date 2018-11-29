@@ -1,7 +1,7 @@
-@import 'modules/variables';
-@import 'modules/fonts';
-@import 'modules/colors';
-@import 'modules/tags';
+@import './modules/variables';
+@import './modules/fonts';
+@import './modules/colors';
+@import './modules/tags';
 
 .singleProperty {
   margin-top: 3.5rem;
@@ -19,6 +19,16 @@
   .keyFacts {
     background-color: $main;
     color: $white;
+  }
+}
+
+.backlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  a {
+    color: $black;
   }
 }
 

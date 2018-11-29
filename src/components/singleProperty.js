@@ -1,19 +1,38 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+
 import styles from './singleProperty.module.scss'
-import PropertyCardTop from './propertyCardTop'
-import PropertyCardBottom from './propertyCardBottom'
+import PropertyCardTop from './properties/propertyCardTop'
+import PropertyCardBottom from './properties/propertyCardBottom'
 import ReactCheckbox from './reactCheckbox'
 import PropTypes from 'prop-types'
+import SinglePropertySlider from './singlePropertySlider'
+
+import { FaSearchLocation } from 'react-icons/fa'
 
 class SingleProperty extends Component {
   render() {
     const data = this.props.data.node
+    const Checkbox = props => (
+      <ReactCheckbox
+        style={styles.checkbox}
+        value={data[name]}
+        name={props.name}
+        label={props.label}
+      />
+    )
     return (
       <div className={styles.singleProperty}>
-        <Link to={`eiendommer/${this.props.queryString}`}>Tilbake til søk</Link>
-        <Img fluid={data.images[0].childImageSharp.fluid} />
+        <div className={styles.backlink}>
+          <Link
+            to={`eiendommer/${
+              this.props.historyQuery ? this.props.historyQuery : ''
+            }`}
+          >
+            <FaSearchLocation /> Tilbake til søket
+          </Link>
+        </div>
+        <SinglePropertySlider images={data.images} />
         <PropertyCardTop
           className={styles.cardTop}
           address={data.address}
@@ -43,66 +62,16 @@ class SingleProperty extends Component {
           asymmetrical Carles{' '}
         </p>
         <div className={styles.checkboxes}>
-          <ReactCheckbox
-            style={styles.checkbox}
-            value={data.balcony}
-            name="balcony"
-            label="Balkong"
-          />
-          <ReactCheckbox
-            style={styles.checkbox}
-            value={data.parking}
-            name="parking"
-            label="Garasje/P-plass"
-          />
-          <ReactCheckbox
-            style={styles.checkbox}
-            value={data.elevator}
-            name="elevator"
-            label="Heis"
-          />
-          <ReactCheckbox
-            style={styles.checkbox}
-            value={data.noRedwellers}
-            name="noRedwellers"
-            label="Ingen gjenboere"
-          />
-          <ReactCheckbox
-            style={styles.checkbox}
-            value={data.swimmingpool}
-            name="swimmingpool"
-            label="Svømmebasseng"
-          />
-          <ReactCheckbox
-            style={styles.checkbox}
-            value={data.fireplace}
-            name="fireplace"
-            label="Peis/ildsted"
-          />
-          <ReactCheckbox
-            style={styles.checkbox}
-            value={data.beach}
-            name="beach"
-            label="Strandlinje"
-          />
-          <ReactCheckbox
-            style={styles.checkbox}
-            value={data.hiking}
-            name="hiking"
-            label="Turterreng"
-          />
-          <ReactCheckbox
-            style={styles.checkbox}
-            value={data.view}
-            name="view"
-            label="Utsikt"
-          />
-          <ReactCheckbox
-            style={styles.checkbox}
-            value={data.janitor}
-            name="janitor"
-            label="Vaktmester"
-          />
+          <Checkbox name="balcony" label="Balkong" />
+          <Checkbox name="parking" label="Garasje/P-plass" />
+          <Checkbox name="elevator" label="Heis" />
+          <Checkbox name="noRedwellers" label="Ingen gjenboere" />
+          <Checkbox name="swimmingpool" label="Svømmebasseng" />
+          <Checkbox name="fireplace" label="Peis/ildsted" />
+          <Checkbox name="beach" label="Strandlinje" />
+          <Checkbox name="hiking" label="Turterreng" />
+          <Checkbox name="view" label="Utsikt" />
+          <Checkbox name="janitor" label="Vaktmester" />
         </div>
       </div>
     )
@@ -111,7 +80,7 @@ class SingleProperty extends Component {
 
 SingleProperty.propTypes = {
   data: PropTypes.object,
-  queryString: PropTypes.string,
+  historyQuery: PropTypes.string,
 }
 
 export default SingleProperty

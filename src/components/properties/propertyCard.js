@@ -16,6 +16,7 @@ const propertyCard = props => {
       <Link
         to={`eiendom/?id=${data.id}`}
         state={{ queryString: props.queryString }}
+        className={styles.linkStyle}
       >
         <div className={styles.propertyCard}>
           <div className={styles.image}>
@@ -52,6 +53,7 @@ const propertyCard = props => {
 propertyCard.propTypes = {
   data: PropTypes.any,
   images: PropTypes.any,
+  queryString: PropTypes.string,
 }
 
 export default propertyCard

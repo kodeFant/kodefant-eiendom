@@ -1,49 +1,72 @@
 import React from 'react'
 import styles from './jumbotron.module.scss'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
+import { decimalFix } from '../helperFunctions'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 
-const JumbotronImage = () => (
+const JumbotronContent = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "jumbotron.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 2500) {
-              ...GatsbyImageSharpFluid_withWebp
+        allPropertiesYaml(
+          filter: { id: { eq: "c585a423-13d7-55db-9e29-0a5c59d3188e" } }
+        ) {
+          edges {
+            node {
+              id
+              title
+              address
+              price
+              images {
+                childImageSharp {
+                  fluid(maxWidth: 2560, maxHeight: 1440) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
       }
     `}
-    render={data => (
-      <Img
-        style={{ height: '100%' }}
-        fluid={data.placeholderImage.childImageSharp.fluid}
-      />
-    )}
+    render={data => {
+      const propertyData = data.allPropertiesYaml.edges[0].node
+      return (
+        <>
+          <Img
+            style={{ height: '100%' }}
+            fluid={propertyData.images[0].childImageSharp.fluid}
+          />
+          <div className={styles.overlay}>
+            <Link
+              to={`/eiendom/?id=${propertyData.id}`}
+              className={styles.overlayBox}
+            >
+              <div className={styles.addressBox}>
+                <div className={styles.verticalLine} />
+                <div className="spacer" />
+                <div className={styles.symbolBox}>
+                  <FaMapMarkerAlt />
+                </div>
+                <div className={styles.address}>{propertyData.address}</div>
+              </div>
+              <div className={styles.header}>{propertyData.title}</div>
+              <div className={styles.priceHeader}>Prisantydning:</div>
+              <div className={styles.price}>
+                {decimalFix(propertyData.price / 1000000)} millioner kroner
+              </div>
+            </Link>
+          </div>
+        </>
+      )
+    }}
   />
 )
 
 const Jumbotron = () => (
   <div className={styles.jumbotron}>
-    <JumbotronImage />
-    <div className={styles.overlay}>
-      <div className={styles.overlayBox}>
-        <div className={styles.addressBox}>
-          <div className={styles.verticalLine} />
-          <div className="spacer" />
-          <div className={styles.symbolBox}>
-            <FaMapMarkerAlt />
-          </div>
-          <div className={styles.address}>Snorresgate 3, 7345 Rasvik</div>
-        </div>
-        <div className={styles.header}>Sameiet Rasvik Allè</div>
-        <div className={styles.priceHeader}>Prisantydning:</div>
-        <div className={styles.price}>3,2 millioner</div>
-      </div>
-    </div>
+    <JumbotronContent />
   </div>
 )
 
