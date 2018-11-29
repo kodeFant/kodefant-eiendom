@@ -32,6 +32,8 @@ const JumbotronContent = () => (
     `}
     render={data => {
       const propertyData = data.allPropertiesYaml.edges[0].node
+        ? data.allPropertiesYaml.edges[0].node
+        : null
       return (
         <>
           <Img
