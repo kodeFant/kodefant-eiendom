@@ -32,33 +32,35 @@
   }
 }
 
-.cardTop {
-  margin: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
+.content {
+  .cardTop {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
 
-  background-color: $maindark;
-  color: white;
-  font-size: 1.1rem;
-}
-
-.cardFooter {
-  margin: 1rem 0;
-  display: inline-flex;
-  justify-content: space-between;
-  color: $darkgray;
-  letter-spacing: 0.05rem;
-  div {
-    padding: 0.7rem;
-
-    &:first-of-type {
-      padding-left: 0;
-    }
+    background-color: $maindark;
+    color: white;
+    font-size: 1.1rem;
   }
 
-  svg {
-    margin-right: 0.4rem;
+  .cardFooter {
+    margin: 1rem 0;
+    display: inline-flex;
+    justify-content: space-between;
+    color: $darkgray;
+    letter-spacing: 0.05rem;
+    div {
+      padding: 0.7rem;
+
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
+
+    svg {
+      margin-right: 0.4rem;
+    }
   }
 }
 
@@ -67,24 +69,24 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 3rem;
-}
 
-.checkbox {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0.7rem 0;
-  color: $white;
+  .checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.7rem 0;
+    color: $white;
 
-  label {
-    display: inline;
-    font-size: 0.8rem;
-    margin-left: 0.3rem;
-    background-color: transparent;
-    margin-bottom: 0rem;
-    margin-top: 0rem;
-    @include breakpoint(laptop) {
-      font-size: 0.7rem;
+    label {
+      display: inline;
+      font-size: 0.8rem;
+      margin-left: 0.3rem;
+      background-color: transparent;
+      margin-bottom: 0rem;
+      margin-top: 0rem;
+      @include breakpoint(laptop) {
+        font-size: 0.7rem;
+      }
     }
   }
 }

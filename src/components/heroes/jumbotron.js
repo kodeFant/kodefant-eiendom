@@ -37,7 +37,7 @@ const JumbotronQuery = () => (
 
 const Jumbotron = ({ data }) => {
   let propertyData
-  if (data.allPropertiesYaml.edges[0]) {
+  if (data.allPropertiesYaml.edges) {
     propertyData = data.allPropertiesYaml.edges[0].node
   }
   return (
