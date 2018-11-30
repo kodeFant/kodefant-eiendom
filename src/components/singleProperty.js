@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import styles from './singleProperty.module.scss'
 import PropertyCardTop from './properties/propertyCardTop'
@@ -8,7 +9,7 @@ import ReactCheckbox from './reactCheckbox'
 import PropTypes from 'prop-types'
 import SinglePropertySlider from './singlePropertySlider'
 
-import { FaSearchLocation } from 'react-icons/fa'
+import { FaSearchLocation, FaRegEnvelope, FaFolderOpen } from 'react-icons/fa'
 
 class SingleProperty extends Component {
   render() {
@@ -77,11 +78,51 @@ class SingleProperty extends Component {
               <Checkbox name="janitor" label="Vaktmester" />
             </div>
           </div>
+          <div className={styles.sidebar}>
+            <h3 className={styles.brokerHeader}>Kontakt din webutvikler</h3>
+            <div className={styles.brokerImageContainer}>
+              <BrokerImage />
+            </div>
+            <p>
+              Har du penger å tjene og en bedrift å drive? Da har du andre ting
+              å gjøre enn å lage nettside selv.
+            </p>
+            <p>
+              Jeg heter Lars Lillo Ulvestad og lager flotte nettsider til en
+              pris vi avtaler på forhånd.
+            </p>
+            <div className={styles.contact}>
+              <Link to="kontakt">
+                <FaRegEnvelope /> Ta kontakt
+              </Link>
+
+              <a href="https://lillo.tech">
+                <FaFolderOpen /> Se min portefølje
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     )
   }
 }
+
+const BrokerImage = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        file(relativePath: { eq: "lillo.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Img fluid={data.file.childImageSharp.fluid} />}
+  />
+)
 
 SingleProperty.propTypes = {
   data: PropTypes.object,

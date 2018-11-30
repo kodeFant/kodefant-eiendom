@@ -6,40 +6,9 @@ import { decimalFix } from '../helperFunctions'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import PropTypes from 'prop-types'
 
-const JumbotronQuery = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allPropertiesYaml(
-          filter: { id: { eq: "c585a423-13d7-55db-9e29-0a5c59d3188e" } }
-        ) {
-          edges {
-            node {
-              id
-              title
-              address
-              price
-              images {
-                childImageSharp {
-                  fluid(maxWidth: 1600, maxHeight: 900) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={data => <Jumbotron data={data} />}
-  />
-)
-
 const Jumbotron = ({ data }) => {
-  let propertyData
-  if (data.allPropertiesYaml) {
-    propertyData = data.allPropertiesYaml.edges[0].node
-  }
+  const propertyData = data.allPropertiesYaml.edges[0].node
+
   return (
     <>
       {propertyData ? (
@@ -77,5 +46,34 @@ const Jumbotron = ({ data }) => {
 Jumbotron.propTypes = {
   data: PropTypes.object,
 }
+
+const JumbotronQuery = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        allPropertiesYaml(
+          filter: { id: { eq: "c585a423-13d7-55db-9e29-0a5c59d3188e" } }
+        ) {
+          edges {
+            node {
+              id
+              title
+              address
+              price
+              images {
+                childImageSharp {
+                  fluid(maxWidth: 1600, maxHeight: 900) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Jumbotron data={data} />}
+  />
+)
 
 export default JumbotronQuery

@@ -21,6 +21,13 @@
     background-color: $main;
     color: $white;
   }
+
+  a {
+    color: $black;
+    &:hover {
+      color: $main;
+    }
+  }
 }
 
 .backlink {
@@ -28,16 +35,13 @@
   justify-content: center;
   align-items: center;
   margin: 1rem 0;
-  a {
-    color: $black;
-  }
 }
 .grid {
   @include breakpoint(phablet) {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: 'content sidebar';
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 }
 
@@ -77,6 +81,7 @@
     background-color: $darkgray;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
     padding: 3rem;
 
     .checkbox {
@@ -97,6 +102,59 @@
           font-size: 0.7rem;
         }
       }
+    }
+  }
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem;
+  }
+
+  p {
+    @include breakpoint(phablet) {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  }
+}
+
+.brokerImageContainer {
+  width: 70%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.brokerHeader {
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: stretch;
+  a {
+    display: inline-block;
+    border: 0;
+    background-color: $main;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    outline-color: $main;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.9);
+      color: $black;
     }
   }
 }
