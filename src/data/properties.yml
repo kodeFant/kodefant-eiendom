@@ -1,4 +1,5 @@
 - title: Rasvik sentrum sameie
+  pID: 1
   description: Enebolog med byens beste beliggenhet
   address: Snorresgate 48
   place: Rasvik
@@ -23,6 +24,7 @@
     - '../images/properties/enebolig1a.jpg'
 
 - title: Porterud gård
+  pID: 2
   description: Romslig enebolig utenfor Rasvik
   address: Hjelmsgata 79
   place: Porterud
@@ -47,6 +49,7 @@
     - '../images/properties/enebolig2a.jpg'
 
 - title: Porteruds fineste
+  pID: 3
   description: Koselig liten enebolig med kort avstand til sjøen
   address: Øksekvarteret 15
   place: Porterud
@@ -71,6 +74,7 @@
     - '../images/properties/enebolig3a.jpg'
 
 - title: Klepsodden marina
+  pID: 4
   description: Havnær enebolig med båtplass inkludert
   address: Hammerborggata 3
   place: Kleppsodden
@@ -95,6 +99,7 @@
     - '../images/properties/enebolig4a.jpg'
 
 - title: Rasvik sentrum sameie
+  pID: 5
   description: Studioleilighet med byens beste beliggenhet
   address: Snorresgate 48
   place: Rasvik
@@ -119,6 +124,7 @@
     - '../images/properties/leilighet1a.jpg'
 
 - title: Porterud borettslag
+  pID: 6
   description: Romslig leilighet utenfor Rasvik
   address: Porterudkrysset 79
   place: Porterud
@@ -143,6 +149,7 @@
     - '../images/properties/leilighet2a.jpg'
 
 - title: Rasviktoppen borettslag
+  pID: 7
   description: Koselig liten leilighet med kort avstand til sjøen
   address: Rasviktoppen 22
   place: Rasvik
@@ -167,6 +174,7 @@
     - '../images/properties/leilighet3a.jpg'
 
 - title: Ravsik sentrum
+  pID: 8
   description: Familieleilighet nær skole, butikk og kjøpesenter
   address: Hans Rasviksgate 34
   place: Rasvik
@@ -191,6 +199,7 @@
     - '../images/properties/leilighet4a.jpg'
 
 - title: Sameiet Rasvik allé
+  pID: 9
   description: To etasjer og flott beliggenhet til havet
   address: Snorresgate 3
   place: Rasvik
@@ -215,6 +224,7 @@
     - '../images/properties/rekkehus1a.jpg'
 
 - title: Porterud borettslag
+  pID: 10
   description: Romslig rekkehus utenfor Rasvik
   address: Porterudkrysset 79
   place: Porterud
@@ -239,6 +249,7 @@
     - '../images/properties/rekkehus3.jpg'
 
 - title: Rasviktoppen borettslag
+  pID: 11
   description: Koselig liten rekkehus med kort avstand til sjøen
   address: Rasviktoppen 22
   place: Rasvik
@@ -263,6 +274,7 @@
     - '../images/properties/rekkehus2a.jpg'
 
 - title: Sameiet Rasvik allé
+  pID: 12
   description: To etasjer og flott beliggenhet til havet
   address: Snorresgate 3
   place: Rasvik
@@ -287,6 +299,7 @@
     - '../images/properties/tomannsbolig1a.jpg'
 
 - title: Porterud borettslag
+  pID: 13
   description: Romslig tomannsbolig utenfor Rasvik
   address: Porterudkrysset 79
   place: Porterud
@@ -311,6 +324,7 @@
     - '../images/properties/tomannsbolig3.jpg'
 
 - title: Rasviktoppen borettslag
+  pID: 14
   description: Koselig liten tomannsbolig med kort avstand til sjøen
   address: Rasviktoppen 22
   place: Rasvik

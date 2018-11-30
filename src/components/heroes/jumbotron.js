@@ -51,11 +51,10 @@ const JumbotronQuery = () => (
   <StaticQuery
     query={graphql`
       query {
-        allPropertiesYaml(
-          filter: { id: { eq: "c585a423-13d7-55db-9e29-0a5c59d3188e" } }
-        ) {
+        allPropertiesYaml(filter: { pID: { eq: 2 } }) {
           edges {
             node {
+              pID
               id
               title
               address

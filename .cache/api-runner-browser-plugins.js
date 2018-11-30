@@ -1,4 +1,4 @@
 module.exports = [{
-      plugin: require('/home/kodefant/kode/kodefant-eiendom/gatsby-browser.js'),
+      plugin: require('/Users/kodefant/kode/eiendom/gatsby-browser.js'),
       options: {"plugins":[]},
     }]
