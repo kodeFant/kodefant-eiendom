@@ -2,7 +2,6 @@
 const preferDefault = m => m && m.default || m
 
 exports.components = {
-  "component---cache-dev-404-page-js": () => import("/home/kodefant/kode/kodefant-eiendom/.cache/dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-404-js": () => import("/home/kodefant/kode/kodefant-eiendom/src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-eiendom-js": () => import("/home/kodefant/kode/kodefant-eiendom/src/pages/eiendom.js" /* webpackChunkName: "component---src-pages-eiendom-js" */),
   "component---src-pages-eiendommer-js": () => import("/home/kodefant/kode/kodefant-eiendom/src/pages/eiendommer.js" /* webpackChunkName: "component---src-pages-eiendommer-js" */),

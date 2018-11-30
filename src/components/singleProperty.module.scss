@@ -37,7 +37,7 @@
   margin: 1rem 0;
 }
 .grid {
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: 'content sidebar';

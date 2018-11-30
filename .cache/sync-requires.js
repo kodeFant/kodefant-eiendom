@@ -3,7 +3,6 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": preferDefault(require("/home/kodefant/kode/kodefant-eiendom/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/home/kodefant/kode/kodefant-eiendom/src/pages/404.js")),
   "component---src-pages-eiendom-js": preferDefault(require("/home/kodefant/kode/kodefant-eiendom/src/pages/eiendom.js")),
   "component---src-pages-eiendommer-js": preferDefault(require("/home/kodefant/kode/kodefant-eiendom/src/pages/eiendommer.js")),

@@ -3,7 +3,7 @@
 @import '../modules/colors';
 @import '../modules/tags';
 
-$filterStroke: $black;
+$filterStroke: $white;
 
 .filterGrid {
   display: grid;
@@ -65,17 +65,17 @@ select {
 
 .col1 {
   composes: col;
-  background-color: $maindark;
+  background-color: $black;
 }
 
 .col2 {
   composes: col;
-  background-color: rgba($main, 1);
+  background-color: rgba($black, 0.8);
 }
 
 .col3 {
   composes: col;
-  background-color: rgba($main, 0.8);
+  background-color: rgba($black, 0.6);
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 3rem;
