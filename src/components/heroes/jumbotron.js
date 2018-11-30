@@ -36,7 +36,10 @@ const JumbotronQuery = () => (
 )
 
 const Jumbotron = ({ data }) => {
-  const propertyData = data.allPropertiesYaml.edges[0].node
+  let propertyData
+  if (data.allPropertiesYaml.edges[0]) {
+    propertyData = data.allPropertiesYaml.edges[0].node
+  }
   return (
     <div className={styles.jumbotron}>
       <Img
