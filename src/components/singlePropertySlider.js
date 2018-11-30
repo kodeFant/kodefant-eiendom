@@ -9,7 +9,6 @@ import { IconContext } from 'react-icons'
 
 class SinglePropertySlider extends Component {
   goNext = () => {
-    console.log(this.swiper)
     if (this.swiper) this.swiper.slideNext()
   }
 

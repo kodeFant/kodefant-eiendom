@@ -18,6 +18,9 @@ class Property extends Component {
 
   componentDidMount() {
     this.setState({ data: this.data() })
+    if (this.props.location.state) {
+      this.setState({ queryString: this.props.location.state.queryString })
+    }
   }
 
   render() {
@@ -40,7 +43,9 @@ class Property extends Component {
             {data ? (
               <SingleProperty
                 data={data}
-                historyQuery={this.props.location.state.queryString}
+                historyQuery={
+                  this.state.queryString ? this.state.queryString : ''
+                }
               />
             ) : null}
           </div>
