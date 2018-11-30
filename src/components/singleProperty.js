@@ -33,48 +33,50 @@ class SingleProperty extends Component {
           </Link>
         </div>
         <SinglePropertySlider images={data.images} />
+        <div className={styles.grid}>
+          <div className={styles.content}>
+            <PropertyCardTop
+              className={styles.cardTop}
+              address={data.address}
+              price={data.price}
+            />
+            <h1>{data.title}</h1>
+            <PropertyCardBottom
+              className={styles.cardFooter}
+              size={data.size}
+              bedrooms={data.bedrooms}
+              bathrooms={data.bathrooms}
+            />
+            <p>
+              Pinterest forage selfies DIY readymade kitsch Brooklyn Vice
+              crucifix locavore cray Wes Anderson cred Williamsburg yr 8-bit
+              fingerstache single-origin coffee master cleanse jean shorts
+              Bushwick paleo distillery quinoa tofu Blue Bottle PBR&B twee
+              post-ironic Portland pork belly fap.
+            </p>
+            <p>
+              {' '}
+              Chillwave heirloom letterpress 3 wolf moon selvage fanny pack
+              gastropub wolf kogi sriracha bitters direct trade banh mi plaid
+              bicycle rights stumptown ethical Schlitz mustache messenger bag
+              McSweeneys farm-to-table retro put a bird on it Tonx typewriter
+              Godard cornhole bespoke tousled mumblecore food truck flannel
+              pickled asymmetrical Carles{' '}
+            </p>
 
-        <div className={styles.content}>
-          <PropertyCardTop
-            className={styles.cardTop}
-            address={data.address}
-            price={data.price}
-          />
-          <h1>{data.title}</h1>
-          <PropertyCardBottom
-            className={styles.cardFooter}
-            size={data.size}
-            bedrooms={data.bedrooms}
-            bathrooms={data.bathrooms}
-          />
-          <p>
-            Pinterest forage selfies DIY readymade kitsch Brooklyn Vice crucifix
-            locavore cray Wes Anderson cred Williamsburg yr 8-bit fingerstache
-            single-origin coffee master cleanse jean shorts Bushwick paleo
-            distillery quinoa tofu Blue Bottle PBR&B twee post-ironic Portland
-            pork belly fap.
-          </p>
-          <p>
-            {' '}
-            Chillwave heirloom letterpress 3 wolf moon selvage fanny pack
-            gastropub wolf kogi sriracha bitters direct trade banh mi plaid
-            bicycle rights stumptown ethical Schlitz mustache messenger bag
-            McSweeneys farm-to-table retro put a bird on it Tonx typewriter
-            Godard cornhole bespoke tousled mumblecore food truck flannel
-            pickled asymmetrical Carles{' '}
-          </p>
-        </div>
-        <div className={styles.checkboxes}>
-          <Checkbox name="balcony" label="Balkong" />
-          <Checkbox name="parking" label="Garasje/P-plass" />
-          <Checkbox name="elevator" label="Heis" />
-          <Checkbox name="noRedwellers" label="Ingen gjenboere" />
-          <Checkbox name="swimmingpool" label="Svømmebasseng" />
-          <Checkbox name="fireplace" label="Peis/ildsted" />
-          <Checkbox name="beach" label="Strandlinje" />
-          <Checkbox name="hiking" label="Turterreng" />
-          <Checkbox name="view" label="Utsikt" />
-          <Checkbox name="janitor" label="Vaktmester" />
+            <div className={styles.checkboxes}>
+              <Checkbox name="balcony" label="Balkong" />
+              <Checkbox name="parking" label="Garasje/P-plass" />
+              <Checkbox name="elevator" label="Heis" />
+              <Checkbox name="noRedwellers" label="Ingen gjenboere" />
+              <Checkbox name="swimmingpool" label="Svømmebasseng" />
+              <Checkbox name="fireplace" label="Peis/ildsted" />
+              <Checkbox name="beach" label="Strandlinje" />
+              <Checkbox name="hiking" label="Turterreng" />
+              <Checkbox name="view" label="Utsikt" />
+              <Checkbox name="janitor" label="Vaktmester" />
+            </div>
+          </div>
         </div>
       </div>
     )

@@ -5,6 +5,7 @@
 
 .singleProperty {
   margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 
   h1 {
     font-size: 2rem;
@@ -31,8 +32,17 @@
     color: $black;
   }
 }
+.grid {
+  @include breakpoint(phablet) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 'content sidebar';
+    grid-gap: 1rem;
+  }
+}
 
 .content {
+  grid-area: content;
   .cardTop {
     margin: 1rem 0;
     display: flex;
@@ -62,30 +72,30 @@
       margin-right: 0.4rem;
     }
   }
-}
 
-.checkboxes {
-  background-color: $darkgray;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 3rem;
+  .checkboxes {
+    background-color: $darkgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
 
-  .checkbox {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0.7rem 0;
-    color: $white;
+    .checkbox {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0.7rem 0;
+      color: $white;
 
-    label {
-      display: inline;
-      font-size: 0.8rem;
-      margin-left: 0.3rem;
-      background-color: transparent;
-      margin-bottom: 0rem;
-      margin-top: 0rem;
-      @include breakpoint(laptop) {
-        font-size: 0.7rem;
+      label {
+        display: inline;
+        font-size: 0.8rem;
+        margin-left: 0.3rem;
+        background-color: transparent;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        @include breakpoint(laptop) {
+          font-size: 0.7rem;
+        }
       }
     }
   }
