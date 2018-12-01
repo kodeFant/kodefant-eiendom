@@ -5,6 +5,10 @@
 
 $filterStroke: $white;
 
+.btn {
+  composes: btn from global;
+}
+
 .filterGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -105,6 +109,7 @@ select {
     margin-left: 0.3rem;
     background-color: transparent;
     cursor: pointer;
+
     @include breakpoint(laptop) {
       font-size: 0.7rem;
     }

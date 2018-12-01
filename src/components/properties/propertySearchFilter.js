@@ -131,6 +131,7 @@ class FormikForm extends PureComponent {
       dd__selectControl: styles.dd__selectControl,
       dd__list: styles.dd__list,
       dd__expandIcon: styles.dd__expandIcon,
+      dd__option: styles.dd__option,
     }
 
     const queryStringToBoolean = input => {

@@ -93,7 +93,9 @@ const FooterArea4 = () => (
     </p>
     <form>
       <input type="email" placeholder="Din epost" />
-      <button onClick={e => e.preventDefault()}>Abonnér</button>
+      <button className={styles.btn} onClick={e => e.preventDefault()}>
+        Abonnér
+      </button>
     </form>
     (Kun for demonstrasjon. Det skjer ingen ting om du melder deg på dette
     nyhetsbrevet)

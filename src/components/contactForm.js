@@ -61,7 +61,7 @@ const contactForm = () => (
           <Field component="textarea" name="message" />
           <ErrorMessage name="message" component="div" />
           <div data-netlify-recaptcha />
-          <button type="submit" disabled={!isValid}>
+          <button type="submit" className={styles.btn} disabled={!isValid}>
             Send forespørsel
           </button>
         </form>

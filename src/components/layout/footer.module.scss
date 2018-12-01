@@ -177,3 +177,7 @@ $imageSize: 5rem;
 .react_icons {
   margin-right: 0.5rem;
 }
+
+.btn {
+  composes: btn from global;
+}

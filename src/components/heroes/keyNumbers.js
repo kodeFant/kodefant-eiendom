@@ -30,7 +30,7 @@ const keyNumbers = () => (
           <div className={styles.keyFactText}>Snittpris: 2.5 millioner</div>
         </div>
       </div>
-      <button onClick={() => navigate('eiendommer')}>
+      <button className={styles.btn} onClick={() => navigate('eiendommer')}>
         Bla i våre eiendommer
       </button>
     </div>

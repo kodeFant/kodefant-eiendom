@@ -5,6 +5,7 @@
 
 .contactForm {
   margin-top: 4rem;
+
   form {
     display: flex;
     flex-direction: column;
@@ -20,12 +21,15 @@
 
   button {
     margin-top: 3rem;
+
     @include breakpoint(tablet) {
       align-self: center;
     }
+
     &[disabled]:hover {
       background-color: $lightgray;
       cursor: not-allowed;
+
       &::after {
         content: ' - Fyll inn alle felter først';
       }
@@ -43,10 +47,12 @@
   }
 
   $placeholder: $white;
+
   ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $placeholder;
-    opacity: 1; /* Firefox */
+    opacity: 1;
+    /* Firefox */
   }
 
   :-ms-input-placeholder {
@@ -81,4 +87,8 @@
   margin-bottom: 3.5rem;
   line-height: 1.7rem;
   font-size: 1.1rem;
+}
+
+.btn {
+  composes: btn from global;
 }

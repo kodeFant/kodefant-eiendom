@@ -6,6 +6,7 @@
 $filterStroke: $black;
 
 .searchFilter {
+
   input:not([type='checkbox']),
   select,
   .dd__selectControl {
@@ -25,12 +26,17 @@ $filterStroke: $black;
   }
 
   .dd__list {
-    background-color: rgba($black, 0.9);
+    background-color: rgba($white, 0.9);
   }
 
   .dd__expandIcon {
     fill: $filterStroke;
     margin-right: 0.5rem;
+  }
+
+  .dd__option:hover {
+    background-color: rgba($main, 0.8);
+    color: $black;
   }
 
   label {
@@ -52,12 +58,15 @@ $filterStroke: $black;
       margin-bottom: 0rem;
       margin-top: 0rem;
       cursor: pointer;
+
       @include breakpoint(laptop) {
         font-size: 0.7rem;
       }
     }
+
     &:hover {
       color: blue;
+
       :global(.rc-checkbox-inner) {
         border-color: blue;
       }
@@ -67,9 +76,11 @@ $filterStroke: $black;
   :global(.rc-checkbox-inner) {
     border-color: $black;
   }
+
   :global(.rc-checkbox-inner:hover) {
     background-color: blue;
   }
+
   :global(.rc-checkbox-checked) {
     :global(.rc-checkbox-inner) {
       background-color: orange;
@@ -102,5 +113,6 @@ $filterStroke: $black;
 }
 
 .resetButton {
+  composes: btn from global;
   margin-bottom: 1rem;
 }

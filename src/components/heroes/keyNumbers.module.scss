@@ -43,6 +43,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+
   @include breakpoint(phablet) {
     flex-direction: row;
   }
@@ -50,7 +51,12 @@
 
 .keyFactText {
   font-weight: 700;
+
   @include breakpoint(phablet) {
     margin-left: 1rem;
   }
+}
+
+.btn {
+  composes: btn from global;
 }

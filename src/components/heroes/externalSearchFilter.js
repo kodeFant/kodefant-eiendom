@@ -278,7 +278,9 @@ class SearchFilter extends Component {
               </div>
             </div>
             <div className={styles.searchButtonContainer}>
-              <button type="submit">Finn din drømmebolig</button>
+              <button className={styles.btn} type="submit">
+                Finn din drømmebolig
+              </button>
             </div>
           </Form>
         )}
