@@ -1,4 +1,6 @@
 import React from 'react'
+import { graphql, StaticQuery, Link } from 'gatsby'
+import Img from 'gatsby-image'
 import styles from './footer.module.scss'
 import PropTypes from 'prop-types'
 import {
@@ -10,6 +12,7 @@ import {
   Github,
 } from '../contactInfo'
 import { IconContext } from 'react-icons'
+import { decimalFix } from '../helperFunctions'
 
 import Logo from './logo'
 
@@ -41,28 +44,9 @@ const FooterArea2 = () => (
   <div className={`${styles.footerArea} ${styles.area2}`}>
     <h2>Siste eiendommer</h2>
     <hr />
+
     <div className="lastProperties">
-      <div className={styles.property}>
-        <div className={styles.image} />
-        <p>
-          Vestvendt familieleilighet med utsikt mot havet.
-          <span className={styles.price}>1,2 millioner</span>
-        </p>
-      </div>
-      <div className={styles.property}>
-        <div className={styles.image} />
-        <p>
-          Vestvendt familieleilighet med utsikt mot havet.
-          <span className={styles.price}>1,2 millioner</span>
-        </p>
-      </div>
-      <div className={styles.property}>
-        <div className={styles.image} />
-        <p>
-          Vestvendt familieleilighet med utsikt mot havet.
-          <span className={styles.price}>1,2 millioner</span>
-        </p>
-      </div>
+      <LastPropertiesWithData />
     </div>
   </div>
 )
@@ -105,6 +89,52 @@ const Footer = () => (
 )
 Footer.propTypes = {
   siteTitle: PropTypes.string,
+}
+
+const LastPropertiesWithData = props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        allPropertiesYaml(limit: 3) {
+          edges {
+            node {
+              id
+              description
+              price
+              images {
+                childImageSharp {
+                  fixed(width: 80, height: 80) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={data => <LastProperties data={data} {...props} />}
+  />
+)
+
+const LastProperties = ({ data }) => {
+  return data.allPropertiesYaml.edges.map(property => (
+    <div key={property.node.id} className={styles.property}>
+      <Link
+        className={styles.lastPropertiesImage}
+        to={`eiendom/?id=${property.node.id}`}
+      >
+        <Img fixed={property.node.images[0].childImageSharp.fixed} />
+      </Link>
+      <p>
+        {property.node.description}
+        <br />
+        <span className={styles.price}>
+          {decimalFix(property.node.price / 1000000)} millioner
+        </span>
+      </p>
+    </div>
+  ))
 }
 
 export default Footer

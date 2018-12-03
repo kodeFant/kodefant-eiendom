@@ -20,8 +20,29 @@
 
 .headerClass {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: flex-start;
   grid-column: 1 / -1;
   text-align: right;
+
+  @include breakpoint(phablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  p {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+}
+
+.dd__selectedItem {
+  margin-right: 0.5rem;
+}
+
+.dd__selectControl {
+  @include breakpoint(mobileonly) {
+    margin-bottom: 1rem;
+  }
+  width: 10rem;
 }

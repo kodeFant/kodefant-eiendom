@@ -1,14 +1,14 @@
 - title: Rasvik sentrum sameie
-  pID: 1
-  description: Enebolog med byens beste beliggenhet
+  pID: 5
+  description: Studioleilighet med byens beste beliggenhet
   address: Snorresgate 48
   place: Rasvik
   postCode: 7345
-  houseType: enebolig
-  ownerType: borettslag
+  houseType: leilighet
+  ownerType: selveier
   bedrooms: 0
   bathrooms: 1
-  size: 200
+  size: 32
   price: 2300000
   balcony: true
   parking: false
@@ -20,8 +20,8 @@
   view: false
   janitor: false
   images:
-    - '../images/properties/enebolig1.jpg'
-    - '../images/properties/enebolig1a.jpg'
+    - '../images/properties/leilighet1.jpg'
+    - '../images/properties/leilighet1a.jpg'
 
 - title: Porterud gård
   pID: 2
@@ -48,18 +48,18 @@
     - '../images/properties/enebolig2.jpg'
     - '../images/properties/enebolig2a.jpg'
 
-- title: Porteruds fineste
-  pID: 3
-  description: Koselig liten enebolig med kort avstand til sjøen
-  address: Øksekvarteret 15
-  place: Porterud
+- title: Rasviktoppen borettslag
+  pID: 7
+  description: Koselig liten leilighet med kort avstand til sjøen
+  address: Rasviktoppen 22
+  place: Rasvik
   postCode: 5675
-  houseType: enebolig
-  ownerType: selveier
-  bedrooms: 2
+  houseType: leilighet
+  ownerType: borettslag
+  bedrooms: 1
   bathrooms: 1
-  size: 150
-  price: 1900000
+  size: 50
+  price: 2300000
   balcony: false
   parking: true
   elevator: false
@@ -70,58 +70,8 @@
   view: true
   janitor: false
   images:
-    - '../images/properties/enebolig3.jpg'
-    - '../images/properties/enebolig3a.jpg'
-
-- title: Klepsodden marina
-  pID: 4
-  description: Havnær enebolig med båtplass inkludert
-  address: Hammerborggata 3
-  place: Kleppsodden
-  postCode: 5685
-  houseType: enebolig
-  ownerType: selveier
-  bedrooms: 3
-  bathrooms: 2
-  size: 130
-  price: 3400000
-  balcony: true
-  parking: true
-  elevator: false
-  noRedwellers: true
-  swimmingpool: false
-  fireplace: false
-  hiking: true
-  view: true
-  janitor: false
-  images:
-    - '../images/properties/enebolig4.jpg'
-    - '../images/properties/enebolig4a.jpg'
-
-- title: Rasvik sentrum sameie
-  pID: 5
-  description: Studioleilighet med byens beste beliggenhet
-  address: Snorresgate 48
-  place: Rasvik
-  postCode: 7345
-  houseType: leilighet
-  ownerType: selveier
-  bedrooms: 0
-  bathrooms: 1
-  size: 32
-  price: 2300000
-  balcony: true
-  parking: false
-  elevator: true
-  noRedwellers: false
-  swimmingpool: false
-  fireplace: false
-  hiking: false
-  view: false
-  janitor: false
-  images:
-    - '../images/properties/leilighet1.jpg'
-    - '../images/properties/leilighet1a.jpg'
+    - '../images/properties/leilighet3.jpg'
+    - '../images/properties/leilighet3a.jpg'
 
 - title: Porterud borettslag
   pID: 6
@@ -148,30 +98,30 @@
     - '../images/properties/leilighet2.jpg'
     - '../images/properties/leilighet2a.jpg'
 
-- title: Rasviktoppen borettslag
-  pID: 7
-  description: Koselig liten leilighet med kort avstand til sjøen
-  address: Rasviktoppen 22
+- title: Sameiet Rasvik allé
+  pID: 9
+  description: To etasjer og flott beliggenhet til havet
+  address: Snorresgate 3
   place: Rasvik
-  postCode: 5675
-  houseType: leilighet
-  ownerType: borettslag
-  bedrooms: 1
-  bathrooms: 1
-  size: 50
-  price: 2300000
-  balcony: false
+  postCode: 7345
+  houseType: rekkehus
+  ownerType: selveier
+  bedrooms: 3
+  bathrooms: 2
+  size: 170
+  price: 3400000
+  balcony: true
   parking: true
   elevator: false
-  noRedwellers: false
+  noRedwellers: true
   swimmingpool: false
   fireplace: false
   hiking: true
   view: true
   janitor: false
   images:
-    - '../images/properties/leilighet3.jpg'
-    - '../images/properties/leilighet3a.jpg'
+    - '../images/properties/rekkehus1.jpg'
+    - '../images/properties/rekkehus1a.jpg'
 
 - title: Ravsik sentrum
   pID: 8
@@ -198,30 +148,30 @@
     - '../images/properties/leilighet4.jpg'
     - '../images/properties/leilighet4a.jpg'
 
-- title: Sameiet Rasvik allé
-  pID: 9
-  description: To etasjer og flott beliggenhet til havet
-  address: Snorresgate 3
-  place: Rasvik
-  postCode: 7345
-  houseType: rekkehus
+- title: Porteruds fineste
+  pID: 3
+  description: Koselig liten enebolig med kort avstand til sjøen
+  address: Øksekvarteret 15
+  place: Porterud
+  postCode: 5675
+  houseType: enebolig
   ownerType: selveier
-  bedrooms: 3
-  bathrooms: 2
-  size: 170
-  price: 3400000
-  balcony: true
+  bedrooms: 2
+  bathrooms: 1
+  size: 150
+  price: 1900000
+  balcony: false
   parking: true
   elevator: false
-  noRedwellers: true
+  noRedwellers: false
   swimmingpool: false
   fireplace: false
   hiking: true
   view: true
   janitor: false
   images:
-    - '../images/properties/rekkehus1.jpg'
-    - '../images/properties/rekkehus1a.jpg'
+    - '../images/properties/enebolig3.jpg'
+    - '../images/properties/enebolig3a.jpg'
 
 - title: Porterud borettslag
   pID: 10
@@ -248,31 +198,6 @@
     - '../images/properties/rekkehus3a.jpg'
     - '../images/properties/rekkehus3.jpg'
 
-- title: Rasviktoppen borettslag
-  pID: 11
-  description: Koselig liten rekkehus med kort avstand til sjøen
-  address: Rasviktoppen 22
-  place: Rasvik
-  postCode: 5675
-  houseType: rekkehus
-  ownerType: borettslag
-  bedrooms: 1
-  bathrooms: 1
-  size: 50
-  price: 2300000
-  balcony: false
-  parking: true
-  elevator: false
-  noRedwellers: false
-  swimmingpool: false
-  fireplace: false
-  hiking: true
-  view: true
-  janitor: false
-  images:
-    - '../images/properties/rekkehus2.jpg'
-    - '../images/properties/rekkehus2a.jpg'
-
 - title: Sameiet Rasvik allé
   pID: 12
   description: To etasjer og flott beliggenhet til havet
@@ -297,6 +222,56 @@
   images:
     - '../images/properties/tomannsbolig1.jpg'
     - '../images/properties/tomannsbolig1a.jpg'
+
+- title: Klepsodden marina
+  pID: 4
+  description: Havnær enebolig med båtplass inkludert
+  address: Hammerborggata 3
+  place: Kleppsodden
+  postCode: 5685
+  houseType: enebolig
+  ownerType: selveier
+  bedrooms: 3
+  bathrooms: 2
+  size: 130
+  price: 3400000
+  balcony: true
+  parking: true
+  elevator: false
+  noRedwellers: true
+  swimmingpool: false
+  fireplace: false
+  hiking: true
+  view: true
+  janitor: false
+  images:
+    - '../images/properties/enebolig4.jpg'
+    - '../images/properties/enebolig4a.jpg'
+
+- title: Rasviktoppen borettslag
+  pID: 11
+  description: Koselig liten rekkehus med kort avstand til sjøen
+  address: Rasviktoppen 22
+  place: Rasvik
+  postCode: 5675
+  houseType: rekkehus
+  ownerType: borettslag
+  bedrooms: 1
+  bathrooms: 1
+  size: 50
+  price: 2300000
+  balcony: false
+  parking: true
+  elevator: false
+  noRedwellers: false
+  swimmingpool: false
+  fireplace: false
+  hiking: true
+  view: true
+  janitor: false
+  images:
+    - '../images/properties/rekkehus2.jpg'
+    - '../images/properties/rekkehus2a.jpg'
 
 - title: Porterud borettslag
   pID: 13
@@ -347,3 +322,28 @@
   images:
     - '../images/properties/tomannsbolig2.jpg'
     - '../images/properties/tomannsbolig2a.jpg'
+
+- title: Rasvik sentrum sameie
+  pID: 1
+  description: Enebolig med byens beste beliggenhet
+  address: Snorresgate 48
+  place: Rasvik
+  postCode: 7345
+  houseType: enebolig
+  ownerType: borettslag
+  bedrooms: 0
+  bathrooms: 1
+  size: 200
+  price: 2300000
+  balcony: true
+  parking: false
+  elevator: true
+  noRedwellers: false
+  swimmingpool: false
+  fireplace: false
+  hiking: false
+  view: false
+  janitor: false
+  images:
+    - '../images/properties/enebolig1.jpg'
+    - '../images/properties/enebolig1a.jpg'

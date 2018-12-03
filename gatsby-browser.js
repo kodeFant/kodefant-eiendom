@@ -7,12 +7,20 @@
 // You can delete this file if you're not using it
 exports.shouldUpdateScroll = ({
   routerProps: { location },
+  prevRouterProps,
   getSavedScrollPosition,
 }) => {
   const currentPosition = getSavedScrollPosition(location)
-  const queriedPosition = getSavedScrollPosition({ pathname: `/random` })
 
-  window.scrollTo(...(currentPosition || [0, 0]))
+  if (
+    prevRouterProps &&
+    prevRouterProps.location.pathname.includes('/eiendommer/') &&
+    location.pathname.includes('/eiendommer/')
+  ) {
+    window.scrollTo(...(currentPosition || [0, 0]))
+  } else {
+    return true
+  }
 
   return false
 }
