@@ -14,9 +14,9 @@ import { IconContext } from 'react-icons'
 import Logo from './logo'
 
 const FooterArea1 = () => (
-  <div className={styles.footerArea}>
+  <div className={`${styles.footerArea} ${styles.area1}`}>
     <Logo />
-    <p>
+    <p className={styles.footerDescription}>
       Din eiendomsbedrift bør presenteres så godt som mulig. Å bruke en
       webutvikler er en smart investering i det lange løp.
     </p>
@@ -38,7 +38,7 @@ const FooterArea1 = () => (
 )
 
 const FooterArea2 = () => (
-  <div className={styles.footerArea}>
+  <div className={`${styles.footerArea} ${styles.area2}`}>
     <h2>Siste eiendommer</h2>
     <hr />
     <div className="lastProperties">
@@ -66,25 +66,9 @@ const FooterArea2 = () => (
     </div>
   </div>
 )
-const FooterArea3 = () => (
-  <div className={styles.footerArea}>
-    <h2>Galleri</h2>
-    <hr />
-    <div className={styles.galleryGrid}>
-      <div className={styles.galleryImage} />
-      <div className={styles.galleryImage} />
-      <div className={styles.galleryImage} />
-      <div className={styles.galleryImage} />
-      <div className={styles.galleryImage} />
-      <div className={styles.galleryImage} />
-      <div className={styles.galleryImage} />
-      <div className={styles.galleryImage} />
-      <div className={styles.galleryImage} />
-    </div>
-  </div>
-)
+
 const FooterArea4 = () => (
-  <div className={styles.footerArea}>
+  <div className={`${styles.footerArea} ${styles.area4}`}>
     <h2>Nyhetsbrev</h2>
     <hr />
     <p>
@@ -108,7 +92,6 @@ const Footer = () => (
       <div className={styles.footerContainer}>
         <FooterArea1 />
         <FooterArea2 />
-        <FooterArea3 />
         <FooterArea4 />
       </div>
     </footer>

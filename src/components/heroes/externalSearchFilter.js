@@ -184,7 +184,7 @@ class SearchFilter extends Component {
                     }
                   />
                 </div>
-                <label htmlFor="price">Pris</label>
+                <label htmlFor="price">Prisantydning</label>
                 <div className={styles.twoFields}>
                   <Field
                     type="number"

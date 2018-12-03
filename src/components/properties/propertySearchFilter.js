@@ -239,7 +239,7 @@ class FormikForm extends PureComponent {
               }}
             />
           </div>
-          <label htmlFor="price">Pris</label>
+          <label htmlFor="price">Prisantydning</label>
           <div className={styles.twoFields}>
             <Field
               type="number"

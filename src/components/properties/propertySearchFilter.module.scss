@@ -65,10 +65,10 @@ $filterStroke: $black;
     }
 
     &:hover {
-      color: blue;
+      color: $darkgray;
 
       :global(.rc-checkbox-inner) {
-        border-color: blue;
+        border-color: $darkgray;
       }
     }
   }
@@ -78,7 +78,7 @@ $filterStroke: $black;
   }
 
   :global(.rc-checkbox-inner:hover) {
-    background-color: blue;
+    background-color: $darkgray;
   }
 
   :global(.rc-checkbox-checked) {
@@ -113,6 +113,6 @@ $filterStroke: $black;
 }
 
 .resetButton {
-  composes: btn from global;
+  composes: btn;
   margin-bottom: 1rem;
 }

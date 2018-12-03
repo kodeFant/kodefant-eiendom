@@ -31,7 +31,7 @@ class ReactSelect extends Component {
 
 ReactSelect.propTypes = {
   onChange: PropTypes.func.isRequired,
-  onBlur: PropTypes.func.isRequired,
+  onBlur: PropTypes.func,
   value: PropTypes.any,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
